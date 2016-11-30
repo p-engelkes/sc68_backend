@@ -1,4 +1,4 @@
-package com.pengelkes;
+package com.pengelkes.jooq;
 
 import org.jooq.SQLDialect;
 import org.jooq.impl.DataSourceConnectionProvider;

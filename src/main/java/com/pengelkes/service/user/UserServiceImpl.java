@@ -26,4 +26,10 @@ public class UserServiceImpl implements UserService
     {
         return this.userServiceController.create(user);
     }
+
+    @Override
+    public Optional<User> findByName(String name)
+    {
+        return this.userServiceController.findByName(name);
+    }
 }

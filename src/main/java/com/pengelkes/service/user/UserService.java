@@ -11,4 +11,6 @@ import java.util.Optional;
 public interface UserService
 {
     Optional<User> registerNewUser(User user);
+
+    Optional<User> findByName(String name);
 }

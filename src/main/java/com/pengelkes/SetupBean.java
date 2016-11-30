@@ -10,6 +10,7 @@ import javax.annotation.PostConstruct;
 /**
  * Created by pengelkes on 29.11.2016.
  */
+//TODO: Remove for production
 @Component
 public class SetupBean
 {

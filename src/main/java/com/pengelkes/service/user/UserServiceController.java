@@ -2,6 +2,7 @@ package com.pengelkes.service.user;
 
 import com.pengelkes.backend.jooq.tables.records.UserAccountRecord;
 import org.jooq.DSLContext;
+import org.jooq.Record;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -37,5 +38,28 @@ public class UserServiceController
 
         user.setId(userAccountRecord.getId());
         return Optional.of(user);
+    }
+
+    public Optional<User> findByName(String name)
+    {
+        UserAccountRecord userAccountRecord = dsl.selectFrom(USER_ACCOUNT)
+                .where(USER_ACCOUNT.USER_NAME.eq(name)).fetchOne();
+
+        return getEntity(userAccountRecord);
+    }
+
+    private Optional<User> getEntity(Record record)
+    {
+        if (record != null)
+        {
+            String userName = record.getValue(USER_ACCOUNT.USER_NAME, String.class);
+            String firstName = record.getValue(USER_ACCOUNT.FIRST_NAME, String.class);
+            String lastName = record.getValue(USER_ACCOUNT.LAST_NAME, String.class);
+            String password = record.getValue(USER_ACCOUNT.PASSWORD, String.class);
+
+            return Optional.of(new User(userName, password, firstName, lastName));
+        }
+
+        return Optional.empty();
     }
 }

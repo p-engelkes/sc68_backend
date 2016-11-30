@@ -1,4 +1,4 @@
-package com.pengelkes;
+package com.pengelkes.jooq;
 
 import org.jooq.ExecuteContext;
 import org.jooq.SQLDialect;

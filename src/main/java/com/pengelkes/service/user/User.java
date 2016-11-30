@@ -20,6 +20,7 @@ public class User
     private String lastName;
     private String userName;
     private String password;
+    private String email;
 
     @CreationTimestamp
     private Date created;
@@ -35,10 +36,11 @@ public class User
         this.password = password;
     }
 
-    public User(String userName, String password, String firstName, String lastName)
+    public User(String userName, String password, String email, String firstName, String lastName)
     {
         this.userName = userName;
         this.password = password;
+        this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -101,5 +103,15 @@ public class User
     public void setCreated(Date created)
     {
         this.created = created;
+    }
+
+    public String getEmail()
+    {
+        return email;
+    }
+
+    public void setEmail(String email)
+    {
+        this.email = email;
     }
 }

@@ -33,6 +33,7 @@ public class UserServiceController
                 .set(USER_ACCOUNT.LAST_NAME, user.getLastName())
                 .set(USER_ACCOUNT.USER_NAME, user.getUserName())
                 .set(USER_ACCOUNT.PASSWORD, user.getPassword())
+                .set(USER_ACCOUNT.EMAIL, user.getEmail())
                 .returning(USER_ACCOUNT.ID)
                 .fetchOne();
 
@@ -56,8 +57,9 @@ public class UserServiceController
             String firstName = record.getValue(USER_ACCOUNT.FIRST_NAME, String.class);
             String lastName = record.getValue(USER_ACCOUNT.LAST_NAME, String.class);
             String password = record.getValue(USER_ACCOUNT.PASSWORD, String.class);
+            String email = record.getValue(USER_ACCOUNT.EMAIL, String.class);
 
-            return Optional.of(new User(userName, password, firstName, lastName));
+            return Optional.of(new User(userName, password, email, firstName, lastName));
         }
 
         return Optional.empty();

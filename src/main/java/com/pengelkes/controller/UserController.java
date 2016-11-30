@@ -19,7 +19,8 @@ import java.util.Optional;
 /**
  * Created by pengelkes on 29.11.2016.
  */
-@RestController("/user")
+@RestController()
+@RequestMapping("/user")
 public class UserController
 {
     private final UserService userService;
@@ -34,9 +35,10 @@ public class UserController
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)
-    public Optional<User> registerUser(@RequestBody User user) throws ServletException
+    public boolean registerUser(@RequestBody User user) throws ServletException
     {
-        return userService.registerNewUser(user);
+        return userService.registerNewUser(user).isPresent();
+
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)

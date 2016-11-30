@@ -57,11 +57,11 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception
     {
         clients.inMemory()
-                .withClient("live-test")
+                .withClient("sc68")
                 .secret("$2a$10$OuUzfzyBbpmHn9tR9Mz7R.D0GqO45SGrwn4BPetvJm6kgcgM18beq")
                 .authorizedGrantTypes("password", "refresh_token")
                 .refreshTokenValiditySeconds(3600 * 24)
-                .scopes("lagoon")
+                .scopes("sc68")
                 .accessTokenValiditySeconds(3600);
     }
 

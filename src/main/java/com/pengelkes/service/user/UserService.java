@@ -2,6 +2,7 @@ package com.pengelkes.service.user;
 
 import org.springframework.stereotype.Service;
 
+import javax.servlet.ServletException;
 import java.util.Optional;
 
 /**
@@ -10,7 +11,7 @@ import java.util.Optional;
 @Service
 public interface UserService
 {
-    Optional<User> registerNewUser(User user);
+    Optional<User> registerNewUser(User user) throws ServletException;
 
     Optional<User> findByName(String name);
 }

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import javax.servlet.ServletException;
 
 /**
  * Created by pengelkes on 29.11.2016.
@@ -26,7 +27,13 @@ public class SetupBean
     public void setupUser()
     {
         final User user = new User("admin@fake.com", "adminpass");
-        userService.registerNewUser(user);
+        try
+        {
+            userService.registerNewUser(user);
+        } catch (ServletException e)
+        {
+            e.printStackTrace();
+        }
     }
 
 }

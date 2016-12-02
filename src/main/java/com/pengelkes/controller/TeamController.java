@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.ServletException;
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -24,6 +25,12 @@ public class TeamController
     public TeamController(TeamService teamService)
     {
         this.teamService = teamService;
+    }
+
+    @RequestMapping(value = "/teams", method = RequestMethod.GET)
+    public List<Team> getAllTeams()
+    {
+        return teamService.getAllTeams();
     }
 
     @RequestMapping(value = "/teams", method = RequestMethod.POST)

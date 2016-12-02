@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.servlet.ServletException;
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -43,6 +44,12 @@ public class TeamServiceImpl implements TeamService
     public Optional<Team> findById(int id)
     {
         return teamServiceController.findById(id);
+    }
+
+    @Override
+    public List<Team> getAllTeams()
+    {
+        return teamServiceController.getAllTeams();
     }
 
     private boolean nameExists(String name)

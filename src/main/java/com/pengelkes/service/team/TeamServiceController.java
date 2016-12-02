@@ -3,10 +3,13 @@ package com.pengelkes.service.team;
 import com.pengelkes.backend.jooq.tables.records.TeamRecord;
 import org.jooq.DSLContext;
 import org.jooq.Record;
+import org.jooq.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import static com.pengelkes.backend.jooq.tables.Team.TEAM;
@@ -48,6 +51,11 @@ public class TeamServiceController
         return getEntity(dsl.selectFrom(TEAM).where(TEAM.ID.eq(id)).fetchOne());
     }
 
+    public List<Team> getAllTeams()
+    {
+        return getEntities(dsl.selectFrom(TEAM).fetch());
+    }
+
     private Optional<Team> getEntity(Record record)
     {
         if (record != null)
@@ -59,5 +67,13 @@ public class TeamServiceController
         }
 
         return Optional.empty();
+    }
+
+    private List<Team> getEntities(Result<TeamRecord> result)
+    {
+        List<Team> allTeams = new ArrayList<>();
+        result.forEach(record -> getEntity(record).ifPresent(allTeams::add));
+
+        return allTeams;
     }
 }

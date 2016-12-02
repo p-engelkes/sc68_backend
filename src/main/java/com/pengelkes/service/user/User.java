@@ -1,5 +1,6 @@
 package com.pengelkes.service.user;
 
+import com.pengelkes.service.team.Team;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
@@ -21,6 +22,11 @@ public class User
     private String userName;
     private String password;
     private String email;
+    private Position position;
+
+    @ManyToOne
+    @JoinColumn(name = "team_id")
+    private Team team;
 
     @CreationTimestamp
     private Date created;
@@ -30,10 +36,11 @@ public class User
 
     }
 
-    public User(String userName, String password)
+    public User(String userName, String password, Team team)
     {
         this.userName = userName;
         this.password = password;
+        this.team = team;
     }
 
     public User(String userName, String password, String email, String firstName, String lastName)
@@ -113,5 +120,25 @@ public class User
     public void setEmail(String email)
     {
         this.email = email;
+    }
+
+    public Position getPosition()
+    {
+        return position;
+    }
+
+    public void setPosition(Position position)
+    {
+        this.position = position;
+    }
+
+    public Team getTeam()
+    {
+        return team;
+    }
+
+    public void setTeam(Team team)
+    {
+        this.team = team;
     }
 }

@@ -1,5 +1,7 @@
 package com.pengelkes;
 
+import com.pengelkes.service.team.Team;
+import com.pengelkes.service.team.TeamService;
 import com.pengelkes.service.user.User;
 import com.pengelkes.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +9,8 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.servlet.ServletException;
+import java.util.HashMap;
+import java.util.Optional;
 
 /**
  * Created by pengelkes on 29.11.2016.
@@ -16,20 +20,37 @@ import javax.servlet.ServletException;
 public class SetupBean
 {
     private UserService userService;
+    private TeamService teamService;
 
     @Autowired
-    public SetupBean(UserService userService)
+    public SetupBean(UserService userService,
+                     TeamService teamService)
     {
         this.userService = userService;
+        this.teamService = teamService;
     }
 
     @PostConstruct
     public void setupUser()
     {
-        final User user = new User("admin@fake.com", "adminpass");
+        HashMap<String, String> trainingTimes = new HashMap<>();
+        trainingTimes.put("Wednesday", "19:00");
+        trainingTimes.put("Friday", "19:00");
+        final Team team = new Team("1. Mannschaft", trainingTimes);
         try
         {
-            userService.registerNewUser(user);
+            Optional<Team> teamOptional = teamService.create(team);
+            if (teamOptional.isPresent())
+            {
+                final User user = new User("admin@fake.com", "adminpass", teamOptional.get());
+                try
+                {
+                    userService.registerNewUser(user);
+                } catch (ServletException e)
+                {
+                    e.printStackTrace();
+                }
+            }
         } catch (ServletException e)
         {
             e.printStackTrace();

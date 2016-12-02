@@ -34,6 +34,7 @@ public class UserServiceController
                 .set(USER_ACCOUNT.USER_NAME, user.getUserName())
                 .set(USER_ACCOUNT.PASSWORD, user.getPassword())
                 .set(USER_ACCOUNT.EMAIL, user.getEmail())
+                .set(USER_ACCOUNT.TEAM_ID, user.getTeam().getId())
                 .returning(USER_ACCOUNT.ID)
                 .fetchOne();
 

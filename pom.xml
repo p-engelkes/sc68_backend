@@ -97,6 +97,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.pengelkes.Application</mainClass>
+                </configuration>
 			</plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -159,6 +162,21 @@
                                             <outputSchema>public</outputSchema>
                                         </schema>
                                     </schemata>
+                                    <customTypes>
+                                        <customType>
+                                            <name>hstore</name>
+                                            <type>java.util.HashMap&lt;String, String&gt;</type>
+                                            <binding>com.pengelkes.database.jooq.hstore.PostgresHstoreBinding</binding>
+                                        </customType>
+                                    </customTypes>
+                                    <forcedTypes>
+                                        <forcedType>
+                                            <name>hstore</name>
+                                            <expression>
+                                                .*\.team\.training_times
+                                            </expression>
+                                        </forcedType>
+                                    </forcedTypes>
                                     <includes>.*</includes>
                                     <excludes/>
                                     <inputSchema>public</inputSchema>

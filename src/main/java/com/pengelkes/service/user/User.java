@@ -5,6 +5,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Optional;
 
 /**
  * Created by pengelkes on 29.11.2016.
@@ -132,9 +133,9 @@ public class User
         this.position = position;
     }
 
-    public Team getTeam()
+    public Optional<Team> getTeam()
     {
-        return team;
+        return Optional.ofNullable(team);
     }
 
     public void setTeam(Team team)

@@ -28,15 +28,31 @@ public class UserServiceController
 
     public Optional<User> create(User user)
     {
-        UserAccountRecord userAccountRecord = dsl.insertInto(USER_ACCOUNT)
-                .set(USER_ACCOUNT.FIRST_NAME, user.getFirstName())
-                .set(USER_ACCOUNT.LAST_NAME, user.getLastName())
-                .set(USER_ACCOUNT.USER_NAME, user.getUserName())
-                .set(USER_ACCOUNT.PASSWORD, user.getPassword())
-                .set(USER_ACCOUNT.EMAIL, user.getEmail())
-                .set(USER_ACCOUNT.TEAM_ID, user.getTeam().getId())
-                .returning(USER_ACCOUNT.ID)
-                .fetchOne();
+        UserAccountRecord userAccountRecord;
+
+        if (user.getTeam().isPresent())
+        {
+            userAccountRecord = dsl.insertInto(USER_ACCOUNT)
+                    .set(USER_ACCOUNT.FIRST_NAME, user.getFirstName())
+                    .set(USER_ACCOUNT.LAST_NAME, user.getLastName())
+                    .set(USER_ACCOUNT.USER_NAME, user.getUserName())
+                    .set(USER_ACCOUNT.PASSWORD, user.getPassword())
+                    .set(USER_ACCOUNT.EMAIL, user.getEmail())
+                    .set(USER_ACCOUNT.TEAM_ID, user.getTeam().get().getId())
+                    .returning(USER_ACCOUNT.ID)
+                    .fetchOne();
+        } else
+        {
+            userAccountRecord = dsl.insertInto(USER_ACCOUNT)
+                    .set(USER_ACCOUNT.FIRST_NAME, user.getFirstName())
+                    .set(USER_ACCOUNT.LAST_NAME, user.getLastName())
+                    .set(USER_ACCOUNT.USER_NAME, user.getUserName())
+                    .set(USER_ACCOUNT.PASSWORD, user.getPassword())
+                    .set(USER_ACCOUNT.EMAIL, user.getEmail())
+                    .returning(USER_ACCOUNT.ID)
+                    .fetchOne();
+        }
+
 
         user.setId(userAccountRecord.getId());
         return Optional.of(user);

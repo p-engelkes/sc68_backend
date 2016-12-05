@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
 
@@ -62,8 +63,9 @@ public class TeamServiceController
         {
             int id = record.getValue(TEAM.ID, Integer.class);
             String name = record.getValue(TEAM.NAME, String.class);
+            HashMap<String, String> trainingTimes = record.getValue(TEAM.TRAINING_TIMES, HashMap.class);
 
-            return Optional.of(new Team(id, name));
+            return Optional.of(new Team(id, name, trainingTimes));
         }
 
         return Optional.empty();

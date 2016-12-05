@@ -36,7 +36,7 @@ public class SetupBean
         HashMap<String, String> trainingTimes = new HashMap<>();
         trainingTimes.put("Wednesday", "19:00");
         trainingTimes.put("Friday", "19:00");
-        final Team team = new Team("1. Mannschaft", trainingTimes);
+        Team team = new Team("1. Mannschaft", trainingTimes);
         try
         {
             Optional<Team> teamOptional = teamService.create(team);
@@ -51,6 +51,15 @@ public class SetupBean
                     e.printStackTrace();
                 }
             }
+        } catch (ServletException e)
+        {
+            e.printStackTrace();
+        }
+
+        team = new Team("2. Mannschaft", trainingTimes);
+        try
+        {
+            teamService.create(team);
         } catch (ServletException e)
         {
             e.printStackTrace();

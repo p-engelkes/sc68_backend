@@ -54,10 +54,11 @@ public class Team
         this.trainingTimes = trainingTimes;
     }
 
-    public Team(int id, String name)
+    public Team(int id, String name, HashMap<String, String> trainingTimes)
     {
         this.id = id;
         this.name = name;
+        this.trainingTimes = trainingTimes;
     }
 
     public static Optional<Team> fromJson(String json)

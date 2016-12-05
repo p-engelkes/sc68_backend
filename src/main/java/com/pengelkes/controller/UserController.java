@@ -20,7 +20,7 @@ import java.util.Optional;
  * Created by pengelkes on 29.11.2016.
  */
 @RestController()
-@RequestMapping("/user")
+@RequestMapping("/api/user")
 public class UserController
 {
     private final UserService userService;

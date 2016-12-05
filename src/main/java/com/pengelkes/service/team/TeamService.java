@@ -15,6 +15,5 @@ public interface TeamService
     Optional<Team> create(Team team) throws ServletException;
     Optional<Team> findByName(String name);
     Optional<Team> findById(int id);
-
     List<Team> getAllTeams();
 }

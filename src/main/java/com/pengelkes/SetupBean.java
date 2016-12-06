@@ -2,6 +2,7 @@ package com.pengelkes;
 
 import com.pengelkes.service.team.Team;
 import com.pengelkes.service.team.TeamService;
+import com.pengelkes.service.user.Position;
 import com.pengelkes.service.user.User;
 import com.pengelkes.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +44,7 @@ public class SetupBean
             if (teamOptional.isPresent())
             {
                 final User user = new User("admin@fake.com", "adminpass", teamOptional.get());
+                user.setPosition(Position.MIDFIELD);
                 try
                 {
                     userService.registerNewUser(user);
@@ -64,6 +66,8 @@ public class SetupBean
         {
             e.printStackTrace();
         }
+
+        userService.findByName("admin@fake.com").ifPresent(user -> System.out.println(user.getPosition()));
     }
 
 }

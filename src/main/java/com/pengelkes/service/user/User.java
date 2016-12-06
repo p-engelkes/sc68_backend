@@ -23,6 +23,7 @@ public class User
     private String userName;
     private String password;
     private String email;
+    @Enumerated(EnumType.STRING)
     private Position position;
 
     @ManyToOne
@@ -44,13 +45,14 @@ public class User
         this.team = team;
     }
 
-    public User(String userName, String password, String email, String firstName, String lastName)
+    public User(String userName, String password, String email, String firstName, String lastName, Position position)
     {
         this.userName = userName;
         this.password = password;
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.position = position;
     }
 
     public int getId()

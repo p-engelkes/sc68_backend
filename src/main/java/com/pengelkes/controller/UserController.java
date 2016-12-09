@@ -38,6 +38,12 @@ public class UserController
         return userService.registerNewUser(user).isPresent();
     }
 
+    @RequestMapping(value = "/user/profile", method = RequestMethod.GET)
+    public User getUserProfile()
+    {
+        return userService.findByName("admin@fake.com").orElse(null);
+    }
+
     @RequestMapping(value = "/positions", method = RequestMethod.GET)
     public List<Position> getAllPositions()
     {

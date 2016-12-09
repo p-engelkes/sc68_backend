@@ -1,6 +1,7 @@
 package com.pengelkes.service.user;
 
 import com.pengelkes.backend.jooq.tables.records.UserAccountRecord;
+import com.pengelkes.service.team.TeamService;
 import org.jooq.DSLContext;
 import org.jooq.Record;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,11 +20,14 @@ import static com.pengelkes.backend.jooq.tables.UserAccount.USER_ACCOUNT;
 public class UserServiceController
 {
     private DSLContext dsl;
+    private TeamService teamService;
 
     @Autowired
-    public UserServiceController(DSLContext dsl)
+    public UserServiceController(DSLContext dsl,
+                                 TeamService teamService)
     {
         this.dsl = dsl;
+        this.teamService = teamService;
     }
 
     public Optional<User> registerNewUser(User user)
@@ -41,7 +45,7 @@ public class UserServiceController
     {
         UserAccountRecord userAccountRecord;
 
-        if (user.getTeam().isPresent() && user.getPosition() != null)
+        if (user.getTeam() != null && user.getPosition() != null)
         {
             userAccountRecord = dsl.insertInto(USER_ACCOUNT)
                     .set(USER_ACCOUNT.FIRST_NAME, user.getFirstName())
@@ -49,7 +53,7 @@ public class UserServiceController
                     .set(USER_ACCOUNT.USER_NAME, user.getUserName())
                     .set(USER_ACCOUNT.PASSWORD, user.getPassword())
                     .set(USER_ACCOUNT.EMAIL, user.getEmail())
-                    .set(USER_ACCOUNT.TEAM_ID, user.getTeam().get().getId())
+                    .set(USER_ACCOUNT.TEAM_ID, user.getTeam().getId())
                     .set(USER_ACCOUNT.POSITION, user.getPosition().toString())
                     .returning(USER_ACCOUNT.ID)
                     .fetchOne();
@@ -92,8 +96,15 @@ public class UserServiceController
             String password = record.getValue(USER_ACCOUNT.PASSWORD, String.class);
             String email = record.getValue(USER_ACCOUNT.EMAIL, String.class);
             Position position = record.getValue(USER_ACCOUNT.POSITION, Position.class);
+            Integer teamId = record.getValue(USER_ACCOUNT.TEAM_ID, Integer.class);
 
-            return Optional.of(new User(userName, password, email, firstName, lastName, position));
+            User user = new User(userName, password, email, firstName, lastName, position);
+            if (teamId != null)
+            {
+                teamService.findById(teamId).ifPresent(user::setTeam);
+            }
+
+            return Optional.of(user);
         }
 
         return Optional.empty();

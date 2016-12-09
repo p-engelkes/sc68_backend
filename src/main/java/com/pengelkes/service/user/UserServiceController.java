@@ -26,6 +26,17 @@ public class UserServiceController
         this.dsl = dsl;
     }
 
+    public Optional<User> registerNewUser(User user)
+    {
+        UserAccountRecord userAccountRecord = dsl.insertInto(USER_ACCOUNT)
+                .set(USER_ACCOUNT.EMAIL, user.getEmail())
+                .set(USER_ACCOUNT.PASSWORD, user.getPassword())
+                .returning(USER_ACCOUNT.ID)
+                .fetchOne();
+
+        return getEntity(userAccountRecord);
+    }
+
     public Optional<User> create(User user)
     {
         UserAccountRecord userAccountRecord;
@@ -61,10 +72,14 @@ public class UserServiceController
 
     public Optional<User> findByName(String name)
     {
-        UserAccountRecord userAccountRecord = dsl.selectFrom(USER_ACCOUNT)
-                .where(USER_ACCOUNT.USER_NAME.eq(name)).fetchOne();
+        return getEntity(dsl.selectFrom(USER_ACCOUNT)
+                .where(USER_ACCOUNT.USER_NAME.eq(name)).fetchOne());
+    }
 
-        return getEntity(userAccountRecord);
+    public Optional<User> findByEmail(String email)
+    {
+        return getEntity(dsl.selectFrom(USER_ACCOUNT)
+                .where(USER_ACCOUNT.EMAIL.eq(email)).fetchOne());
     }
 
     private Optional<User> getEntity(Record record)
@@ -77,7 +92,6 @@ public class UserServiceController
             String password = record.getValue(USER_ACCOUNT.PASSWORD, String.class);
             String email = record.getValue(USER_ACCOUNT.EMAIL, String.class);
             Position position = record.getValue(USER_ACCOUNT.POSITION, Position.class);
-            int teamId = record.getValue(USER_ACCOUNT.TEAM_ID, Integer.class);
 
             return Optional.of(new User(userName, password, email, firstName, lastName, position));
         }

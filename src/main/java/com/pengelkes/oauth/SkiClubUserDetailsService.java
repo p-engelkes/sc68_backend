@@ -35,23 +35,36 @@ public class SkiClubUserDetailsService implements UserDetailsService
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException
     {
-        final Optional<User> userOptional = userService.findByName(userName);
+        Optional<User> userOptional = userService.findByName(userName);
         if (userOptional.isPresent())
         {
             User user = userOptional.get();
-            return new org.springframework.security.core.userdetails.User(
-                    user.getUserName(),
-                    user.getPassword(),
-                    true,
-                    true,
-                    true,
-                    true,
-                    getAuthorities(ROLE_USER)
-            );
+            return login(user.getUserName(), user.getPassword());
         } else
         {
-            throw new UsernameNotFoundException("Username was not found: " + userName);
+            userOptional = userService.findByEmail(userName);
+            if (userOptional.isPresent())
+            {
+                User user = userOptional.get();
+                return login(user.getEmail(), user.getPassword());
+            } else
+            {
+                throw new UsernameNotFoundException("Username was not found: " + userName);
+            }
         }
+    }
+
+    private UserDetails login(String userName, String password)
+    {
+        return new org.springframework.security.core.userdetails.User(
+                userName,
+                password,
+                true,
+                true,
+                true,
+                true,
+                getAuthorities(ROLE_USER)
+        );
     }
 
     private Collection<? extends GrantedAuthority> getAuthorities(String role)

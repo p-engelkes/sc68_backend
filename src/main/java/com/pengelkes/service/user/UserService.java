@@ -13,4 +13,6 @@ public interface UserService
 {
     Optional<User> registerNewUser(User user) throws ServletException;
     Optional<User> findByName(String name);
+
+    Optional<User> findByEmail(String email);
 }

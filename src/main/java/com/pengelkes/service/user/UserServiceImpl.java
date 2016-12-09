@@ -35,13 +35,19 @@ public class UserServiceImpl implements UserService
         }
 
         user.setPassword(passwordEncoder.encode(user.getPassword()));
-        return this.userServiceController.create(user);
+        return this.userServiceController.registerNewUser(user);
     }
 
     @Override
     public Optional<User> findByName(String name)
     {
         return this.userServiceController.findByName(name);
+    }
+
+    @Override
+    public Optional<User> findByEmail(String email)
+    {
+        return this.userServiceController.findByEmail(email);
     }
 
     private boolean userNameExists(String name)

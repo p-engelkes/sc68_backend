@@ -1,35 +1,23 @@
 package com.pengelkes.service.user;
 
 import com.pengelkes.service.team.Team;
-import org.hibernate.annotations.CreationTimestamp;
 
-import javax.persistence.*;
 import java.util.Date;
 
 /**
  * Created by pengelkes on 29.11.2016.
  */
-@Entity
-@Table(name = "user_account")
 public class User
 {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-
     private String firstName;
     private String lastName;
     private String userName;
     private String password;
     private String email;
-    @Enumerated(EnumType.STRING)
     private Position position;
-
-    @ManyToOne
-    @JoinColumn(name = "team_id")
     private Team team;
-
-    @CreationTimestamp
+    private int teamId;
     private Date created;
 
     public User()
@@ -37,9 +25,9 @@ public class User
 
     }
 
-    public User(String userName, String password, Team team)
+    public User(String email, String password, Team team)
     {
-        this.userName = userName;
+        this.email = email;
         this.password = password;
         this.team = team;
     }
@@ -142,5 +130,15 @@ public class User
     public void setTeam(Team team)
     {
         this.team = team;
+    }
+
+    public int getTeamId()
+    {
+        return teamId;
+    }
+
+    public void setTeamId(int teamId)
+    {
+        this.teamId = teamId;
     }
 }

@@ -30,7 +30,7 @@ public class UserServiceController
         this.teamService = teamService;
     }
 
-    public Optional<User> registerNewUser(User user)
+    public int registerNewUser(User user)
     {
         UserAccountRecord userAccountRecord = dsl.insertInto(USER_ACCOUNT)
                 .set(USER_ACCOUNT.EMAIL, user.getEmail())
@@ -38,7 +38,7 @@ public class UserServiceController
                 .returning(USER_ACCOUNT.ID)
                 .fetchOne();
 
-        return getEntity(userAccountRecord);
+        return userAccountRecord.getValue(USER_ACCOUNT.ID, Integer.class);
     }
 
     public Optional<User> create(User user)
@@ -84,6 +84,16 @@ public class UserServiceController
     {
         return getEntity(dsl.selectFrom(USER_ACCOUNT)
                 .where(USER_ACCOUNT.EMAIL.eq(email)).fetchOne());
+    }
+
+    public Optional<User> update(User user)
+    {
+        dsl.update(USER_ACCOUNT)
+                .set(USER_ACCOUNT.POSITION, user.getPosition().toString())
+                .set(USER_ACCOUNT.TEAM_ID, user.getTeamId())
+                .where(USER_ACCOUNT.ID.eq(user.getId()));
+
+        return Optional.of(user);
     }
 
     private Optional<User> getEntity(Record record)

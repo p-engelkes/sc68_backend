@@ -5,10 +5,7 @@ import com.pengelkes.service.user.User;
 import com.pengelkes.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletException;
 import java.util.Arrays;
@@ -33,9 +30,9 @@ public class UserController
     }
 
     @RequestMapping(value = "/user/register", method = RequestMethod.POST)
-    public boolean registerUser(@RequestBody User user) throws ServletException
+    public int registerUser(@RequestBody User user) throws ServletException
     {
-        return userService.registerNewUser(user).isPresent();
+        return userService.registerNewUser(user);
     }
 
     @RequestMapping(value = "/user/profile", method = RequestMethod.GET)
@@ -48,5 +45,11 @@ public class UserController
     public List<Position> getAllPositions()
     {
         return Arrays.asList(Position.values());
+    }
+
+    @RequestMapping(value = "/user/{id}", method = RequestMethod.POST)
+    public User updateUser(@RequestBody User user, @PathVariable int id)
+    {
+        return userService.update(user).orElse(null);
     }
 }

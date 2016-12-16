@@ -2,13 +2,8 @@ package com.pengelkes.service.team;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
-import com.pengelkes.database.jooq.hstore.HstoreUserType;
 import com.pengelkes.service.user.User;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.Type;
-import org.hibernate.annotations.TypeDef;
 
-import javax.persistence.*;
 import java.io.IOException;
 import java.util.Date;
 import java.util.HashMap;
@@ -18,8 +13,6 @@ import java.util.Optional;
 /**
  * Created by pengelkes on 02.12.2016.
  */
-@Entity
-@TypeDef(name = "hstore", typeClass = HstoreUserType.class)
 public class Team
 {
     public static final String TRAINING_TIMES_JSON = "training_times";
@@ -27,20 +20,10 @@ public class Team
     public static final String TRAINING_TIME_JSON = "time";
     public static final String NAME_JSON = "name";
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String name;
-
-
-    @OneToMany(mappedBy = "team")
     private List<User> users;
-
-    @Type(type = "hstore")
-    @Column(name = "training_times")
     private HashMap<String, String> trainingTimes;
-
-    @CreationTimestamp
     private Date created;
 
     public Team()

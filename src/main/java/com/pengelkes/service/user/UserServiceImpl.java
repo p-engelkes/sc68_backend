@@ -27,7 +27,7 @@ public class UserServiceImpl implements UserService
     }
 
     @Override
-    public Optional<User> registerNewUser(User user) throws ServletException
+    public int registerNewUser(User user) throws ServletException
     {
         if (userNameExists(user.getUserName()))
         {
@@ -48,6 +48,12 @@ public class UserServiceImpl implements UserService
     public Optional<User> findByEmail(String email)
     {
         return this.userServiceController.findByEmail(email);
+    }
+
+    @Override
+    public Optional<User> update(User user)
+    {
+        return this.userServiceController.update(user);
     }
 
     private boolean userNameExists(String name)

@@ -15,5 +15,6 @@ public interface UserService
     Optional<User> findByName(String name);
     Optional<User> findByEmail(String email);
 
+    Optional<User> findById(int id);
     Optional<User> update(User user);
 }

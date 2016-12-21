@@ -51,6 +51,12 @@ public class UserServiceImpl implements UserService
     }
 
     @Override
+    public Optional<User> findById(int id)
+    {
+        return this.userServiceController.findById(id);
+    }
+
+    @Override
     public Optional<User> update(User user)
     {
         return this.userServiceController.update(user);

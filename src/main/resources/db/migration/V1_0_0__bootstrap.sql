@@ -17,6 +17,7 @@ CREATE TABLE user_account (
   password   VARCHAR(200),
   email      VARCHAR(200) CONSTRAINT unique_email_address UNIQUE,
   position   VARCHAR(100),
+  backnumber INTEGER,
   team_id    INTEGER REFERENCES team,
   created_at DATE DEFAULT CURRENT_DATE
 );

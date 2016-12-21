@@ -47,6 +47,12 @@ public class UserController
         return Arrays.asList(Position.values());
     }
 
+    @RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
+    public User getUser(@PathVariable int id)
+    {
+        return userService.findById(id).orElse(null);
+    }
+
     @RequestMapping(value = "/user/{id}", method = RequestMethod.POST)
     public User updateUser(@RequestBody User user, @PathVariable int id)
     {

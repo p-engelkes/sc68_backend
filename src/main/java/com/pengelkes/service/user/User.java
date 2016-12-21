@@ -1,8 +1,11 @@
 package com.pengelkes.service.user;
 
+import com.pengelkes.backend.jooq.tables.records.UserAccountRecord;
 import com.pengelkes.service.team.Team;
 
 import java.util.Date;
+
+import static com.pengelkes.backend.jooq.tables.UserAccount.USER_ACCOUNT;
 
 /**
  * Created by pengelkes on 29.11.2016.
@@ -19,6 +22,7 @@ public class User
     private Team team;
     private int teamId;
     private Date created;
+    private int backNumber;
 
     public User()
     {
@@ -32,14 +36,17 @@ public class User
         this.team = team;
     }
 
-    public User(String userName, String password, String email, String firstName, String lastName, Position position)
+    public User(UserAccountRecord userAccountRecord)
     {
-        this.userName = userName;
-        this.password = password;
-        this.email = email;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.position = position;
+        this.id = userAccountRecord.getValue(USER_ACCOUNT.ID, Integer.class);
+        this.userName = userAccountRecord.getValue(USER_ACCOUNT.USER_NAME, String.class);
+        this.firstName = userAccountRecord.getValue(USER_ACCOUNT.FIRST_NAME, String.class);
+        this.lastName = userAccountRecord.getValue(USER_ACCOUNT.LAST_NAME, String.class);
+        this.password = userAccountRecord.getValue(USER_ACCOUNT.PASSWORD, String.class);
+        this.email = userAccountRecord.getValue(USER_ACCOUNT.EMAIL, String.class);
+        this.position = userAccountRecord.getValue(USER_ACCOUNT.POSITION, Position.class);
+        this.teamId = userAccountRecord.getValue(USER_ACCOUNT.TEAM_ID, Integer.class);
+        this.backNumber = userAccountRecord.getValue(USER_ACCOUNT.BACKNUMBER, Integer.class);
     }
 
     public int getId()
@@ -140,5 +147,15 @@ public class User
     public void setTeamId(int teamId)
     {
         this.teamId = teamId;
+    }
+
+    public int getBackNumber()
+    {
+        return backNumber;
+    }
+
+    public void setBackNumber(int backNumber)
+    {
+        this.backNumber = backNumber;
     }
 }

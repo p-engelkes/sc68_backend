@@ -67,7 +67,7 @@ public class SetupBean
             e.printStackTrace();
         }
 
-        userService.findByName("admin@fake.com").ifPresent(user -> System.out.println(user.getPosition()));
+        userService.findByEmail("admin@fake.com").ifPresent(user -> System.out.println(user.getPosition()));
     }
 
 }

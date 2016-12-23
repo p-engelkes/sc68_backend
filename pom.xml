@@ -219,7 +219,7 @@
                                         <customType>
                                             <name>hstore</name>
                                             <type>java.util.HashMap&lt;String, String&gt;</type>
-                                            <binding>com.pengelkes.database.jooq.hstore.PostgresHstoreBinding</binding>
+                                            <binding>com.pengelkes.database.jooq.PostgresHstoreBinding</binding>
                                         </customType>
                                     </customTypes>
                                     <forcedTypes>

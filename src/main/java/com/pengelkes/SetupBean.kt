@@ -1,6 +1,9 @@
 package com.pengelkes
 
-import com.pengelkes.service.*
+import com.pengelkes.service.Team
+import com.pengelkes.service.TeamService
+import com.pengelkes.service.User
+import com.pengelkes.service.UserService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 import java.util.*
@@ -26,7 +29,6 @@ constructor(private val userService: UserService,
         try {
             teamService.create(team)?.let {
                 val user = User("admin@fake.com", "adminpass", it)
-                user.position = Position.MIDFIELD
                 try {
                     userService.registerNewUser(user)
                 } catch (e: ServletException) {
@@ -43,8 +45,5 @@ constructor(private val userService: UserService,
         } catch (e: ServletException) {
             e.printStackTrace()
         }
-
-        userService.findByEmail("admin@fake.com")?.let { println(it.position) }
     }
-
 }

@@ -50,7 +50,6 @@ class User {
 interface UserService {
     @Throws(ServletException::class)
     fun registerNewUser(user: User): Int
-
     fun findByName(name: String): User?
     fun findByEmail(email: String): User?
     fun findById(id: Int): User?
@@ -169,10 +168,7 @@ open class UserServiceController @Autowired constructor(val dsl: DSLContext, val
     private fun getEntity(userAccountRecord: UserAccountRecord?): User? {
         if (userAccountRecord != null) {
             val user = User(userAccountRecord)
-            val teamId = userAccountRecord.teamId!!
-            if (teamId > 0) {
-                teamService.findById(teamId)?.let { user.team = it }
-            }
+            userAccountRecord.teamId?.let { teamService.findById(it)?.let { user.team = it } }
             return user
         }
 

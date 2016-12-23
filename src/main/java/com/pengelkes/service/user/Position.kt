@@ -1,10 +1,9 @@
-package com.pengelkes.service.user;
+package com.pengelkes.service.user
 
 /**
  * Created by pengelkes on 02.12.2016.
  */
-public enum Position
-{
+enum class Position {
     GOALKEEPER,
     DEFENSE,
     MIDFIELD,

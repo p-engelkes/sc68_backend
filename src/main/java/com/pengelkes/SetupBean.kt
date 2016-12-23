@@ -1,10 +1,6 @@
 package com.pengelkes
 
-import com.pengelkes.service.team.Team
-import com.pengelkes.service.team.TeamService
-import com.pengelkes.service.user.Position
-import com.pengelkes.service.user.User
-import com.pengelkes.service.user.UserService
+import com.pengelkes.service.*
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 import java.util.*
@@ -28,9 +24,8 @@ constructor(private val userService: UserService,
         trainingTimes.put("Friday", "19:00")
         var team = Team("1. Mannschaft", trainingTimes)
         try {
-            val teamOptional = teamService.create(team)
-            if (teamOptional.isPresent) {
-                val user = User("admin@fake.com", "adminpass", teamOptional.get())
+            teamService.create(team)?.let {
+                val user = User("admin@fake.com", "adminpass", it)
                 user.position = Position.MIDFIELD
                 try {
                     userService.registerNewUser(user)

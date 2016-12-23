@@ -1,6 +1,6 @@
 package com.pengelkes.controller
 
-import com.pengelkes.service.user.UserService
+import com.pengelkes.service.UserService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping

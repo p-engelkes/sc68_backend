@@ -1,8 +1,8 @@
 package com.pengelkes.controller
 
-import com.pengelkes.service.user.Position
-import com.pengelkes.service.user.User
-import com.pengelkes.service.user.UserService
+import com.pengelkes.service.Position
+import com.pengelkes.service.User
+import com.pengelkes.service.UserService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
 import javax.servlet.ServletException

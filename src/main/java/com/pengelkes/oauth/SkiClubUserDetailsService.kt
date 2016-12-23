@@ -1,6 +1,6 @@
 package com.pengelkes.oauth
 
-import com.pengelkes.service.user.UserService
+import com.pengelkes.service.UserService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.security.core.GrantedAuthority
 import org.springframework.security.core.authority.SimpleGrantedAuthority

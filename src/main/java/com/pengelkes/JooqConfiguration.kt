@@ -1,4 +1,4 @@
-package com.pengelkes.database.jooq
+package com.pengelkes
 
 import org.jooq.*
 import org.jooq.impl.*

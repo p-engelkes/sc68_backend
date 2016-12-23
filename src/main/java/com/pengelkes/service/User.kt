@@ -73,25 +73,11 @@ constructor(private val userServiceController: UserServiceController,
         return this.userServiceController.registerNewUser(user)
     }
 
-    override fun findByName(name: String): User? {
-        return this.userServiceController.findByName(name)
-    }
-
-    override fun findByEmail(email: String): User? {
-        return this.userServiceController.findByEmail(email)
-    }
-
-    override fun findById(id: Int): User? {
-        return this.userServiceController.findById(id)
-    }
-
-    override fun update(user: User): User? {
-        return this.userServiceController.update(user)
-    }
-
-    private fun emailExists(email: String): Boolean {
-        return userServiceController.findByEmail(email) != null
-    }
+    override fun findByName(name: String) = this.userServiceController.findByName(name)
+    override fun findByEmail(email: String) = this.userServiceController.findByEmail(email)
+    override fun findById(id: Int) = this.userServiceController.findById(id)
+    override fun update(user: User) = this.userServiceController.update(user)
+    private fun emailExists(email: String) = userServiceController.findByEmail(email) != null
 }
 
 
@@ -137,20 +123,14 @@ open class UserServiceController @Autowired constructor(val dsl: DSLContext, val
         return user
     }
 
-    fun findByName(name: String): User? {
-        return getEntity(dsl.selectFrom(USER_ACCOUNT)
-                .where(USER_ACCOUNT.USER_NAME.eq(name)).fetchOne())
-    }
+    fun findByName(name: String) = getEntity(dsl.selectFrom(USER_ACCOUNT)
+            .where(USER_ACCOUNT.USER_NAME.eq(name)).fetchOne())
 
-    fun findByEmail(email: String): User? {
-        return getEntity(dsl.selectFrom(USER_ACCOUNT)
+    fun findByEmail(email: String) = getEntity(dsl.selectFrom(USER_ACCOUNT)
                 .where(USER_ACCOUNT.EMAIL.eq(email)).fetchOne())
-    }
 
-    fun findById(id: Int): User? {
-        return getEntity(dsl.selectFrom(USER_ACCOUNT)
+    fun findById(id: Int) = getEntity(dsl.selectFrom(USER_ACCOUNT)
                 .where(USER_ACCOUNT.ID.eq(id)).fetchOne())
-    }
 
     fun update(user: User): User? {
         dsl.update(USER_ACCOUNT)

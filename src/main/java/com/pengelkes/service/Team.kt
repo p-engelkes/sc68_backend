@@ -94,7 +94,6 @@ class TeamDeserializer : JsonDeserializer<Team>() {
 interface TeamService {
     @Throws(ServletException::class)
     fun create(team: Team): Team?
-
     fun findByName(name: String): Team?
     fun findById(id: Int): Team?
     fun getAllTeams(): List<Team>
@@ -115,15 +114,11 @@ constructor(private val teamServiceController: TeamServiceController) : TeamServ
         return teamServiceController.create(team)
     }
 
-    override fun findByName(name: String): Team? {
-        return teamServiceController.findByName(name)
-    }
+    override fun findByName(name: String) = teamServiceController.findByName(name)
 
-    override fun findById(id: Int): Team? {
-        return teamServiceController.findById(id)
-    }
+    override fun findById(id: Int) = teamServiceController.findById(id)
 
-    override fun getAllTeams(): List<Team> = teamServiceController.getAllTeams()
+    override fun getAllTeams() = teamServiceController.getAllTeams()
 
     private fun nameExists(name: String?): Boolean {
         if (name != null) {
@@ -149,15 +144,11 @@ constructor(private val dsl: DSLContext) {
         return team
     }
 
-    fun findByName(name: String): Team? {
-        return getEntity(dsl.selectFrom(TEAM).where(TEAM.NAME.eq(name)).fetchOne())
-    }
+    fun findByName(name: String) = getEntity(dsl.selectFrom(TEAM).where(TEAM.NAME.eq(name)).fetchOne())
 
-    fun findById(id: Int): Team? {
-        return getEntity(dsl.selectFrom(TEAM).where(TEAM.ID.eq(id)).fetchOne())
-    }
+    fun findById(id: Int) = getEntity(dsl.selectFrom(TEAM).where(TEAM.ID.eq(id)).fetchOne())
 
-    fun getAllTeams(): List<Team> = getEntities(dsl.selectFrom(TEAM).fetch())
+    fun getAllTeams() = getEntities(dsl.selectFrom(TEAM).fetch())
 
     private fun getEntity(record: Record?): Team? {
         if (record != null) {

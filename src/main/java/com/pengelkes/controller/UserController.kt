@@ -18,22 +18,14 @@ constructor(private val userService: UserService) {
 
     @RequestMapping(value = "/user/register", method = arrayOf(RequestMethod.POST))
     @Throws(ServletException::class)
-    fun registerUser(@RequestBody user: User): Int {
-        return userService.registerNewUser(user)
-    }
+    fun registerUser(@RequestBody user: User) = userService.registerNewUser(user)
 
     @RequestMapping(value = "positions", method = arrayOf(RequestMethod.GET))
-    fun getAllPositions(): List<Position> {
-        return Position.values().asList()
-    }
+    fun getAllPositions() = Position.values().asList()
 
     @RequestMapping(value = "/user/{id}", method = arrayOf(RequestMethod.GET))
-    fun getUser(@PathVariable id: Int): User? {
-        return userService.findById(id)
-    }
+    fun getUser(@PathVariable id: Int) = userService.findById(id)
 
     @RequestMapping(value = "/user/{id}", method = arrayOf(RequestMethod.POST))
-    fun updateUser(@RequestBody user: User, @PathVariable id: Int): User? {
-        return userService.update(user)
-    }
+    fun updateUser(@RequestBody user: User, @PathVariable id: Int) = userService.update(user)
 }

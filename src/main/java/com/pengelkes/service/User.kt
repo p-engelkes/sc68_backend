@@ -27,6 +27,8 @@ class User {
     var created: Date? = null
     var backNumber: Int = 0
 
+    constructor() {}
+
     constructor(email: String, password: String, team: Team) {
         this.email = email
         this.password = password
@@ -141,6 +143,7 @@ open class UserServiceController @Autowired constructor(val dsl: DSLContext, val
                 .set(USER_ACCOUNT.TEAM_ID, user.teamId)
                 .set(USER_ACCOUNT.BACKNUMBER, user.backNumber)
                 .where(USER_ACCOUNT.ID.eq(user.id))
+                .execute();
 
         return user
     }

@@ -28,7 +28,6 @@ constructor(private val teamService: TeamService) {
             return teamService.create(it)
         }
 
-
         throw ServletException("Das Team konnte nicht erstellt werden");
     }
 }

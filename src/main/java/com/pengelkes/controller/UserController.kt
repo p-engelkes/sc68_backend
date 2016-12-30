@@ -18,20 +18,20 @@ class UserController
 @Autowired
 constructor(private val userService: UserService) {
 
-    @RequestMapping(value = "/user/register", method = arrayOf(RequestMethod.POST))
+    @RequestMapping(value = "/users/register", method = arrayOf(RequestMethod.POST))
     @Throws(ServletException::class)
     fun registerUser(@RequestBody user: User) = userService.registerNewUser(user)
 
     @RequestMapping(value = "positions", method = arrayOf(RequestMethod.GET))
     fun getAllPositions() = Position.values().asList()
 
-    @RequestMapping(value = "/user/{id}", method = arrayOf(RequestMethod.GET))
+    @RequestMapping(value = "/users/{id}", method = arrayOf(RequestMethod.GET))
     fun getUser(@PathVariable id: Int) = userService.findById(id)
 
-    @RequestMapping(value = "/user/{id}", method = arrayOf(RequestMethod.POST))
+    @RequestMapping(value = "/users/{id}", method = arrayOf(RequestMethod.POST))
     fun updateUser(@RequestBody user: User, @PathVariable id: Int) = userService.update(user)
 
-    @RequestMapping(value = "/user/{id}/uploadProfilePicture", method = arrayOf(RequestMethod.POST), consumes = arrayOf(MediaType.MULTIPART_FORM_DATA_VALUE))
+    @RequestMapping(value = "/users/{id}/uploadProfilePicture", method = arrayOf(RequestMethod.POST), consumes = arrayOf(MediaType.MULTIPART_FORM_DATA_VALUE))
     fun handleFileUpload(
             @RequestPart("file") file: MultipartFile,
             @PathVariable id: Int): Boolean {

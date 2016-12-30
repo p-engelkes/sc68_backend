@@ -23,7 +23,7 @@ class User {
     var email: String? = null
     var position: Position? = null
     var team: Team? = null
-    var teamId: Int = 0
+    var teamId: Int? = null
     var created: Date? = null
     var backNumber: Int = 0
     var profilePicture: String? = null
@@ -144,9 +144,10 @@ open class UserServiceController @Autowired constructor(val dsl: DSLContext, val
                 .set(USER_ACCOUNT.EMAIL, user.email)
                 .set(USER_ACCOUNT.FIRST_NAME, user.firstName)
                 .set(USER_ACCOUNT.LAST_NAME, user.lastName)
-                .set(USER_ACCOUNT.POSITION, user.position!!.toString())
+                .set(USER_ACCOUNT.POSITION, user.position?.toString() )
                 .set(USER_ACCOUNT.TEAM_ID, user.teamId)
                 .set(USER_ACCOUNT.BACKNUMBER, user.backNumber)
+                .set(USER_ACCOUNT.PROFILE_PICTURE, user.profilePicture)
                 .where(USER_ACCOUNT.ID.eq(user.id))
                 .execute()
 

@@ -28,6 +28,7 @@ class User {
     var backNumber: Int = 0
     var profilePicture: String? = null
 
+    //empty constructor needed for jackson
     constructor() {}
 
     constructor(email: String, password: String, team: Team) {

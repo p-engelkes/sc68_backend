@@ -29,9 +29,7 @@ constructor(private val userService: UserService) {
     fun getUser(@PathVariable id: Int) = userService.findById(id)
 
     @RequestMapping(value = "/user/{id}", method = arrayOf(RequestMethod.POST))
-    fun updateUser(@RequestBody user: User, @PathVariable id: Int) {
-        userService.update(user)
-    }
+    fun updateUser(@RequestBody user: User, @PathVariable id: Int) = userService.update(user)
 
     @RequestMapping(value = "/user/{id}/uploadProfilePicture", method = arrayOf(RequestMethod.POST), consumes = arrayOf(MediaType.MULTIPART_FORM_DATA_VALUE))
     fun handleFileUpload(

@@ -22,3 +22,13 @@ CREATE TABLE user_account (
   profile_picture TEXT,
   created_at      DATE DEFAULT CURRENT_DATE
 );
+
+DROP TABLE IF EXISTS article;
+CREATE TABLE article (
+  id         SERIAL4 PRIMARY KEY,
+  title      TEXT,
+  content    TEXT,
+  author_id  INTEGER REFERENCES user_account,
+  team_id    INTEGER REFERENCES team,
+  created_at DATE DEFAULT CURRENT_DATE
+);

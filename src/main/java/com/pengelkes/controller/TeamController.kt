@@ -23,7 +23,7 @@ constructor(private val teamService: TeamService) {
 
     @RequestMapping(value = "/teams", method = arrayOf(RequestMethod.POST))
     @Throws(ServletException::class)
-    fun createTeam(@RequestBody json: String): Team? {
+    fun create(@RequestBody json: String): Team? {
         Team.fromJson(json)?.let {
             return teamService.create(it)
         }

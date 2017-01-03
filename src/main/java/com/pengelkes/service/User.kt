@@ -47,7 +47,6 @@ class User {
         this.position = userAccountRecord.getValue<Position>(USER_ACCOUNT.POSITION, Position::class.java)
         this.teamId = userAccountRecord.getValue<Int>(USER_ACCOUNT.TEAM_ID, Int::class.java)
         this.backNumber = userAccountRecord.getValue<Int>(USER_ACCOUNT.BACKNUMBER, Int::class.java)
-        this.profilePicture = userAccountRecord.getValue<String>(USER_ACCOUNT.PROFILE_PICTURE, String::class.java)
     }
 }
 
@@ -59,7 +58,6 @@ interface UserService {
     fun findByEmail(email: String): User?
     fun findById(id: Int): User?
     fun update(user: User): User?
-    fun updateProfilePicture(byteArray: ByteArray, userId: Int)
 }
 
 @Service
@@ -82,8 +80,6 @@ constructor(private val userServiceController: UserServiceController,
     override fun findByEmail(email: String) = this.userServiceController.findByEmail(email)
     override fun findById(id: Int) = this.userServiceController.findById(id)
     override fun update(user: User) = this.userServiceController.update(user)
-    override fun updateProfilePicture(byteArray: ByteArray, userId: Int) =
-            userServiceController.updateProfilePicture(byteArray, userId)
     private fun emailExists(email: String) = userServiceController.findByEmail(email) != null
 }
 
@@ -147,19 +143,10 @@ open class UserServiceController @Autowired constructor(val dsl: DSLContext, val
                 .set(USER_ACCOUNT.POSITION, user.position?.toString() )
                 .set(USER_ACCOUNT.TEAM_ID, user.teamId)
                 .set(USER_ACCOUNT.BACKNUMBER, user.backNumber)
-                .set(USER_ACCOUNT.PROFILE_PICTURE, user.profilePicture)
                 .where(USER_ACCOUNT.ID.eq(user.id))
                 .execute()
 
         return user
-    }
-
-    fun updateProfilePicture(byteArray: ByteArray, userId: Int) {
-        val imgAsBase64 = Base64.getEncoder().encodeToString(byteArray)
-        dsl.update(USER_ACCOUNT)
-                .set(USER_ACCOUNT.PROFILE_PICTURE, imgAsBase64)
-                .where(USER_ACCOUNT.ID.eq(userId))
-                .execute()
     }
 
     private fun getEntity(userAccountRecord: UserAccountRecord?): User? {

@@ -1,12 +1,12 @@
 package com.pengelkes.controller
 
-import com.pengelkes.service.Position
-import com.pengelkes.service.User
-import com.pengelkes.service.UserService
+import com.pengelkes.service.*
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.multipart.MultipartFile
+import java.util.*
+import javax.imageio.ImageIO
 import javax.servlet.ServletException
 
 /**
@@ -16,7 +16,8 @@ import javax.servlet.ServletException
 @RequestMapping("/api")
 class UserController
 @Autowired
-constructor(private val userService: UserService) {
+constructor(private val userService: UserService,
+            private val profilePictureService: ProfilePictureService) {
 
     @RequestMapping(value = "/users/register", method = arrayOf(RequestMethod.POST))
     @Throws(ServletException::class)
@@ -36,7 +37,16 @@ constructor(private val userService: UserService) {
             @RequestPart("file") file: MultipartFile,
             @PathVariable id: Int): Boolean {
         if (!file.isEmpty) {
-            userService.updateProfilePicture(file.bytes, id)
+            val bufferedImage = ImageIO.read(file.inputStream)
+            val profilePicture = ProfilePicture(
+                    Base64.getEncoder().encodeToString(file.bytes),
+                    bufferedImage.width,
+                    bufferedImage.height,
+                    bufferedImage.width.toFloat().div(bufferedImage.height.toFloat()),
+                    id
+            )
+
+            profilePictureService.addProfilePicture(profilePicture)
             return true;
         } else {
             return false;

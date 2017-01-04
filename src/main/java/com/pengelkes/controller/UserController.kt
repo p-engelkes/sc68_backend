@@ -1,12 +1,11 @@
 package com.pengelkes.controller
 
-import com.pengelkes.service.*
+import com.pengelkes.service.Position
+import com.pengelkes.service.ProfilePictureService
+import com.pengelkes.service.User
+import com.pengelkes.service.UserService
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.*
-import org.springframework.web.multipart.MultipartFile
-import java.util.*
-import javax.imageio.ImageIO
 import javax.servlet.ServletException
 
 /**
@@ -31,25 +30,4 @@ constructor(private val userService: UserService,
 
     @RequestMapping(value = "/users/{id}", method = arrayOf(RequestMethod.POST))
     fun updateUser(@RequestBody user: User, @PathVariable id: Int) = userService.update(user)
-
-    @RequestMapping(value = "/users/{id}/uploadProfilePicture", method = arrayOf(RequestMethod.POST), consumes = arrayOf(MediaType.MULTIPART_FORM_DATA_VALUE))
-    fun handleFileUpload(
-            @RequestPart("file") file: MultipartFile,
-            @PathVariable id: Int): Boolean {
-        if (!file.isEmpty) {
-            val bufferedImage = ImageIO.read(file.inputStream)
-            val profilePicture = ProfilePicture(
-                    Base64.getEncoder().encodeToString(file.bytes),
-                    bufferedImage.width,
-                    bufferedImage.height,
-                    bufferedImage.width.toFloat().div(bufferedImage.height.toFloat()),
-                    id
-            )
-
-            profilePictureService.addProfilePicture(profilePicture)
-            return true;
-        } else {
-            return false;
-        }
-    }
 }

@@ -24,12 +24,11 @@ CREATE TABLE user_account (
 
 DROP TABLE IF EXISTS user_profile_picture;
 CREATE TABLE user_profile_picture (
-  id         SERIAL4 PRIMARY KEY,
+  user_id    INTEGER REFERENCES user_account PRIMARY KEY,
   picture    TEXT,
   width      INTEGER,
   height     INTEGER,
   ratio      REAL,
-  user_id    INTEGER REFERENCES user_account,
   created_at DATE DEFAULT CURRENT_DATE
 );
 

@@ -26,7 +26,7 @@ class User {
     var teamId: Int? = null
     var created: Date? = null
     var backNumber: Int = 0
-    var profilePicture: String? = null
+    var profilePicture: ProfilePicture? = null
 
     //empty constructor needed for jackson
     constructor() {}
@@ -85,7 +85,10 @@ constructor(private val userServiceController: UserServiceController,
 
 
 @Component
-open class UserServiceController @Autowired constructor(val dsl: DSLContext, val teamService: TeamService) {
+open class UserServiceController @Autowired constructor(
+        val dsl: DSLContext,
+        val teamService: TeamService,
+        val profilePictureService: ProfilePictureService) {
     fun registerNewUser(user: User): Int {
         val userAccountRecord = dsl.insertInto(USER_ACCOUNT)
                 .set(USER_ACCOUNT.EMAIL, user.email)
@@ -153,6 +156,7 @@ open class UserServiceController @Autowired constructor(val dsl: DSLContext, val
         if (userAccountRecord != null) {
             val user = User(userAccountRecord)
             userAccountRecord.teamId?.let { teamService.findById(it)?.let { user.team = it } }
+            profilePictureService.findById(user.id)?.let { user.profilePicture = it }
             return user
         }
 

@@ -26,7 +26,7 @@ constructor(private val userService: UserService,
             var team = Team("1. Mannschaft", trainingTimes)
             teamService.create(team)
             team.id = 1
-            val user = User("admin@fake.com", "adminpass", team)
+            val user = User("admin@fake.com", "adminpass")
             userService.registerNewUser(user)
             user.id = 1
             user.firstName = "Patrick"

@@ -1,8 +1,10 @@
 package com.pengelkes
 
+import com.pengelkes.properties.DatabaseProperties
 import org.jooq.*
 import org.jooq.impl.*
 import org.postgresql.jdbc3.Jdbc3PoolingDataSource
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
@@ -23,14 +25,14 @@ import javax.sql.DataSource
 @Configuration
 @ComponentScan("com.pengelkes.backend.jooq.tables")
 @EnableTransactionManagement
-open class PersistenceContext {
+open class PersistenceContext @Autowired constructor(private val databaseProperties: DatabaseProperties) {
 
     @Bean @Primary
     open fun dataSource(): DataSource {
         val dataSource = Jdbc3PoolingDataSource()
-        dataSource.url = "jdbc:postgresql://localhost:5433/sc68"
-        dataSource.user = "lagoon"
-        dataSource.password = "lagoon"
+        dataSource.url = databaseProperties.url
+        dataSource.user = databaseProperties.user
+        dataSource.password = databaseProperties.password
 
         return dataSource
     }

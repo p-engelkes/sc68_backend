@@ -3,6 +3,7 @@ package com.pengelkes.service
 import com.pengelkes.backend.jooq.tables.UserAccount.USER_ACCOUNT
 import com.pengelkes.backend.jooq.tables.records.UserAccountRecord
 import org.jooq.DSLContext
+import org.jooq.Result
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.stereotype.Component
@@ -31,10 +32,9 @@ class User {
     //empty constructor needed for jackson
     constructor() {}
 
-    constructor(email: String, password: String, team: Team) {
+    constructor(email: String, password: String) {
         this.email = email
         this.password = password
-        this.team = team
     }
 
     constructor(userAccountRecord: UserAccountRecord) {
@@ -55,6 +55,7 @@ interface UserService {
     fun helloIntegrationTest(): String
     @Throws(ServletException::class)
     fun registerNewUser(user: User): Int
+    fun findAll(): List<User>
     fun findByName(name: String): User?
     fun findByEmail(email: String): User?
     fun findById(id: Int): User?
@@ -79,6 +80,7 @@ constructor(private val userServiceController: UserServiceController,
         return this.userServiceController.registerNewUser(user)
     }
 
+    override fun findAll() = this.userServiceController.findAll()
     override fun findByName(name: String) = this.userServiceController.findByName(name)
     override fun findByEmail(email: String) = this.userServiceController.findByEmail(email)
     override fun findById(id: Int) = this.userServiceController.findById(id)
@@ -133,6 +135,8 @@ open class UserServiceController @Autowired constructor(val dsl: DSLContext,
         return user
     }
 
+    fun findAll() = getEntities(dsl.selectFrom(USER_ACCOUNT).fetch())
+
     fun findByName(name: String) = getEntity(dsl.selectFrom(USER_ACCOUNT)
             .where(USER_ACCOUNT.USER_NAME.eq(name)).fetchOne())
 
@@ -165,5 +169,12 @@ open class UserServiceController @Autowired constructor(val dsl: DSLContext,
         }
 
         return null
+    }
+
+    private fun getEntities(result: Result<UserAccountRecord>): List<User> {
+        val allUsers = mutableListOf<User>()
+        result.forEach { getEntity(it)?.let { allUsers.add(it) } }
+
+        return allUsers
     }
 }

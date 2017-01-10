@@ -19,7 +19,7 @@ class TeamController
 constructor(private val teamService: TeamService) {
 
     @RequestMapping(value = "/teams", method = arrayOf(RequestMethod.GET))
-    fun getAllTeams() = teamService.getAllTeams()
+    fun getAllTeams() = teamService.findAll()
 
     @RequestMapping(value = "/teams", method = arrayOf(RequestMethod.POST))
     @Throws(ServletException::class)

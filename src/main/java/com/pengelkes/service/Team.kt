@@ -10,7 +10,6 @@ import com.fasterxml.jackson.databind.node.ObjectNode
 import com.pengelkes.backend.jooq.tables.Team.TEAM
 import com.pengelkes.backend.jooq.tables.records.TeamRecord
 import org.jooq.DSLContext
-import org.jooq.Record
 import org.jooq.Result
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
@@ -27,23 +26,20 @@ class Team {
 
     var id: Int = 0
     var name: String? = null
-    var users: List<User>? = null
     var trainingTimes: HashMap<String, String>? = null
     var created: Date? = null
 
-    constructor() {
-
-    }
+    constructor()
 
     constructor(name: String, trainingTimes: HashMap<String, String>) {
         this.name = name
         this.trainingTimes = trainingTimes
     }
 
-    constructor(id: Int, name: String, trainingTimes: HashMap<String, String>) {
-        this.id = id
-        this.name = name
-        this.trainingTimes = trainingTimes
+    constructor(teamRecord: TeamRecord) {
+        this.id = teamRecord.id
+        this.name = teamRecord.name
+        this.trainingTimes = teamRecord.trainingTimes
     }
 
     companion object {
@@ -96,7 +92,7 @@ interface TeamService {
     fun create(team: Team): Team?
     fun findByName(name: String): Team?
     fun findById(id: Int): Team?
-    fun getAllTeams(): List<Team>
+    fun findAll(): List<Team>
 }
 
 @Service
@@ -118,7 +114,7 @@ constructor(private val teamServiceController: TeamServiceController) : TeamServ
 
     override fun findById(id: Int) = teamServiceController.findById(id)
 
-    override fun getAllTeams() = teamServiceController.getAllTeams()
+    override fun findAll() = teamServiceController.findAll()
 
     private fun nameExists(name: String?): Boolean {
         if (name != null) {
@@ -148,15 +144,11 @@ constructor(private val dsl: DSLContext) {
 
     fun findById(id: Int) = getEntity(dsl.selectFrom(TEAM).where(TEAM.ID.eq(id)).fetchOne())
 
-    fun getAllTeams() = getEntities(dsl.selectFrom(TEAM).fetch())
+    fun findAll() = getEntities(dsl.selectFrom(TEAM).fetch())
 
-    private fun getEntity(record: Record?): Team? {
-        if (record != null) {
-            val id = record.getValue(TEAM.ID, Int::class.java)
-            val name = record.getValue(TEAM.NAME, String::class.java)
-            val trainingTimes: HashMap<String, String> = record.getValue(TEAM.TRAINING_TIMES, HashMap::class.java) as HashMap<String, String>
-
-            return Team(id, name, trainingTimes)
+    private fun getEntity(teamRecord: TeamRecord?): Team? {
+        if (teamRecord != null) {
+            return Team(teamRecord)
         }
 
         return null

@@ -20,7 +20,7 @@ abstract class DatabaseTestCase {
     lateinit var migrator: Migrator
 
     @Before
-    fun setup() {
+    open fun setup() {
         migrator.cleanAndMigrate()
     }
 

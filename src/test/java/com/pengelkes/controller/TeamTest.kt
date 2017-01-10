@@ -17,8 +17,7 @@ class TeamTest : DatabaseTestCase() {
 
     companion object {
         val teamName = "Herren 1. Mannschaft"
-        val trainingTimes = hashMapOf<String, String>(Pair("Wednesday", "19:00"), Pair("Friday", "19:00"))
-        val team = Team(teamName, trainingTimes)
+        val team = Team(teamName, hashMapOf())
     }
 
     @Test
@@ -33,7 +32,6 @@ class TeamTest : DatabaseTestCase() {
         team.should.not.be.`null`
         if (team != null) {
             team.name.should.equal(teamName)
-            team.trainingTimes.should.equal(trainingTimes)
         }
     }
 }

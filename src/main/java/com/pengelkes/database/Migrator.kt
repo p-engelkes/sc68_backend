@@ -13,6 +13,6 @@ object Migrator {
                 "lagoon"
         )
         flyway.setLocations("db/migrations")
-        flyway.migrate()
+        flyway.clean()
     }
 }

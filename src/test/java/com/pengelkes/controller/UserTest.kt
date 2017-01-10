@@ -14,13 +14,23 @@ import org.springframework.beans.factory.annotation.Autowired
  */
 class UserTest : DatabaseTestCase() {
 
+    companion object {
+        val updatedFirstName = "Peter"
+        val updatedLastName = "Pan"
+        val updatedBacknumber = 8
+        val userMail = "test@test.com"
+        val user = User(userMail, "test")
+    }
+
     @Autowired
     lateinit var userService: UserService
 
     @Test
-    fun findUser() {
-        userService.registerNewUser(User("test@test.com", "test"))
-        userService.findByEmail("test@test.com").should.not.be.`null`
+    fun testRegisterNewUser() {
+        val size = userService.findAll().size
+        userService.registerNewUser(user)
+
+        userService.findAll().should.have.size.equal(size + 1)
     }
 
     @Test
@@ -29,10 +39,31 @@ class UserTest : DatabaseTestCase() {
     }
 
     @Test
-    fun createUser() {
-        val size = userService.findAll().size
-        userService.registerNewUser(User("test@test1.com", "test"))
+    fun findByEmail() {
+        userService.registerNewUser(user)
+        userService.findByEmail(userMail).should.not.be.`null`
+    }
 
-        userService.findAll().should.have.size.equal(size + 1)
+    @Test
+    fun update() {
+        userService.registerNewUser(user)
+        var user = userService.findByEmail(userMail)
+        if (user != null) {
+            user.backNumber = updatedBacknumber
+            user.firstName = updatedFirstName
+            user.lastName = updatedLastName
+            userService.update(user)
+            user = userService.findByEmail(userMail)
+            if (user != null) {
+                user.backNumber.should.equal(updatedBacknumber)
+                user.firstName.should.equal(updatedFirstName)
+                user.lastName.should.equal(updatedLastName)
+            } else {
+                true.should.be.`false`
+            }
+        } else {
+            true.should.be.`false`
+        }
+
     }
 }

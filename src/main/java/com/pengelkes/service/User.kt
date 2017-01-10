@@ -26,7 +26,7 @@ class User {
     var team: Team? = null
     var teamId: Int? = null
     var created: Date? = null
-    var backNumber: Int = 0
+    var backNumber: Int? = null
     var profilePicture: ProfilePicture? = null
 
     //empty constructor needed for jackson
@@ -38,15 +38,15 @@ class User {
     }
 
     constructor(userAccountRecord: UserAccountRecord) {
-        this.id = userAccountRecord.getValue<Int>(USER_ACCOUNT.ID, Int::class.java)
-        this.userName = userAccountRecord.getValue<String>(USER_ACCOUNT.USER_NAME, String::class.java)
-        this.firstName = userAccountRecord.getValue<String>(USER_ACCOUNT.FIRST_NAME, String::class.java)
-        this.lastName = userAccountRecord.getValue<String>(USER_ACCOUNT.LAST_NAME, String::class.java)
-        this.password = userAccountRecord.getValue<String>(USER_ACCOUNT.PASSWORD, String::class.java)
-        this.email = userAccountRecord.getValue<String>(USER_ACCOUNT.EMAIL, String::class.java)
+        this.id = userAccountRecord.id
+        this.userName = userAccountRecord.userName
+        this.firstName = userAccountRecord.firstName
+        this.lastName = userAccountRecord.lastName
+        this.password = userAccountRecord.password
+        this.email = userAccountRecord.email
         this.position = userAccountRecord.getValue<Position>(USER_ACCOUNT.POSITION, Position::class.java)
-        this.teamId = userAccountRecord.getValue<Int>(USER_ACCOUNT.TEAM_ID, Int::class.java)
-        this.backNumber = userAccountRecord.getValue<Int>(USER_ACCOUNT.BACKNUMBER, Int::class.java)
+        this.teamId = userAccountRecord.teamId
+        this.backNumber = userAccountRecord.backnumber
     }
 }
 

@@ -16,22 +16,29 @@ class TeamTest : DatabaseTestCase() {
     lateinit var teamService: TeamService
 
     companion object {
-        val teamName = "Herren 1. Mannschaft"
-        val team = Team(teamName, hashMapOf())
+        val testName = "Herren 1. Mannschaft"
+        val teamName = "Herren 2. Mannschaft"
+        val team = Team(teamName, hashMapOf(Pair("Friday", "19:00")))
+    }
+
+    @Test
+    fun testCreate() {
+        val size = teamService.findAll().size
+        teamService.create(team)
+        teamService.findAll().size.should.equal(size + 1)
     }
 
     @Test
     fun testFindAll() {
-        teamService.findAll().size.should.equal(0)
+        teamService.findAll().size.should.equal(1)
     }
 
     @Test
     fun testFindByName() {
-        teamService.create(team)
-        val team = teamService.findByName(teamName)
+        val team = teamService.findByName(testName)
         team.should.not.be.`null`
         if (team != null) {
-            team.name.should.equal(teamName)
+            team.name.should.equal(testName)
         }
     }
 }

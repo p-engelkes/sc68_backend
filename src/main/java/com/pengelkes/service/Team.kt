@@ -144,7 +144,9 @@ constructor(private val dsl: DSLContext) {
 
     fun findById(id: Int) = getEntity(dsl.selectFrom(TEAM).where(TEAM.ID.eq(id)).fetchOne())
 
-    fun findAll() = getEntities(dsl.selectFrom(TEAM).fetch())
+    fun findAll(): List<Team> {
+        return getEntities(dsl.selectFrom(TEAM).fetch())
+    }
 
     private fun getEntity(teamRecord: TeamRecord?): Team? {
         if (teamRecord != null) {

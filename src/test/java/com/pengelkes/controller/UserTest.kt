@@ -18,7 +18,8 @@ class UserTest : DatabaseTestCase() {
         val updatedFirstName = "Peter"
         val updatedLastName = "Pan"
         val updatedBacknumber = 8
-        val userMail = "test@test.com"
+        val testMail = "test@test.com"
+        val userMail = "register@new.user"
         val user = User(userMail, "test")
     }
 
@@ -35,25 +36,23 @@ class UserTest : DatabaseTestCase() {
 
     @Test
     fun findAll() {
-        userService.findAll().should.have.size.equal(0)
+        userService.findAll().should.have.size.equal(1)
     }
 
     @Test
     fun findByEmail() {
-        userService.registerNewUser(user)
-        userService.findByEmail(userMail).should.not.be.`null`
+        userService.findByEmail(testMail).should.not.be.`null`
     }
 
     @Test
     fun update() {
-        userService.registerNewUser(user)
-        var user = userService.findByEmail(userMail)
+        var user = userService.findByEmail(testMail)
         if (user != null) {
             user.backNumber = updatedBacknumber
             user.firstName = updatedFirstName
             user.lastName = updatedLastName
             userService.update(user)
-            user = userService.findByEmail(userMail)
+            user = userService.findByEmail(testMail)
             if (user != null) {
                 user.backNumber.should.equal(updatedBacknumber)
                 user.firstName.should.equal(updatedFirstName)
@@ -64,6 +63,5 @@ class UserTest : DatabaseTestCase() {
         } else {
             true.should.be.`false`
         }
-
     }
 }

@@ -1,8 +1,6 @@
-package com.pengelkes.controller
+package com.pengelkes.service
 
 import com.pengelkes.DatabaseTestCase
-import com.pengelkes.service.Article
-import com.pengelkes.service.ArticleService
 import com.winterbe.expekt.should
 import org.junit.Before
 import org.junit.Test

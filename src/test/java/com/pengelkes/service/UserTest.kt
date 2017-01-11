@@ -1,10 +1,8 @@
 @file:Suppress("SpringKotlinAutowiredMembers")
 
-package com.pengelkes.controller
+package com.pengelkes.service
 
 import com.pengelkes.DatabaseTestCase
-import com.pengelkes.service.User
-import com.pengelkes.service.UserService
 import com.winterbe.expekt.should
 import org.junit.Test
 import org.springframework.beans.factory.annotation.Autowired

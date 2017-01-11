@@ -57,7 +57,6 @@ open class ProfilePictureServiceImpl
 @Component
 open class ProfilePictureServiceController @Autowired constructor(val dsl: DSLContext) {
     fun add(profilePicture: ProfilePicture): ProfilePicture {
-
         if (findById(profilePicture.userId) == null) {
             //update profile picture
             dsl.insertInto(USER_PROFILE_PICTURE)

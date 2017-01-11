@@ -1,8 +1,6 @@
-package com.pengelkes.controller
+package com.pengelkes.service
 
 import com.pengelkes.DatabaseTestCase
-import com.pengelkes.service.Team
-import com.pengelkes.service.TeamService
 import com.winterbe.expekt.should
 import org.junit.Test
 import org.springframework.beans.factory.annotation.Autowired

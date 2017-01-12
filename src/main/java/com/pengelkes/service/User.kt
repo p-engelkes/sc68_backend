@@ -174,7 +174,7 @@ open class UserServiceController @Autowired constructor(val dsl: DSLContext,
                 .returning(USER_ACCOUNT.ID)
                 .fetchOne()
 
-        return userAccountRecord.getValue(USER_ACCOUNT.ID, Int::class.java)
+        return userAccountRecord.id
     }
 
     fun create(user: User): User? {

@@ -112,7 +112,7 @@ class TeamDeserializer : JsonDeserializer<Team>() {
 @Service
 interface TeamService {
     @Throws(ServletException::class)
-    fun create(team: Team): Team
+    fun create(team: Team): Int
     fun findByName(name: String): Team?
     fun findById(id: Int): Team?
     fun findAll(): List<Team>
@@ -125,7 +125,7 @@ open class TeamServiceImpl
 constructor(private val teamServiceController: TeamServiceController) : TeamService {
 
     @Throws(ServletException::class)
-    override fun create(team: Team): Team {
+    override fun create(team: Team): Int {
         if (nameExists(team.name)) {
             throw ServletException("Es existiert bereits ein Team mit dem ausgewähten Namen")
         }
@@ -152,15 +152,14 @@ open class TeamServiceController
 @Autowired
 constructor(private val dsl: DSLContext) {
 
-    fun create(team: Team): Team {
+    fun create(team: Team): Int {
         val record = dsl.insertInto(TEAM)
                 .set(TEAM.NAME, team.name)
                 .set(TEAM.TRAINING_TIMES, team.trainingTimes)
                 .returning(TEAM.ID)
                 .fetchOne()
 
-        team.id = record.id
-        return team
+        return record.id
     }
 
     fun findByName(name: String) = getEntity(dsl.selectFrom(TEAM).where(TEAM.NAME.eq(name)).fetchOne())

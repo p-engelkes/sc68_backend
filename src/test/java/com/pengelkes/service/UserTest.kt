@@ -2,7 +2,7 @@
 
 package com.pengelkes.service
 
-import com.pengelkes.DatabaseTestCase
+import com.pengelkes.SpringTestCase
 import com.winterbe.expekt.should
 import org.junit.Test
 import org.springframework.beans.factory.annotation.Autowired
@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired
 /**
  * Created by pengelkes on 06.01.2017.
  */
-class UserTest : DatabaseTestCase() {
+class UserTest : SpringTestCase() {
 
     companion object {
         val updatedFirstName = "Peter"

@@ -21,7 +21,11 @@ class ProfilePicture {
     var userId: Int? = null
     var user: User? = null
 
+    //empty constructor needed for jackson
+    constructor()
+
     constructor(profilePictureRecord: UserProfilePictureRecord) {
+        this.userId = profilePictureRecord.userId
         this.picture = profilePictureRecord.picture
         this.width = profilePictureRecord.width
         this.height = profilePictureRecord.height
@@ -36,6 +40,34 @@ class ProfilePicture {
         this.height = height
         this.ratio = ratio
     }
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other?.javaClass != javaClass) return false
+
+        other as ProfilePicture
+
+        if (picture != other.picture) return false
+        if (width != other.width) return false
+        if (height != other.height) return false
+        if (ratio != other.ratio) return false
+        if (userId != other.userId) return false
+        if (user != other.user) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = picture?.hashCode() ?: 0
+        result = 31 * result + (width ?: 0)
+        result = 31 * result + (height ?: 0)
+        result = 31 * result + (ratio?.hashCode() ?: 0)
+        result = 31 * result + (userId ?: 0)
+        result = 31 * result + (user?.hashCode() ?: 0)
+        return result
+    }
+
+
 }
 
 @Service

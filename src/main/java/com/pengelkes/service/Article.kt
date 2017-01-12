@@ -26,7 +26,8 @@ class Article {
     //empty constructor needed for jackson
     constructor()
 
-    constructor(title: String, content: String, authorId: Int? = null, teamId: Int? = null) {
+    constructor(id: Int = 0, title: String, content: String, authorId: Int? = null, teamId: Int? = null) {
+        this.id = id
         this.title = title
         this.content = content
         this.authorId = authorId
@@ -40,6 +41,34 @@ class Article {
         this.authorId = articleRecord.authorId
         this.teamId = articleRecord.teamId
         this.created = articleRecord.createdAt
+    }
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other?.javaClass != javaClass) return false
+
+        other as Article
+
+        if (id != other.id) return false
+        if (title != other.title) return false
+        if (content != other.content) return false
+        if (authorId != other.authorId) return false
+        if (author != other.author) return false
+        if (teamId != other.teamId) return false
+        if (team != other.team) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = id
+        result = 31 * result + (title?.hashCode() ?: 0)
+        result = 31 * result + (content?.hashCode() ?: 0)
+        result = 31 * result + (authorId ?: 0)
+        result = 31 * result + (author?.hashCode() ?: 0)
+        result = 31 * result + (teamId ?: 0)
+        result = 31 * result + (team?.hashCode() ?: 0)
+        return result
     }
 }
 

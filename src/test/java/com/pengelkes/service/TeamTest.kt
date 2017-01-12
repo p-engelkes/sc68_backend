@@ -1,6 +1,6 @@
 package com.pengelkes.service
 
-import com.pengelkes.DatabaseTestCase
+import com.pengelkes.SpringTestCase
 import com.winterbe.expekt.should
 import org.junit.Test
 import org.springframework.beans.factory.annotation.Autowired
@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired
 /**
  * Created by patrickengelkes on 10/01/2017.
  */
-class TeamTest : DatabaseTestCase() {
+class TeamTest : SpringTestCase() {
 
     @Autowired
     lateinit var teamService: TeamService
@@ -16,7 +16,7 @@ class TeamTest : DatabaseTestCase() {
     companion object {
         val testName = "Herren 1. Mannschaft"
         val teamName = "Herren 2. Mannschaft"
-        val team = Team(teamName, hashMapOf(Pair("Friday", "19:00")))
+        val team = Team(name = teamName, trainingTimes = hashMapOf(Pair("Friday", "19:00")))
     }
 
     @Test

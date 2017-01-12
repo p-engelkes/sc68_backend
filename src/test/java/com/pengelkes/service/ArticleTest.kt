@@ -1,6 +1,6 @@
 package com.pengelkes.service
 
-import com.pengelkes.DatabaseTestCase
+import com.pengelkes.SpringTestCase
 import com.winterbe.expekt.should
 import org.junit.Before
 import org.junit.Test
@@ -9,14 +9,14 @@ import org.springframework.beans.factory.annotation.Autowired
 /**
  * Created by patrickengelkes on 10/01/2017.
  */
-class ArticleTest : DatabaseTestCase() {
+class ArticleTest : SpringTestCase() {
 
     companion object {
         val authorId = 1
         val teamId = 1
         val article = Article(
-                "Test Title",
-                "Test Content"
+                title = "Test Title",
+                content = "Test Content"
         )
     }
 

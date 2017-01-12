@@ -1,7 +1,6 @@
 package com.pengelkes.controller
 
 import com.pengelkes.service.Position
-import com.pengelkes.service.ProfilePictureService
 import com.pengelkes.service.User
 import com.pengelkes.service.UserService
 import org.springframework.beans.factory.annotation.Autowired
@@ -15,8 +14,7 @@ import javax.servlet.ServletException
 @RequestMapping("/api")
 class UserController
 @Autowired
-constructor(private val userService: UserService,
-            private val profilePictureService: ProfilePictureService) {
+constructor(private val userService: UserService) {
 
     @RequestMapping(value = "/users/register", method = arrayOf(RequestMethod.POST))
     @Throws(ServletException::class)
@@ -26,8 +24,11 @@ constructor(private val userService: UserService,
     fun getAllPositions() = Position.values().asList()
 
     @RequestMapping(value = "/users/{id}", method = arrayOf(RequestMethod.GET))
-    fun getUser(@PathVariable id: Int) = userService.findById(id)
+    fun getUser(@PathVariable id: Int): User? {
+        return userService.findById(id)
+    }
 
     @RequestMapping(value = "/users/{id}", method = arrayOf(RequestMethod.POST))
     fun updateUser(@RequestBody user: User, @PathVariable id: Int) = userService.update(user)
 }
+

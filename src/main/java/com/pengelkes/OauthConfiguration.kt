@@ -77,12 +77,12 @@ constructor(private val userService: UserService) : UserDetailsService {
         )
     }
 
-    private fun getAuthorities(role: String): Collection<GrantedAuthority> {
+    fun getAuthorities(role: String): Collection<GrantedAuthority> {
         return Arrays.asList(SimpleGrantedAuthority(role))
     }
 
     companion object {
-        private val ROLE_USER = "ROLE_USER"
+        val ROLE_USER = "ROLE_USER"
     }
 }
 

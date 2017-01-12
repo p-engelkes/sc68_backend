@@ -1,5 +1,6 @@
 package com.pengelkes.service
 
+import com.fasterxml.jackson.databind.ObjectMapper
 import com.pengelkes.backend.jooq.tables.UserAccount.USER_ACCOUNT
 import com.pengelkes.backend.jooq.tables.records.UserAccountRecord
 import org.jooq.DSLContext
@@ -30,11 +31,45 @@ class User {
     var profilePicture: ProfilePicture? = null
 
     //empty constructor needed for jackson
-    constructor() {}
+    constructor() {
+    }
+
+    constructor(id: Int = 0, firstName: String? = null, lastName: String? = null, userName: String? = null,
+                password: String? = null, email: String? = null, position: Position? = null, team: Team? = null,
+                teamId: Int? = null, created: Date? = null, backNumber: Int? = null, profilePicture: ProfilePicture? = null) {
+        this.id = id
+        this.firstName = firstName
+        this.lastName = lastName
+        this.userName = userName
+        this.password = password
+        this.email = email
+        this.position = position
+        this.team = team
+        this.teamId = teamId
+        this.created = created
+        this.backNumber = backNumber
+        this.profilePicture = profilePicture
+    }
 
     constructor(email: String, password: String) {
         this.email = email
         this.password = password
+    }
+
+    constructor(json: String) {
+        val mapper = ObjectMapper()
+        val user = mapper.readValue(json, User::class.java)
+        this.id = user.id
+        this.firstName = user.firstName
+        this.lastName = user.lastName
+        this.password = user.password
+        this.email = user.email
+        this.position = user.position
+        this.team = user.team
+        this.teamId = user.teamId
+        this.created = user.created
+        this.backNumber = user.backNumber
+        this.profilePicture = user.profilePicture
     }
 
     constructor(userAccountRecord: UserAccountRecord) {
@@ -48,6 +83,42 @@ class User {
         this.teamId = userAccountRecord.teamId
         this.backNumber = userAccountRecord.backnumber
     }
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other?.javaClass != javaClass) return false
+
+        other as User
+
+        if (id != other.id) return false
+        if (firstName != other.firstName) return false
+        if (lastName != other.lastName) return false
+        if (userName != other.userName) return false
+        if (password != other.password) return false
+        if (email != other.email) return false
+        if (position != other.position) return false
+        if (team != other.team) return false
+        if (teamId != other.teamId) return false
+        if (backNumber != other.backNumber) return false
+        if (profilePicture != other.profilePicture) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = id
+        result = 31 * result + (firstName?.hashCode() ?: 0)
+        result = 31 * result + (lastName?.hashCode() ?: 0)
+        result = 31 * result + (userName?.hashCode() ?: 0)
+        result = 31 * result + (password?.hashCode() ?: 0)
+        result = 31 * result + (email?.hashCode() ?: 0)
+        result = 31 * result + (position?.hashCode() ?: 0)
+        result = 31 * result + (team?.hashCode() ?: 0)
+        result = 31 * result + (teamId ?: 0)
+        result = 31 * result + (backNumber ?: 0)
+        result = 31 * result + (profilePicture?.hashCode() ?: 0)
+        return result
+    }
 }
 
 @Service
@@ -55,6 +126,7 @@ interface UserService {
     fun helloIntegrationTest(): String
     @Throws(ServletException::class)
     fun registerNewUser(user: User): Int
+
     fun findAll(): List<User>
     fun findByName(name: String): User?
     fun findByEmail(email: String): User?
@@ -141,17 +213,17 @@ open class UserServiceController @Autowired constructor(val dsl: DSLContext,
             .where(USER_ACCOUNT.USER_NAME.eq(name)).fetchOne())
 
     fun findByEmail(email: String) = getEntity(dsl.selectFrom(USER_ACCOUNT)
-                .where(USER_ACCOUNT.EMAIL.eq(email)).fetchOne())
+            .where(USER_ACCOUNT.EMAIL.eq(email)).fetchOne())
 
     fun findById(id: Int) = getEntity(dsl.selectFrom(USER_ACCOUNT)
-                .where(USER_ACCOUNT.ID.eq(id)).fetchOne())
+            .where(USER_ACCOUNT.ID.eq(id)).fetchOne())
 
     fun update(user: User): User? {
         dsl.update(USER_ACCOUNT)
                 .set(USER_ACCOUNT.EMAIL, user.email)
                 .set(USER_ACCOUNT.FIRST_NAME, user.firstName)
                 .set(USER_ACCOUNT.LAST_NAME, user.lastName)
-                .set(USER_ACCOUNT.POSITION, user.position?.toString() )
+                .set(USER_ACCOUNT.POSITION, user.position?.toString())
                 .set(USER_ACCOUNT.TEAM_ID, user.teamId)
                 .set(USER_ACCOUNT.BACKNUMBER, user.backNumber)
                 .where(USER_ACCOUNT.ID.eq(user.id))

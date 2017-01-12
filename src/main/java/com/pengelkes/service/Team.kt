@@ -31,7 +31,8 @@ class Team {
 
     constructor()
 
-    constructor(name: String, trainingTimes: HashMap<String, String>) {
+    constructor(id: Int = 0, name: String, trainingTimes: HashMap<String, String>) {
+        this.id = id
         this.name = name
         this.trainingTimes = trainingTimes
     }
@@ -61,6 +62,28 @@ class Team {
 
         }
     }
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other?.javaClass != javaClass) return false
+
+        other as Team
+
+        if (id != other.id) return false
+        if (name != other.name) return false
+        if (trainingTimes != other.trainingTimes) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = id
+        result = 31 * result + (name?.hashCode() ?: 0)
+        result = 31 * result + (trainingTimes?.hashCode() ?: 0)
+        return result
+    }
+
+
 }
 
 class TeamDeserializer : JsonDeserializer<Team>() {

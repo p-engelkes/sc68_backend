@@ -1,37 +1,22 @@
 package com.pengelkes.controller
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.pengelkes.SpringTestCase
+import com.pengelkes.ControllerTestCase
 import com.pengelkes.service.Article
 import com.winterbe.expekt.should
 import org.junit.Test
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.MediaType
-import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers.print
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.content
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
-import org.springframework.test.web.servlet.setup.MockMvcBuilders
-import org.springframework.web.context.WebApplicationContext
 
 /**
  * Created by pengelkes on 13.01.2017.
  */
-class ArticleControllerTest : SpringTestCase() {
-
-    @Autowired
-    lateinit var context: WebApplicationContext
-
-    lateinit var mockMvc: MockMvc
-
-    override fun setup() {
-        super.setup()
-        this.mockMvc = MockMvcBuilders.webAppContextSetup(context).build()
-        setUserAuthenticationForTesting()
-    }
+class ArticleControllerTest : ControllerTestCase() {
 
     @Test
     fun testFindAll() {

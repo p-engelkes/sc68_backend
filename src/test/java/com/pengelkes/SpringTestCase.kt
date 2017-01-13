@@ -14,6 +14,9 @@ import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.security.core.userdetails.User
 import org.springframework.test.context.TestPropertySource
 import org.springframework.test.context.junit4.SpringRunner
+import org.springframework.test.web.servlet.MockMvc
+import org.springframework.test.web.servlet.setup.MockMvcBuilders
+import org.springframework.web.context.WebApplicationContext
 
 /**
  * Created by pengelkes on 10.01.2017.
@@ -23,6 +26,9 @@ import org.springframework.test.context.junit4.SpringRunner
 @TestPropertySource(locations = arrayOf("classpath:test.properties"))
 abstract class SpringTestCase {
 
+    @Autowired
+    lateinit var migrator: Migrator
+
     companion object {
         lateinit var databasePicture: ProfilePicture
         lateinit var databaseUser: com.pengelkes.service.User
@@ -31,9 +37,6 @@ abstract class SpringTestCase {
         lateinit var databaseArticleWithTeam: Article
         lateinit var databaseTeam: Team
     }
-
-    @Autowired
-    lateinit var migrator: Migrator
 
     @Before
     open fun setup() {
@@ -61,5 +64,18 @@ abstract class SpringTestCase {
         val user = User("testUser", "", listOf(SimpleGrantedAuthority("ROLE_USER")))
         val testingAuthenticationToken = TestingAuthenticationToken(user, null)
         SecurityContextHolder.getContext().authentication = testingAuthenticationToken
+    }
+}
+
+abstract class ControllerTestCase : SpringTestCase() {
+    @Autowired
+    lateinit var context: WebApplicationContext
+
+    lateinit var mockMvc: MockMvc
+
+    override fun setup() {
+        super.setup()
+        this.mockMvc = MockMvcBuilders.webAppContextSetup(context).build()
+        setUserAuthenticationForTesting()
     }
 }

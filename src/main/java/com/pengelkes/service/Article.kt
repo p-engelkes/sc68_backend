@@ -1,5 +1,6 @@
 package com.pengelkes.service
 
+import com.fasterxml.jackson.databind.ObjectMapper
 import com.pengelkes.backend.jooq.tables.Article.ARTICLE
 import com.pengelkes.backend.jooq.tables.records.ArticleRecord
 import org.jooq.DSLContext
@@ -25,6 +26,18 @@ class Article {
 
     //empty constructor needed for jackson
     constructor()
+
+    constructor(json: String) {
+        val article = ObjectMapper().readValue(json, Article::class.java)
+        this.id = article.id
+        this.title = article.title
+        this.content = article.content
+        this.authorId = article.authorId
+        this.author = article.author
+        this.teamId = article.teamId
+        this.team = article.team
+        this.created = article.created
+    }
 
     constructor(id: Int = 0, title: String, content: String, authorId: Int? = null, teamId: Int? = null) {
         this.id = id

@@ -8,34 +8,14 @@ import org.springframework.stereotype.Component
 /**
  * Created by Pattis-PC on 06.01.2017.
  */
-@ConfigurationProperties(prefix = "database")
+@ConfigurationProperties(prefix = "environment")
 @Component
 open class DatabaseProperties @Autowired constructor(private val environment: Environment) {
-    var environmentUrl: String? = null
+    var url: String? = null
+    var user: String? = null
+    var password: String? = null
 
-    fun getDatabaseConnectionString(): String = environment.getProperty(environmentUrl)
-
-    fun getUser(): String {
-        var connectionString = getDatabaseConnectionString()
-        connectionString = connectionString.substring(11, connectionString.length)
-        val user = connectionString.substringBefore(':')
-        return user
-    }
-
-    fun getPassword(): String {
-        var connectionString = getDatabaseConnectionString()
-        connectionString = connectionString.substring(11, connectionString.length)
-        val userAndPassword = connectionString.substringBefore('@')
-        val password = userAndPassword.substringAfter(":")
-        return password
-    }
-
-    fun getUrl(): String {
-        var connectionString = getDatabaseConnectionString()
-        connectionString = "jdbc:" + connectionString
-        connectionString = connectionString.replace("postgres", "postgresql")
-        val userAndPassword = getUser() + ":" + getPassword() + "@"
-        val url = connectionString.replace(userAndPassword, "")
-        return url
-    }
+    fun getDatabaseUrl(): String = environment.getProperty(url)
+    fun getDatabaseUser(): String = environment.getProperty(user)
+    fun getDatabasePassword(): String = environment.getProperty(password)
 }

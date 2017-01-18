@@ -23,8 +23,11 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<postgres.version>9.4.1211</postgres.version>
-        <database.url>jdbc:postgresql://localhost:5433/sc68</database.url>
-        <test.database.url>jdbc:postgresql://localhost:5433/sc68_test</test.database.url>
+        <database.url>${env.URL}</database.url>
+        <test.database.url>${env.TEST_URL}</test.database.url>
+        <database.user>${env.USER}</database.user>
+        <database.password>${env.PASSWORD}</database.password>
+        <migration.location>filesystem:src/main/resources/db/migrations</migration.location>
         <jooq.sources.directory>target/generated-sources/jooq-postgresql</jooq.sources.directory>
         <kotlin.version>1.0.5-3</kotlin.version>
     </properties>
@@ -122,10 +125,10 @@
                 <version>4.0.3</version>
                 <configuration>
                     <url>${database.url}</url>
-                    <user>lagoon</user>
-                    <password>lagoon</password>
+                    <user>${database.user}</user>
+                    <password>${database.password}</password>
                     <locations>
-                        <location>filesystem:src/main/resources/db/migrations</location>
+                        <location>${migration.location}</location>
                     </locations>
                 </configuration>
                 <dependencies>
@@ -166,8 +169,8 @@
                     <jdbc>
                         <driver>org.postgresql.Driver</driver>
                         <url>${database.url}</url>
-                        <user>lagoon</user>
-                        <password>lagoon</password>
+                        <user>${database.user}</user>
+                        <password>${database.password}</password>
                     </jdbc>
                     <generator>
                         <name>org.jooq.util.DefaultGenerator</name>

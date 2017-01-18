@@ -16,6 +16,9 @@ class UserController
 @Autowired
 constructor(private val userService: UserService) {
 
+    @RequestMapping(value = "/users/test", method = arrayOf(RequestMethod.GET))
+    fun test() = "I am a test"
+
     @RequestMapping(value = "/users/register", method = arrayOf(RequestMethod.POST))
     @Throws(ServletException::class)
     fun registerUser(@RequestBody user: User) = userService.registerNewUser(user)

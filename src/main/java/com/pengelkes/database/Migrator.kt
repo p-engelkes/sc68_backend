@@ -25,9 +25,9 @@ open class Migrator @Autowired constructor(private val databaseProperties: Datab
 
     fun cleanAndMigrate() {
         val flyway = Flyway()
-        flyway.setDataSource(databaseProperties.url,
-                databaseProperties.user,
-                databaseProperties.password)
+        flyway.setDataSource(databaseProperties.getUrl(),
+                databaseProperties.getUser(),
+                databaseProperties.getPassword())
 
         flyway.setLocations("db/migrations")
         flyway.clean()

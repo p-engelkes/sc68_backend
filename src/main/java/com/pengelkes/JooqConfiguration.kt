@@ -30,9 +30,9 @@ open class PersistenceContext @Autowired constructor(private val databasePropert
     @Bean @Primary
     open fun dataSource(): DataSource {
         val dataSource = Jdbc3PoolingDataSource()
-        dataSource.url = databaseProperties.url
-        dataSource.user = databaseProperties.user
-        dataSource.password = databaseProperties.password
+        dataSource.url = databaseProperties.getUrl()
+        dataSource.user = databaseProperties.getUser()
+        dataSource.password = databaseProperties.getPassword()
 
         return dataSource
     }

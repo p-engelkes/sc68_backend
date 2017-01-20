@@ -3,14 +3,16 @@ jdk:
   oraclejdk8
 
 services:
-  postgresql
+  - postgresql
+addons:
+  postgresql: "9.4"
 
 before_install:
-  - psql -c 'create database travis_ci_test;' -U postgres -p 5433
+  - psql -c 'create database travis_ci_test;' -U postgres
   - psql -c "alter user postgres password 'test';"
 
 env:
-  URL=jdbc:postgresql://localhost:5433/sc68_test USER=postgres PASSWORD=test
+  URL=jdbc:postgresql://localhost:5432/sc68_test USER=postgres PASSWORD=test
 
 install:
   mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V

@@ -3,7 +3,7 @@ jdk:
   - oraclejdk8
 addons:
   - postgresql: "9.4"
-before_script:
+before_install:
   psql -c "ALTER USER postgres PASSWORD 'test';"
   psql -c 'create database sc68_test;' -U postgres -p 5433
 

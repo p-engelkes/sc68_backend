@@ -1,23 +1,21 @@
 language: java
-jdk:
-  oraclejdk8
-
+jdk: oraclejdk8
 services:
-  - postgresql
+- postgresql
 addons:
-  postgresql: "9.4"
-
+  postgresql: '9.4'
 before_install:
-  - psql -c 'create database sc68_test;' -U postgres
-  - psql -c "alter user postgres password 'test';"
-
-env:
-  URL=jdbc:postgresql://localhost:5432/sc68_test USER=postgres PASSWORD=test TEST_URL=jdbc:postgresql://localhost:5432/sc68_test TEST_USER=postgres TEST_PASSWORD=test
-
-install:
-  mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-
-
-script:
-  mvn test
-
+- psql -c 'create database sc68_test;' -U postgres
+- psql -c "alter user postgres password 'test';"
+env: URL=jdbc:postgresql://localhost:5432/sc68_test USER=postgres PASSWORD=test TEST_URL=jdbc:postgresql://localhost:5432/sc68_test
+  TEST_USER=postgres TEST_PASSWORD=test
+install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+script: mvn test
+deploy:
+  provider: heroku
+  api_key:
+    secure: C7CHjsM10aByY93NCN/tx+4KTR/7UVOBb9MM1wg3zz+rRd73pjXrJ21XFljtlm+WQFcCzorc7+jasynok4cBx8Xe3WyYOH55OjagbRlv59pvqAV7OwmhG7sdw9aufCevRJjpqJobAOgM44yM7Yzkv8QGDUgszdgjcehzBBP398z6w4WqfoqywyoHbiP7OKFLBiht5LIkHD32frQM0oexci7X/1wQaHQCCnj55F5AcFVVOlKmiS1alOGjO/Ca60bILOE9uKr5PrpnUJD4M0WQLMsaRKdiW7bXiWpYwIwUuogIMhEhp2Ts4/1nvVuryt0msZYcDKmb3xfNcB4d0GWpWmA09GE85jx0W90yq42QohusdyumG83AcPz7uYnQcfHkWNiHeJf985zoaVzjxlZCtfHlL1typyegdGw6KdyHJYg3SnGWDgnkaizrguqVzvv8M2K7yQ2e2BGf9rYDM7UGYGQu9z6TMjwoSWfyDbbMYkxjPkzBiesjI8PloErtzrapZe9h5jJriKfmxJUXLMMeR+aKD/rYsgIa0LodjO9nlWSDz/CyVfAiUvKNL93psXepG7m5JkB0XqXu5x1kt22LKko1n8zGlbRAdnDUj5nZGgw3ajoFw0GfKnS3YyUkHm1d/9K4I5vSPkhPyHVwtp8At/aiXhGFMKIn60XRHcqZKCk=
+  app: murmuring-sierra-50342
+  on:
+    repo: p-engelkes/sc68_backend
+    branch: travis-ci

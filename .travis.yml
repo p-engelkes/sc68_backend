@@ -6,6 +6,7 @@ services:
   postgresql
 
 before_install:
+  - psql -c 'create database travis_ci_test;' -U postgres -p 5433
   - psql -c "alter user postgres password 'test';"
 
 env:

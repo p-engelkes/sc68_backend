@@ -4,11 +4,10 @@ jdk:
 addons:
   - postgresql: "9.4"
 before_install:
-  psql -c "ALTER USER postgres PASSWORD 'test';"
   psql -c 'create database sc68_test;' -U postgres -p 5433
 
 env:
-  - URL=jdbc:postgresql://localhost:5433/sc68_test USER=postgres PASSWORD=test
+  - URL=jdbc:postgresql://localhost:5433/sc68_test USER=postgres
 
 install:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V

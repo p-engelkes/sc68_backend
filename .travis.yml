@@ -6,7 +6,7 @@ services:
   postgresql
 
 before_install:
-  - psql -c 'alter user postgres password 'test'; create database sc68_test;' -U postgres -p 5433
+  - psql -c "alter user postgres password 'test';"
 
 env:
   URL=jdbc:postgresql://localhost:5433/sc68_test USER=postgres PASSWORD=test

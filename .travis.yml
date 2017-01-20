@@ -12,7 +12,7 @@ before_install:
   - psql -c "alter user postgres password 'test';"
 
 env:
-  URL=jdbc:postgresql://localhost:5432/sc68_test USER=postgres PASSWORD=test
+  URL=jdbc:postgresql://localhost:5432/sc68_test USER=postgres PASSWORD=test TEST_URL=jdbc:postgresql://localhost:5432/sc68_test TEST_USER=postgres TEST_PASSWORD=test
 
 install:
   mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V

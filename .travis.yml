@@ -1,8 +1,15 @@
 language: java
 jdk:
   oraclejdk8
+
+services:
+  postgresql
+
+before_script:
+  - psql -c 'alter user postgres password 'test'; create database sc68_test;' -U postgres -p 5433
+
 env:
-  URL=jdbc:postgresql://ec2-54-217-232-100.eu-west-1.compute.amazonaws.com:5432/dbr9g417bvitfi USER=ktefwocdgbdxos PASSWORD=d680655daee99bd12d167c05581d12e43870b1b35a313b7e4c3809f1c5fe0b24
+  URL=jdbc:postgresql://localhost:5433/sc68_test USER=postgres PASSWORD=test
 
 install:
   mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V

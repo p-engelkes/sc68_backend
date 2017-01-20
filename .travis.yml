@@ -5,7 +5,7 @@ jdk:
 services:
   postgresql
 
-before_script:
+before_install:
   - psql -c 'alter user postgres password 'test'; create database sc68_test;' -U postgres -p 5433
 
 env:

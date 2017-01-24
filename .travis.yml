@@ -13,7 +13,7 @@ install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 script: mvn test
 deploy:
   provider: heroku
-  app: murmuring-sierra-50342
+  app: sc68
   on:
     repo: p-engelkes/sc68_backend
     branch: travis-ci

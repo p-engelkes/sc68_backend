@@ -16,6 +16,6 @@ deploy:
   app: sc68backend
   on:
     repo: p-engelkes/sc68_backend
-    branch: travis-ci
-  api_key: 2e82ac0c-5af0-41d6-baa7-dcd16e298fea
-
+    all_branches: true
+  api_key:
+    secure: ulVd1422/LfPs73CJeVPlGdoLCrtFLOCpXUcDKYT/AL+LDQxcLxqK3cdDSez1TJYv94olNPsT1DC240mbWhmtFI3dZ2JLNFdXtuRt6CmL5jG6o9UHfNeosngtjHebhXwmeDsIeDoJPP1DPsO+K8yZJAg+0TIVvL7Dxyrq0L0lctYhLZXf99n1iJ6rEjyhgzPuUaBkm3hriVUWE1nMhtuZKxXESEwZvJavQ2Y8mvwzCB4GHaIpPOXKv3gDATH99BX1c82SAB21IZX5pR88XO32X1urHefjDKGpI+MEhzK7unLDjPXJ+dlYqj3lFxqsVfmbbTXPtKWZ6zaRDYTn3L++0SPn5X6R77XgQgdwjkZGsPjr1dZWDCNjaOAMfjaJLVKkr7HBYObYLQGfWmsMCoM3nqHZaAck7DZXoxJsYSyUl3eHP9PM3ikNBjm/YYIyz4dtHEss2XdWkEEuLFxA/qq4v55bXjyULDLbw8B7G1wzbioYst6dpEdfXurnYgAoMAAwlHIpFL7MLMgBMG3SFqIKNlCZlpk8+dh93pEoRRFKw5NZTGMUSEd9oZ7FaWXGl7M3e0jTfXncbJSACIOHFAg7JzX5h7idJTMmt1bZTAhv8FDRXaeMDY86NvkrnqsZJILx9dyvL19Oywnl7rqyMT9C8Ss6PT+v7tj4LhZY1pj0dg=

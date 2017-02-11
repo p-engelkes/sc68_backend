@@ -1,0 +1,6 @@
+<a href="http://www.fussball.de/spiel/sus-neuenkirchen-iii-skiclub-nordwest-rheine/-/spiel/01U1FPA2A0000000VS54898EVU34LTP2"><span class="info-text">Abse.</span></a>
+				</td>
+				<td class="column-detail">
+					<a href="http://www.fussball.de/spiel/sus-neuenkirchen-iii-skiclub-nordwest-rheine/-/spiel/01U1FPA2A0000000VS54898EVU34LTP2"><span class="icon-angle-right hidden-full"></span><span class="visible-full">Zum Spiel<span class="icon-link-arrow"></span></span></a>
+				</td>
+			</tr>

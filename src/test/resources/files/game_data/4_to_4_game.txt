@@ -1,0 +1,3395 @@
+
+<!doctype html>
+<html class="no-js" xmlns:ng="http://angularjs.org">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+		<title>SC Altenrheine II - Skiclub Nordwest Rheine Ergebnis: Kreisliga B - Herren - 30.10.2016</title>
+		<meta name="default_image_title" content=""/>
+		<link rel="canonical" href="http://www.fussball.de/spiel/sc-altenrheine-ii-skiclub-nordwest-rheine/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" />
+		<meta name="description" content="Alle Spielinfos zur Begegnung Kreisliga B - 2016/2017 der Kreis Steinfurt Kreisliga B Herren im Westfalen bei FUSSBALL.DE"/>
+		<meta name="keywords" content=""/>
+		<meta name="robots" content="NOINDEX,FOLLOW"/>
+		<meta name="generator" content=""/>
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:description" content="Alle Spielinfos zur Begegnung Kreisliga B - 2016/2017 der Kreis Steinfurt Kreisliga B Herren im Westfalen bei FUSSBALL.DE"/>
+		<meta name="twitter:image" content="http://www.fussball.de/export.media/-/action/getSocialMediaImage/page/spiel/spiel/01SNJOBM08000000VS54898DVV2J9QR4"/>
+		<meta name="twitter:title" content="SC Altenrheine II - Skiclub Nordwest Rheine Ergebnis: Kreisliga B - Herren - 30.10.2016"/>
+		<meta property="og:title" content="SC Altenrheine II - Skiclub Nordwest Rheine Ergebnis: Kreisliga B - Herren - 30.10.2016"/>
+		<meta property="og:image" content="http://www.fussball.de/export.media/-/action/getSocialMediaImage/page/spiel/spiel/01SNJOBM08000000VS54898DVV2J9QR4"/>
+		<meta property="og:image:width" content="600"/>
+		<meta property="og:image:height" content="315"/>
+		<meta property="og:url" content="http://www.fussball.de/spiel/sc-altenrheine-ii-skiclub-nordwest-rheine/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:description" content="Alle Spielinfos zur Begegnung Kreisliga B - 2016/2017 der Kreis Steinfurt Kreisliga B Herren im Westfalen bei FUSSBALL.DE"/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="//www.fussball.de/static/por/6.20.95.2439/icon/favicon.ico" />
+        <link rel="apple-touch-icon-precomposed" href="//www.fussball.de/static/por/6.20.95.2439/images/apple-touch-icon-precomposed.png">
+
+		<link rel="stylesheet" href="//www.fussball.de/static/por/6.20.95.2439/css/style.css" />
+
+		<!-- components::script_open_app -->
+
+    <script>
+      if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+        var headTag = document.getElementsByTagName("head")[0];
+        var metaTag = document.createElement('meta');
+        metaTag.name = 'apple-itunes-app';
+        metaTag.content = 'app-id=901148836';
+        headTag.appendChild(metaTag);
+      }
+    </script>
+
+<!-- /components::script_open_app -->
+
+
+		<script src="//www.fussball.de/static/por/6.20.95.2439/js/lib/modernizr.min.js"></script>
+
+
+		<style>
+	</style>
+
+
+
+
+		<script type="text/javascript">/*<![CDATA[*/
+edGebiet='00ES8GMVKO000004VV0AG08LVUPGND5I';
+edGebietName='Kreis Steinfurt';
+edMandant='21';
+edMannschaftsart='41';
+edSaison='1617';
+edSpielklasse='100';
+edWettbewerbId='01SNJETL9K000002VS54898DVV2J9QR4-G';
+edWettbewerbName='Kreisliga B Staffel 1 Steinfurt';
+edWettbewerbUrl='http://www.fussball.de/spieltagsuebersicht/kreisliga-b-staffel-1-steinfurt-kreis-steinfurt-kreisliga-b-herren-saison1617-westfalen/-/staffel/01SNJETL9K000002VS54898DVV2J9QR4-G';
+edWettkampfTyp='1';
+fbedExtMa='';
+fbedExtPlzMultiSpielst='';
+fbedExtPlzMultiVerein='';
+fbedExtPlzSpielst='48432';
+fbedExtPlzVerein='48432';
+fbedTeamTypeName='Herren';
+fbedWidgetKey='';
+trackingcountername='spiel.16/17.Westfalen.Meisterschaften.Herren.Kreisliga B.Kreis Steinfurt.01SNJOBM08000000VS54898DVV2J9QR4';
+if (window.location.href.indexOf('#_=_') > 0) {
+	window.location = window.location.href.replace(/#.*/, '');
+}
+/*]]>*/</script>
+
+
+
+	</head>
+	<body class="fbde" data-ng-controller="ApplicationController" data-scroll-spy data-ng-cloak global-events data-obfuscation-stylesheet="//www.fussball.de/export.fontface/-/id/%ID%/type/css">
+		<header data-ng-class="{active:flyoutState.isOpen, 'active-layer':layerState.isOpen}" data-ng-controller="FlyoutController">
+	<nav class="header-meta-nav">
+		<div class="container">
+			<div class="metanav-left">
+				<ul>
+					<li>
+						<a target="_blank" href="http://www.dfb.de">dfb.de</a>
+						<span class="divider">&#124;</span>
+					</li>
+					<li>
+						<a target="_blank" href="https://kampagne.dfb.de/unsere-amateure/">Amateurfußballkampagne</a>
+						<span class="divider">&#124;</span>
+					</li>
+					<li>
+						<a target="_blank" href="http://dfb-fanshop.de/">DFB-Fanshop</a>
+						<span class="divider">&#124;</span>
+					</li>
+					<li>
+						<a target="_blank" href="http://fanclub.dfb.de/index.php?id=2">Fan Club Nationalmannschaft</a>
+						<span class="divider">&#124;</span>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.dfb.de/tickets">Tickets</a>
+						<span class="divider">&#124;</span>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.fussball.de/partner">Partner</a>
+						<span class="divider">&#124;</span>
+					</li>
+					<li>
+						<a target="_blank" href="http://training-service.fussball.de/faq/">FAQ</a>
+					</li>
+				</ul>
+				<div class="sponsor-text">FUSSBALL.DE wird präsentiert von</div>
+			</div>
+			<div class="metanav-right">
+				<div class="sponsor">
+					<a href="http://www.fussball.de/partner">
+						<img src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/temp/sponsor.png">
+					</a>
+				</div>
+				<a id="editor-link" class="visible-full" href="javascript:alert('/spiel/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4');"><span>Link</span>
+					<div data-ajaxcontent-type="jsonp" data-ajaxcontent="https://www.fussball.de/login.community" data-user="{'FBDE_COMMUNITY_IN':'1'}" data-user-dependency="{'FBDE_COMMUNITY_IN':'equal'}"></div>
+					<div data-ajaxcontent-type="jsonp" data-ajaxcontent="https://www.fussball.de/logout.community" data-user="{'FBDE_COMMUNITY_OUT':'1'}" data-user-dependency="{'FBDE_COMMUNITY_OUT':'equal'}"></div>
+					<div data-ajaxcontent-type="jsonp" data-ajaxcontent="https://www.fussball.de/logout.fanshop" data-user="{'FBDE_FANSHOP_OUT':'1'}" data-user-dependency="{'FBDE_FANSHOP_OUT':'equal'}"></div>
+				</a>
+			</div>
+		</div>
+	</nav>
+	<div class="header-main-nav">
+		<div class="container">
+			<div class="logo-wrapper">
+				<div id="logo">
+					<a data-ng-click="onLogoClick($event)" href="http://www.fussball.de/homepage">
+						<img height="16" width="24" class="logo-graphic" src="http://www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/logo.svg">
+						<span class="logo-letters">fussball.de</span>
+					</a>
+				</div>
+			</div>
+			<nav class="secondary-nav">
+				<ul>
+					<li class="seondary-nav-toggle">
+						<a data-ng-click="toggleVisibleMobile()"><span class="icon-toggle"></span></a>
+					</li>
+					<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="main">
+						<div data-flyoutitem-identifier="#login" data-user-dependency="{'FBDE_USER_ID':'existVisible'}">
+							<img class="img-profile" data-user-interpolate="src" data-user-interpolate-tmpl="%FBDE_USER_THUMB%">
+						</div>
+						<div data-flyoutitem-identifier="#login" data-user-dependency="{'FBDE_USER_ID':'notexistVisible'}"><span class="icon-login"></span></div>
+					</li>
+					<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="main">
+						<div data-flyoutitem-identifier="#search"><span class="icon-search"></span></div>
+					</li>
+				</ul>
+			</nav>
+			<nav data-ng-class="{active: isVisibleMobile, hidden: scopeEnv.isMainMenuHidden}" class="primary-nav">
+				<ul class="fast">
+					<li>
+						<a href="https://www.fussball.de/favorites"><span class="icon-favorits"></span>Favoriten</a>
+					</li>
+					<li>
+						<a href="http://www.fussball.de/matchkalender"><span class="icon-matchcal"></span>Matchkalender</a>
+					</li>
+					<li data-flyoutnavitem="main">
+						<div data-flyoutitem-identifier="#login" data-user-dependency="{'FBDE_USER_ID':'existVisible'}">
+							<img class="img-profile" data-user-interpolate="src" data-user-interpolate-tmpl="%FBDE_USER_THUMB%">
+							<span data-user-interpolate="innerHTML" data-user-interpolate-tmpl="%FBDE_NICKNAME%"></span>
+						</div>
+						<div data-flyoutitem-identifier="#login" data-user-dependency="{'FBDE_USER_ID':'notexistVisible'}"><span class="icon-login"></span>Anmelden</div>
+					</li>
+					<li data-flyoutnavitem="main">
+						<div data-flyoutitem-identifier="#search">Suche<span class="icon-search"></span></div>
+					</li>
+				</ul>
+				<ul class="main">
+					<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="main">
+						<div data-flyoutitem-identifier="#flyout-news">News<span class="icon-angle-right"></span></div>
+					</li>
+					<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="main" class="active">
+						<div data-flyoutitem-identifier="#competitions">Ligen<span class="icon-angle-right"></span></div>
+					</li>
+					<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="main">
+						<div data-flyoutitem-identifier="#pros">Vereine & Verbände<span class="icon-angle-right"></span></div>
+					</li>
+					<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="main">
+						<div data-flyoutitem-identifier="#trainings">Training & Service<span class="icon-angle-right"></span></div>
+					</li>
+					<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="main">
+						<div data-flyoutitem-identifier="#tv">Videos & Foren<span class="icon-angle-right"></span></div>
+					</li>
+					<li>
+						<a href="http://shop.fussball.de/">Shop<span class="icon-angle-right"></span></a>
+					</li>
+				</ul>
+				<ul class="meta">
+					<li>
+						<a target="_blank" href="http://www.dfb.de">dfb.de<span class="icon-link-arrow"></span></a>
+					</li>
+					<li>
+						<a target="_blank" href="https://kampagne.dfb.de/unsere-amateure/">Amateurfußballkampagne<span class="icon-link-arrow"></span></a>
+					</li>
+					<li>
+						<a target="_blank" href="http://dfb-fanshop.de/">DFB-Fanshop<span class="icon-link-arrow"></span></a>
+					</li>
+					<li>
+						<a target="_blank" href="http://fanclub.dfb.de/index.php?id=2">Fan Club Nationalmannschaft<span class="icon-link-arrow"></span></a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.dfb.de/tickets">Tickets<span class="icon-link-arrow"></span></a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.fussball.de/partner">Partner<span class="icon-link-arrow"></span></a>
+					</li>
+					<li>
+						<a target="_blank" href="http://training-service.fussball.de/faq/">FAQ<span class="icon-link-arrow"></span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div id="header-flyout" data-user-favorites-load-cookie="FBDE_USER_ID" data-ng-class="{'opened':flyoutState.isOpen}" data-user-favorites-load="https://www.fussball.de/ajax.favorites" class="header-flyout">
+		<div id="flyout-news" data-ng-class="{active:isActive, hidden: scopeEnv.isSubMenuHidden}" data-flyoutnavcontent="main" class="flyout-subnav">
+			<div class="container">
+				<div data-ng-controller="ToolboxController" class="news-list-toolbox news-list-toolbox-menu" data-toolbox>
+					<div class="flyout-left">
+						<nav class="flyout-nav">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = false; flyoutState.isOpen = false;"><span class="icon-angle-left"></span>News</h4>
+							<ul>
+								<li data-ng-class="{'current':isCurrent}" data-toolbox-value="all_news" data-toolbox-headermenu-item="single" data-toolbox-key="include" data-toolbox-target="http://www.fussball.de/news/-/include/all_news">
+									<div>Alle<span></span></div>
+								</li>
+								<li data-ng-class="{'current':isCurrent}" data-toolbox-value="magazin" data-toolbox-headermenu-item="single" data-toolbox-key="include" data-toolbox-target="http://www.fussball.de/news/-/include/magazin">
+									<div>Magazin<span></span></div>
+								</li>
+								<li data-ng-class="{'current':isCurrent}" data-toolbox-flyout-right="regional-league-categories" data-flyoutnavitem="sub">
+									<div data-flyoutitem-identifier="#regional-league-categories">Regionalliga<span class="icon-angle-right"></span></div>
+								</li>
+								<li data-ng-class="{'current':isCurrent}" data-toolbox-flyout-right="association-categories" data-flyoutnavitem="sub">
+									<div data-flyoutitem-identifier="#association-categories">Verbände<span class="icon-angle-right"></span></div>
+								</li>
+								<li data-ng-class="{'current':isCurrent}" data-toolbox-value="service" data-toolbox-headermenu-item="single" data-toolbox-key="include" data-toolbox-target="http://www.fussball.de/news/-/include/service">
+									<div>Service<span></span></div>
+								</li>
+								<li data-ng-class="{'current':isCurrent}" data-toolbox-value="aktionen" data-toolbox-headermenu-item="single" data-toolbox-key="include" data-toolbox-target="http://www.fussball.de/news/-/include/aktionen">
+									<div>Aktionen<span></span></div>
+								</li>
+								<li data-ng-class="{'current':isCurrent}" data-toolbox-flyout-right="helpcenter-categories" data-flyoutnavitem="sub">
+									<div data-flyoutitem-identifier="#helpcenter-categories">Hilfe-Center<span class="icon-angle-right"></span></div>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="flyout-right">
+						<div id="helpcenter-categories" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+							<div data-flyout-content=".filter-helpcenter" id="link-flyout-right-helpcenter-categories" data-toolbox-flyout-header-menu="filterList" data-toolbox-key="helpcenter-categories"></div>
+							<div class="container">
+								<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Hilfe-Center</h4>
+								<div data-toolbox-headermenu-item="list" data-toolbox-key="helpcenter-categories" class="filter-categories filter-assoc filter-helpcenter" data-toolbox-target="http://www.fussball.de/news">
+									<div data-ng-class="{'on': showSelectList}" data-ng-click="showSelectList = !showSelectList" class="select-wrapper-toolbox">
+										<div tabindex="0" class="selection visible-small">
+											<div class="value">Hilfe-Center: <strong class="currentSelection" data-attr-selection-info></strong></div>
+											<span class="icon-angle-down"></span>
+										</div>
+										<ul class="list select-list">
+											<li class="visible-small">
+												<label class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="true" type="checkbox" checked="checked" data-attr-toggle-type="all">
+													<strong data-attr-select-all-label>Alle Auswählen</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1198" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<strong>Allgemeines</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1199" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<strong>APP</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1200" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<strong>Liveticker</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1201" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<strong>Mannschaftsseite</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1202" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<strong>Profile</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1203" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<strong>Registrierung</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1204" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<strong>Training & Service</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1205" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<strong>Widgets</strong>
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="general">
+										<div class="hidden-small">
+											<label class="checkbox" data-checkbox>
+												<span class="icon-verified"></span>
+												<input name="filter-items" value="true" type="checkbox" checked="checked" data-attr-toggle-type="all">
+												<strong data-attr-select-all-label>Alle Auswählen</strong>
+											</label>
+										</div>
+										<button class="button button-primary" type="submit">Los</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="regional-league-categories" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+							<div data-flyout-content=".filter-regionalliga" id="link-flyout-right-regional-league-categories" data-toolbox-flyout-header-menu="filterList" data-toolbox-key="regional-league-categories"></div>
+							<div class="container">
+								<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Regionalliga</h4>
+								<div data-toolbox-headermenu-item="list" data-toolbox-key="regional-league-categories" class="filter-categories filter-assoc filter-regionalliga" data-toolbox-target="http://www.fussball.de/news">
+									<div data-ng-class="{'on': showSelectList}" data-ng-click="showSelectList = !showSelectList" class="select-wrapper-toolbox">
+										<div tabindex="0" class="selection visible-small">
+											<div class="value">Regionalligen: <strong class="currentSelection" data-attr-selection-info></strong></div>
+											<span class="icon-angle-down"></span>
+										</div>
+										<ul class="list select-list">
+											<li class="visible-small">
+												<label class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="true" type="checkbox" checked="checked" data-attr-toggle-type="all">
+													<strong data-attr-select-all-label>Alle Auswählen</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1212" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<strong>Regionalliga Nord</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1213" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<strong>Regionalliga Nordost</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1211" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<strong>Regionalliga West</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1209" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<strong>Regionalliga Südwest</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1210" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<strong>Regionalliga Bayern</strong>
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="general">
+										<div class="hidden-small">
+											<label class="checkbox" data-checkbox>
+												<span class="icon-verified"></span>
+												<input name="filter-items" value="true" type="checkbox" checked="checked" data-attr-toggle-type="all">
+												<strong data-attr-select-all-label>Alle Auswählen</strong>
+											</label>
+										</div>
+										<button class="button button-primary" type="submit">Los</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="association-categories" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+							<div data-flyout-content=".filter-verband" id="link-flyout-right-association-categories" data-toolbox-flyout-header-menu="filterList" data-toolbox-key="association-categories"></div>
+							<div class="container">
+								<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Verbände</h4>
+								<div data-toolbox-headermenu-item="list" data-toolbox-key="association-categories" class="filter-categories filter-assoc filter-verband" data-toolbox-target="http://www.fussball.de/news">
+									<div data-ng-class="{'on': showSelectList}" data-ng-click="showSelectList = !showSelectList" class="select-wrapper-toolbox">
+										<div tabindex="0" class="selection visible-small">
+											<div class="value">Verbände: <strong class="currentSelection" data-attr-selection-info></strong></div>
+											<span class="icon-angle-down"></span>
+										</div>
+										<ul class="list select-list">
+											<li class="visible-small">
+												<label class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="true" type="checkbox" checked="checked" data-attr-toggle-type="all">
+													<strong data-attr-select-all-label>Alle Auswählen</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1032" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1032"></span></div>
+													<strong>Baden</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1031" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1031"></span></div>
+													<strong>Bayern</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1066" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1066"></span></div>
+													<strong>Berlin</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1061" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1061"></span></div>
+													<strong>Brandenburg</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1002" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1002"></span></div>
+													<strong>Bremen</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1003" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1003"></span></div>
+													<strong>Hamburg</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1034" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1034"></span></div>
+													<strong>Hessen</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1062" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1062"></span></div>
+													<strong>Mecklenburg-Vorpommern</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1023" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1023"></span></div>
+													<strong>Mittelrhein</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1022" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1022"></span></div>
+													<strong>Niederrhein</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1001" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1001"></span></div>
+													<strong>Niedersachsen</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1041" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1041"></span></div>
+													<strong>Rheinland</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1043" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1043"></span></div>
+													<strong>Saarland</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1063" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1063"></span></div>
+													<strong>Sachsen</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1064" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1064"></span></div>
+													<strong>Sachsen-Anhalt</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1004" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1004"></span></div>
+													<strong>Schleswig-Holstein</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1033" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1033"></span></div>
+													<strong>Südbaden</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1042" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1042"></span></div>
+													<strong>Südwest</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1065" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1065"></span></div>
+													<strong>Thüringen</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1021" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1021"></span></div>
+													<strong>Westfalen</strong>
+												</label>
+											</li>
+											<li>
+												<label data-attr-select-option="true" class="checkbox" data-checkbox>
+													<span class="icon-verified"></span>
+													<input name="filter-items" value="1035" type="checkbox" checked="checked" data-attr-toggle-type="single">
+													<div class="logo hidden-small"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/4/id/1035"></span></div>
+													<strong>Württemberg</strong>
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="general">
+										<div class="hidden-small">
+											<label class="checkbox" data-checkbox>
+												<span class="icon-verified"></span>
+												<input name="filter-items" value="true" type="checkbox" checked="checked" data-attr-toggle-type="all">
+												<strong data-attr-select-all-label>Alle Auswählen</strong>
+											</label>
+										</div>
+										<button class="button button-primary" type="submit">Los</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="competitions" data-ng-class="{active:isActive, hidden: scopeEnv.isSubMenuHidden}" data-flyoutnavcontent="main" class="flyout-subnav">
+			<div class="container">
+				<div class="flyout-left">
+					<nav class="flyout-nav">
+						<h4 data-ng-click="scopeEnv.isMainMenuHidden = false; flyoutState.isOpen = false;"><span class="icon-angle-left"></span>Ligen</h4>
+						<ul>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#wam">Alle Ligen<span class="icon-angle-right"></span></div>
+							</li>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#topleagues">Top-Ligen<span class="icon-angle-right"></span></div>
+							</li>
+							<li data-ng-class="{'current':isCurrent}" data-user-dependency="{'FBDE_USER_ID':'existVisible'}">
+								<a href="https://www.fussball.de/account.matchplan.next">Dein Spielplan</a>
+							</li>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#stats">Amateurstatistiken<span class="icon-angle-right"></span></div>
+							</li>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#matchcal">Matchkalender<span class="icon-angle-right"></span></div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="flyout-right">
+					<div id="wam" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="wam header-flyout-wam">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Wettbewerbsauswahl</h4>
+							<div class="inner">
+								<form data-url-areas="//www.fussball.de/wam_arten_CLIENT_SEASON_COMPETITIONTYPE.json" data-url-competitions="//www.fussball.de/wam_wettbewerbsurls_CLIENT_SEASON_COMPETITIONTYPE_TEAMTYPE.json" data-url-base="//www.fussball.de/wam_basis.json" method="GET" data-url-submit="" data-wam>
+									<div class="form-wrapper">
+										<div data-ng-class="{on: wamData.clients.isOpen, cta: wamData.clients.isCta, disabled: wamData.clients.length == 1}" class="select-wrapper">
+											<div data-ng-click="wamData.clients.length == 1 || clickHandler(0)" class="selection">
+												<div data-ng-bind="wamData.clientsSelected.label" class="value"></div>
+												<span class="icon-angle-down"></span>
+											</div>
+											<ul class="select-list">
+												<li data-ng-class="{on: wamData.clientsSelected.id == option.id}" data-ng-repeat="option in wamData.clients">
+													<a data-ng-click="wamData.clients.isOpen = !wamData.clients.isOpen; wamData.clientsSelected = option; wamUpdate('clients',$index)">{{option.label}}</a>
+												</li>
+											</ul>
+											<div class="select">
+												<select data-ng-options="option as option.label for option in wamData.clients track by option.id" name="clients" data-ng-model="wamData.clientsSelected" data-ng-change="onChange()" data-label="Verband wählen" data-ng-disabled="wamData.clients.length == 1" size="1" data-wam-select>
+													<option value="" ng-if="false"></option>
+												</select>
+											</div>
+										</div>
+										<div data-ng-class="{on: wamData.seasons.isOpen, cta: wamData.seasons.isCta, disabled: wamData.seasons.length == 1}" class="select-wrapper">
+											<div data-ng-click="wamData.seasons.length == 1 || clickHandler(1)" class="selection">
+												<div data-ng-bind="wamData.seasonsSelected.label" class="value"></div>
+												<span class="icon-angle-down"></span>
+											</div>
+											<ul class="select-list">
+												<li data-ng-class="{on: wamData.seasonsSelected.id == option.id}" data-ng-repeat="option in wamData.seasons">
+													<a data-ng-click="wamData.seasons.isOpen = !wamData.seasons.isOpen; wamData.seasonsSelected = option; wamUpdate('seasons',$index)">{{option.label}}</a>
+												</li>
+											</ul>
+											<div class="select">
+												<select data-ng-options="option as option.label for option in wamData.seasons track by option.id" name="seasons" data-ng-model="wamData.seasonsSelected" data-ng-change="onChange()" data-label="Saison wählen" data-ng-disabled="wamData.seasons.length == 1" size="1" data-wam-select>
+													<option value="" ng-if="false"></option>
+												</select>
+											</div>
+										</div>
+										<div data-ng-class="{on: wamData.competitionTypes.isOpen, cta: wamData.competitionTypes.isCta, disabled: wamData.competitionTypes.length == 1}" class="select-wrapper">
+											<div data-ng-click="wamData.competitionTypes.length == 1 || clickHandler(2)" class="selection">
+												<div data-ng-bind="wamData.competitionTypesSelected.label" class="value"></div>
+												<span class="icon-angle-down"></span>
+											</div>
+											<ul class="select-list">
+												<li data-ng-class="{on: wamData.competitionTypesSelected.id == option.id}" data-ng-repeat="option in wamData.competitionTypes">
+													<a data-ng-click="wamData.competitionTypes.isOpen = !wamData.competitionTypes.isOpen; wamData.competitionTypesSelected = option; wamUpdate('competitionTypes',$index)">{{option.label}}</a>
+												</li>
+											</ul>
+											<div class="select">
+												<select data-ng-options="option as option.label for option in wamData.competitionTypes track by option.id" name="competitionTypes" data-ng-model="wamData.competitionTypesSelected" data-ng-change="onChange()" data-label="Typ wählen" data-ng-disabled="wamData.competitionTypes.length == 1" size="1" data-wam-select>
+													<option value="" ng-if="false"></option>
+												</select>
+											</div>
+										</div>
+										<div data-ng-class="{on: wamData.teamTypes.isOpen, cta: wamData.teamTypes.isCta, disabled: wamData.teamTypes.length == 1}" class="select-wrapper">
+											<div data-ng-click="wamData.teamTypes.length == 1 || clickHandler(3)" class="selection">
+												<div data-ng-bind="wamData.teamTypesSelected.label" class="value"></div>
+												<span class="icon-angle-down"></span>
+											</div>
+											<ul class="select-list">
+												<li data-ng-class="{on: wamData.teamTypesSelected.id == option.id}" data-ng-repeat="option in wamData.teamTypes">
+													<a data-ng-click="wamData.teamTypes.isOpen = !wamData.teamTypes.isOpen; wamData.teamTypesSelected = option; wamUpdate('teamTypes',$index)">{{option.label}}</a>
+												</li>
+											</ul>
+											<div class="select">
+												<select data-ng-options="option as option.label for option in wamData.teamTypes track by option.id" name="teamTypes" data-ng-model="wamData.teamTypesSelected" data-ng-change="onChange()" data-label="Mannschaftsart wählen" data-ng-disabled="wamData.teamTypes.length == 1" size="1" data-wam-select>
+													<option value="" ng-if="false"></option>
+												</select>
+											</div>
+										</div>
+										<div data-ng-class="{on: wamData.leagues.isOpen, cta: wamData.leagues.isCta, disabled: wamData.leagues.length == 1}" class="select-wrapper">
+											<div data-ng-click="wamData.leagues.length == 1 || clickHandler(4)" class="selection">
+												<div data-ng-bind="wamData.leaguesSelected.label" class="value"></div>
+												<span class="icon-angle-down"></span>
+											</div>
+											<ul class="select-list">
+												<li data-ng-class="{on: wamData.leaguesSelected.id == option.id}" data-ng-repeat="option in wamData.leagues">
+													<a data-ng-click="wamData.leagues.isOpen = !wamData.leagues.isOpen; wamData.leaguesSelected = option; wamUpdate('leagues',$index)">{{option.label}}</a>
+												</li>
+											</ul>
+											<div class="select">
+												<select data-ng-options="option as option.label for option in wamData.leagues track by option.id" name="leagues" data-ng-model="wamData.leaguesSelected" data-ng-change="onChange()" data-label="Spielklasse wählen" data-ng-disabled="wamData.leagues.length == 1" size="1" data-wam-select>
+													<option value="" ng-if="false"></option>
+												</select>
+											</div>
+										</div>
+										<div data-ng-class="{on: wamData.areas.isOpen, cta: wamData.areas.isCta, disabled: wamData.areas.length == 1}" class="select-wrapper">
+											<div data-ng-click="wamData.areas.length == 1 || clickHandler(5)" class="selection">
+												<div data-ng-bind="wamData.areasSelected.label" class="value"></div>
+												<span class="icon-angle-down"></span>
+											</div>
+											<ul class="select-list">
+												<li data-ng-class="{on: wamData.areasSelected.id == option.id}" data-ng-repeat="option in wamData.areas">
+													<a data-ng-click="wamData.areas.isOpen = !wamData.areas.isOpen; wamData.areasSelected = option; wamUpdate('areas',$index)">{{option.label}}</a>
+												</li>
+											</ul>
+											<div class="select">
+												<select data-ng-options="option as option.label for option in wamData.areas track by option.id" name="areas" data-ng-model="wamData.areasSelected" data-ng-change="onChange()" data-label="Gebiet wählen" data-ng-disabled="wamData.areas.length == 1" size="1" data-wam-select>
+													<option value="" ng-if="false"></option>
+												</select>
+											</div>
+										</div>
+										<div data-ng-class="{on: wamData.competitions.isOpen, cta: wamData.competitions.isCta, disabled: wamData.competitions.length == 1}" class="select-wrapper">
+											<div data-ng-click="wamData.competitions.length == 1 || clickHandler(6)" class="selection">
+												<div data-ng-bind="wamData.competitionsSelected.label" class="value"></div>
+												<span class="icon-angle-down"></span>
+											</div>
+											<ul class="select-list">
+												<li data-ng-class="{on: wamData.competitionsSelected.id == option.id}" data-ng-repeat="option in wamData.competitions">
+													<a data-ng-click="wamData.competitions.isOpen = !wamData.competitions.isOpen; wamData.competitionsSelected = option; wamUpdate('competitions',$index)">{{option.label}}</a>
+												</li>
+											</ul>
+											<div class="select">
+												<select data-ng-options="option as option.label for option in wamData.competitions track by option.id" name="competitions" data-ng-model="wamData.competitionsSelected" data-ng-change="onChange()" data-label="Wettbewerb wählen" data-ng-disabled="wamData.competitions.length == 1" size="1" data-wam-select>
+													<option value="" ng-if="false"></option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div data-user-favorites-save="https://www.fussball.de/add.favorite">
+										<a data-ng-class="{'disabled':!wamData.competitionsSelected.id}" data-ng-click="saveFavorite(wamData.competitionsSelected)" class="button button-primary favorits trigger-login-layer" data-user-dependency="{'FBDE_USER_ID':'exist'}">als Favorit speichern</a>
+									</div>
+									<div class="form-submit" data-wam-submit>
+										<button data-ng-class="{'disabled':!wamData.competitionsSelected.id}" data-ng-click="submitForm()" class="button button-primary" type="submit">Anzeigen</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="favs header-flyout-favorites">
+							<div class="header-flyout-link-list">
+								<div class="inner">
+									<h3>Favoriten</h3>
+									<div class="user-favorites-load" data-user-favorites="competitions" data-user-dependency="{'FBDE_USER_ID':'existVisible'}" data-lazyload></div>
+									<div class="favorits" data-user-dependency="{'FBDE_USER_ID':'existVisible'}">
+										<a href="https://www.fussball.de/favorites">Deine Favoriten<span class="icon-link-arrow"></span></a>
+									</div>
+								</div>
+							</div>
+							<p data-user-dependency="{'FBDE_USER_ID':'notexistVisible'}">Wenn Du dich bei unserer Community einloggst, kannst du Vereine und Mannschaften als Favoriten speichern und direkt von hier aus schnell und einfach erreichen.</p>
+						</div>
+					</div>
+					<div id="topleagues" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="header-flyout-wam header-flyout-link-list wam">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Top-Ligen Herren 16/17</h4>
+							<div class="inner">
+								<h3 class="hidden-small">Herren 16/17</h3>
+								<ul>
+									<li>
+										<a class="link" href="http://www.fussball.de/spieltagsuebersicht/bundesliga-deutschland-bundesliga-herren-saison1617-deutschland/-/staffel/01S7O7JFK0000003VS54898DVU4RL8AK-G">Bundesliga<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/spieltagsuebersicht/2bundesliga-deutschland-2bundesliga-herren-saison1617-deutschland/-/staffel/01S7O8272C000003VS54898DVU4RL8AK-G">2.Bundesliga<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/spieltagsuebersicht/3liga-deutschland-3liga-herren-saison1617-deutschland/-/staffel/01S7O85V2K000003VS54898DVU4RL8AK-G">3.Liga<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/spieltagsuebersicht/regionalliga-nord-region-norddeutschland-regionalliga-herren-saison1617-region-norddeutschland/-/staffel/01S7P1SFJK000002VS54898EVTAHLVK3-G">Regionalliga Nord<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/spieltagsuebersicht/regionalliga-nordost-region-nordostdeutschland-regionalliga-herren-saison1617-region-nordostdeutschland/-/staffel/01SCLGJ5TS000004VS54898EVUVM2J7N-G">Regionalliga Nordost<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/spieltagsuebersicht/regionalliga-suedwest-region-suedwestdeutschland-regionalliga-herren-saison1617-region-suedwestdeutschland/-/staffel/01SKL3K4GK00000CVS54898EVT9SILN7-G">Regionalliga Südwest<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/spieltagsuebersicht/regionalliga-west-region-westdeutschland-regionalliga-herren-saison1617-region-westdeutschland/-/staffel/01S96O6LV8000007VS54898EVTAHLVK3-G">Regionalliga West<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/spieltagsuebersicht/regionalliga-bayern-bayern-regionalliga-bayern-herren-saison1617-bayern/-/staffel/01SB16UV1G00000AVS54898EVVS6OL13-G">Regionalliga Bayern<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/spieltagsuebersicht/dfb-pokal-deutschland-dfb-pokal-herren-saison1617-deutschland/-/staffel/01S7O8S14S000000VS54898DVU4RL8AK-C">DFB-Pokal<span class="icon-link-arrow"></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header-flyout-wam header-flyout-link-list profiles">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Top-Ligen Frauen 16/17</h4>
+							<div class="inner">
+								<h3 class="hidden-small">Frauen 16/17</h3>
+								<ul>
+									<li>
+										<a class="link" href="http://www.fussball.de/spieltagsuebersicht/allianz-frauen-bundesliga-deutschland-bundesliga-frauen-saison1617-deutschland/-/staffel/01SKKK0RCC000006VS54898EVT9SILN7-G">Allianz Frauen-Bundesliga<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/spieltagsuebersicht/2-frauen-bundesliga-nord-deutschland-2bundesliga-frauen-saison1617-deutschland/-/staffel/01SKKKG15S000001VS54898EVT9SILN7-G">2. Frauen-Bundesliga Nord<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/spieltagsuebersicht/2-frauen-bundesliga-sued-deutschland-2bundesliga-frauen-saison1617-deutschland/-/staffel/01SKKKG1FC000002VS54898EVT9SILN7-G">2. Frauen-Bundesliga Süd<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/spieltagsuebersicht/dfb-pokal-der-frauen-deutschland-dfb-pokal-frauen-saison1617-deutschland/-/staffel/01SKUPIK6K000000VS54898DVV2J9QR4-C">DFB-Pokal der Frauen<span class="icon-link-arrow"></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="matchcal" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="matchcal header-flyout-form">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Matchkalender</h4>
+							<div class="inner form-dark">
+								<h3>Begegnungen in deiner Nähe</h3>
+								<form action="//www.fussball.de/matchkalender" method="GET" data-rest-form>
+									<div data-ng-controller="TypeaheadController" data-typeahead-default="{'action':'getPostalCodeCompletions'}" data-typeahead-key="plz" data-typeahead-type="noselect" data-typeahead-minlength="3" class="label-wrapper location" data-typeahead="http://www.fussball.de/public.service/-/action/getPostalCodeCompletions">
+										<div class="typeahead-wrapper">
+											<label for="matchplan-calendar-location">Umgebung:</label>
+											<input id="matchplan-calendar-location" placeholder="PLZ / Ort*" name="plz" value="" data-ng-show="!showSelected()" data-ajaxmodel="plz" data-ng-model="typeaheadInput.text" data-ng-change="updateInput()" type="text">
+											<ul data-ng-class="{'on':isActiveList()}" class="typeahead-list">
+												<li data-ng-show="isActiveError()"><span>Keine Postleitzahlen gefunden. Bitte überprüfe deine Angabe.</span></li>
+												<li data-ng-class-even="'even'" data-ng-show="isActiveResults()" data-ng-repeat="item in filterResults('$', typeaheadItems, typeaheadInput.text)">
+													<a data-ng-click="chooseItem(item, 'postalCode')" href="">{{item.postalCode}}, {{item.city}}</a>
+												</li>
+											</ul>
+											<p class="typeahead-selected" data-ng-show="showSelected()">
+												{{typeaheadInput.text}}
+												<a data-ng-click="resetSelected()" class="close" href=""><span class="icon-close"></span></a>
+											</p>
+										</div>
+									</div>
+									<div class="cal-group">
+										<div class="datepicker-wrapper">
+											<div data-calendar-span="14" data-ng-controller="MatchcalController" data-calendar-type="from" class="date datepicker label-wrapper">
+												<label for="matchcal-date-from">Von:</label>
+												<input id="matchcal-date-from" placeholder="Datum*" name="datum-von" value="" data-ajaxmodel="datum-von" data-ng-init="dt='2017-02-10'" data-is-open="opened" data-ng-model="dt" data-datepicker-popup="dd.MM.yyyy" type="text">
+												<label data-ng-class="{'open':opened}" for="matchcal-date-from"><span class="icon-matchcal"></span></label>
+											</div>
+										</div>
+										<div class="datepicker-wrapper">
+											<div data-calendar-span="14" data-ng-controller="MatchcalController" data-calendar-type="to" class="date datepicker label-wrapper">
+												<label for="matchcal-date-to">Bis:</label>
+												<input id="matchcal-date-to" placeholder="Datum*" name="datum-bis" value="" data-ajaxmodel="datum-bis" data-ng-init="dt='2017-02-24'" data-is-open="opened" data-ng-model="dt" data-datepicker-popup="dd.MM.yyyy" type="text">
+												<label data-ng-class="{'open':opened}" for="matchcal-date-to"><span class="icon-matchcal"></span></label>
+											</div>
+										</div>
+									</div>
+									<div data-select-box="single" class="select-wrapper" data-ajaxmodel="wettkampftyp" data-ng-model="filterCompetitions" data-select-title="Wettbewerbe" data-select-box-default="0">
+										<select name="wettkampftyp" size="1">
+											<option value="-1">Alle</option>
+											<option value="1">Meisterschaften</option>
+											<option value="8">Pokale</option>
+											<option value="3">Turniere</option>
+											<option value="7">Freundschaftsspiele</option>
+											<option value="11">Futsal-Ligabetrieb</option>
+											<option value="2">Hallenturniere (Futsal)</option>
+										</select>
+									</div>
+									<div data-select-box="multiple" class="select-wrapper" data-ajaxmodel="mannschaftsart" data-select-box-multiple="ausgewählt" data-ng-model="filterTeams" data-select-title="Mannschaften" data-select-box-default="0">
+										<select name="mannschaftsart" size="1" multiple>
+											<option value="-1">Alle</option>
+											<option value="1">Herren</option>
+											<option value="39">Herren-Reserve</option>
+											<option value="54">Herren - Behindertenfußball</option>
+											<option value="807">Senioren Ü60 Freizeit/Betrieb</option>
+											<option value="809">Senioren Ü50 Freizeit/Betrieb</option>
+											<option value="811">Senioren Ü40 Freizeit/Betrieb</option>
+											<option value="812">Senioren Ü32 Freizeit/Betrieb</option>
+											<option value="813">Herren Freizeit/Betrieb</option>
+											<option value="3">A-Junioren</option>
+											<option value="6">B-Junioren</option>
+											<option value="8">C-Junioren</option>
+											<option value="10">D-Junioren</option>
+											<option value="12">E-Junioren</option>
+											<option value="14">F-Junioren</option>
+											<option value="16">G-Junioren</option>
+											<option value="19">Altherren</option>
+											<option value="20">Alt-Senioren</option>
+											<option value="21">Alte Herren Ü50</option>
+											<option value="24">Altliga Ü50</option>
+											<option value="23">Altliga Ü60</option>
+											<option value="47">Alte Herren Ü60</option>
+											<option value="49">Altliga Ü70</option>
+											<option value="55">Seniorinnen Ü35</option>
+											<option value="48">Seniorinnen Ü30</option>
+											<option value="4">Frauen</option>
+											<option value="5">A-Juniorinnen</option>
+											<option value="7">B-Juniorinnen</option>
+											<option value="9">C-Juniorinnen</option>
+											<option value="11">D-Juniorinnen</option>
+											<option value="13">E-Juniorinnen</option>
+											<option value="15">F-Juniorinnen</option>
+											<option value="17">G-Juniorinnen</option>
+											<option value="22">Freizeitsport</option>
+											<option value="40">Freizeitsport Frauen</option>
+										</select>
+									</div>
+									<button class="button button-primary button-block" type="submit">Suchen</button>
+									<p class="mandatory">* Pflichtfelder</p>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div id="stats" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="stats header-flyout-stats">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Amateurstatistiken</h4>
+							<div class="inner">
+								<h3>Deutschlands Beste</h3>
+								<ul>
+									<li>
+										<a href="http://www.fussball.de/stats.amateur.team/-/mandantspez/false/stats/4"><span class="icon-team-logo"></span><span class="link">Bestes Team<span class="icon-link-arrow"></span></span></a>
+									</li>
+									<li>
+										<a href="http://www.fussball.de/stats.amateur.player/-/mandantspez/false/stats/8"><span class="icon-player-image"></span><span class="link">Bester Stürmer<span class="icon-link-arrow"></span></span></a>
+									</li>
+									<li>
+										<a href="http://www.fussball.de/stats.amateur.team/-/mandantspez/false/stats/5"><span class="icon-soccer-ball"></span><span class="link">Alle Top-Statistiken<span class="icon-link-arrow"></span></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="pros" data-ng-class="{active:isActive, hidden: scopeEnv.isSubMenuHidden}" data-flyoutnavcontent="main" class="flyout-subnav">
+			<div class="container">
+				<div class="flyout-left">
+					<nav class="flyout-nav">
+						<h4 data-ng-click="scopeEnv.isMainMenuHidden = false; flyoutState.isOpen = false;"><span class="icon-angle-left"></span>Vereine & Verbände</h4>
+						<ul>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#region">Regionalverbände<span class="icon-angle-right"></span></div>
+							</li>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#fed">Landesverbände<span class="icon-angle-right"></span></div>
+							</li>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#searchAssociation">Vereine<span class="icon-angle-right"></span></div>
+							</li>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#searchPlayer">Spieler<span class="icon-angle-right"></span></div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="flyout-right">
+					<div id="region" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="region header-flyout-associations">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Regionalverbände</h4>
+							<div class="inner">
+								<div class="block">
+									<ul class="col">
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/regionalverband/region-norddeutschland/-/verband/0123456789ABCDEF0123456700004020">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004020"></span></div>
+												<div class="name">Norddeutscher Fußball-Verband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/regionalverband/region-nordostdeutschland/-/verband/0123456789ABCDEF0123456700004060">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004060"></span></div>
+												<div class="name">Nordostdeutscher Fußballverband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/regionalverband/region-sueddeutschland/-/verband/0123456789ABCDEF0123456700004050">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004050"></span></div>
+												<div class="name">Süddeutscher Fußball-Verband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="block last">
+									<ul class="col">
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/regionalverband/region-suedwestdeutschland/-/verband/0123456789ABCDEF0123456700004040">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004040"></span></div>
+												<div class="name">Fußball-Regional-Verband Südwest<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/regionalverband/region-westdeutschland/-/verband/0123456789ABCDEF0123456700004030">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004030"></span></div>
+												<div class="name">Westdeutscher Fußballverband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="fed" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="fed header-flyout-associations">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Landesverbände</h4>
+							<div class="inner">
+								<div class="block">
+									<ul class="col">
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/baden/-/verband/0123456789ABCDEF0123456700004180">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004180"></span></div>
+												<div class="name">Badischer Fußball-Verband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/bremen/-/verband/0123456789ABCDEF0123456700004090">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004090"></span></div>
+												<div class="name">Bremer Fußball-Verband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/mittelrhein/-/verband/0123456789ABCDEF0123456700004120">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004120"></span></div>
+												<div class="name">Fußball-Verband Mittelrhein<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/saarland/-/verband/0123456789ABCDEF0123456700004150">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004150"></span></div>
+												<div class="name">Saarländischer Fußball-Verband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/suedbaden/-/verband/0123456789ABCDEF0123456700004190">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004190"></span></div>
+												<div class="name">Südbadischer Fußballverband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/wuerttemberg/-/verband/0123456789ABCDEF0123456700004200">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004200"></span></div>
+												<div class="name">Württembergischer Fußball-Verband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+									</ul>
+									<ul class="col last">
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/bayern/-/verband/00ES8GNCQK000000VV0AG08LVUPGND5I">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/00ES8GNCQK000000VV0AG08LVUPGND5I"></span></div>
+												<div class="name">Bayerischer Fußball-Verband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/hamburg/-/verband/0123456789ABCDEF0123456700004080">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004080"></span></div>
+												<div class="name">Hamburger Fußball-Verband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/niederrhein/-/verband/0123456789ABCDEF0123456700004110">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004110"></span></div>
+												<div class="name">Fußballverband Niederrhein e.V.<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/sachsen/-/verband/0123456789ABCDEF0123456700004270">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004270"></span></div>
+												<div class="name">Sächsischer Fußball-Verband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/suedwest/-/verband/0123456789ABCDEF0123456700004160">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004160"></span></div>
+												<div class="name">Südwestdeutscher Fußball-Verband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="block last">
+									<ul class="col">
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/berlin/-/verband/0123456789ABCDEF0123456700004240">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004240"></span></div>
+												<div class="name">Berliner Fußball-Verband e. V.<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/hessen/-/verband/0123456789ABCDEF0123456700004170">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004170"></span></div>
+												<div class="name">Hessischer Fußball-Verband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/niedersachsen/-/verband/0123456789ABCDEF0123456700004100">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004100"></span></div>
+												<div class="name">Niedersächsischer Fußballverband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/sachsen-anhalt/-/verband/0123456789ABCDEF0123456700004230">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004230"></span></div>
+												<div class="name">Fußball-Verband Sachsen-Anhalt<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/thueringen/-/verband/0123456789ABCDEF0123456700004260">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004260"></span></div>
+												<div class="name">Thüringer Fußball-Verband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+									</ul>
+									<ul class="col last">
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/brandenburg/-/verband/0123456789ABCDEF0123456700004250">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004250"></span></div>
+												<div class="name">Fußball-Landesverband Brandenburg<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/mecklenburg-vorpommern/-/verband/0123456789ABCDEF0123456700004220">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004220"></span></div>
+												<div class="name">Landesfußballverband Mecklenburg-Vorpommern<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/rheinland/-/verband/0123456789ABCDEF0123456700004140">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004140"></span></div>
+												<div class="name">Fußballverband Rheinland<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/schleswig-holstein/-/verband/0123456789ABCDEF0123456700004070">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004070"></span></div>
+												<div class="name">Schleswig-Holsteinischer Fußballverband<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+										<li>
+											<a class="association-wrapper" href="http://www.fussball.de/verband/westfalen/-/verband/0123456789ABCDEF0123456700004130">
+												<div class="logo"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004130"></span></div>
+												<div class="name">Fußball- u. Leichtathletik-Verband Westfalen<span class="icon-link-arrow"></span></div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="searchAssociation" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="search header-flyout-form">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Vereine</h4>
+							<div class="inner form-dark">
+								<h3>Vereine nach Name und Region finden</h3>
+								<form action="//www.fussball.de/suche.verein" method="GET" data-rest-form>
+									<input placeholder="Vereinsname*" name="text" value="" data-ng-model="text" type="text">
+									<div class="location label-wrapper">
+										<label for="plz">Umgebung</label>
+										<input id="flyout-search-club-zip" placeholder="PLZ / Ort*" name="plz" value="" data-ng-model="plz" type="text">
+									</div>
+									<button class="button button-primary button-block" type="submit">Finden</button>
+								</form>
+							</div>
+						</div>
+						<div class="favs header-flyout-favorites">
+							<div class="header-flyout-link-list">
+								<div class="inner">
+									<h3>Favoriten</h3>
+									<div class="user-favorites-load" data-user-favorites="club" data-user-dependency="{'FBDE_USER_ID':'existVisible'}" data-lazyload></div>
+									<div class="favorits" data-user-dependency="{'FBDE_USER_ID':'existVisible'}">
+										<a href="https://www.fussball.de/favorites">Deine Favoriten<span class="icon-link-arrow"></span></a>
+									</div>
+								</div>
+							</div>
+							<p data-user-dependency="{'FBDE_USER_ID':'notexistVisible'}">Wenn Du dich bei unserer Community einloggst, kannst du Vereine und Mannschaften als Favoriten speichern und direkt von hier aus schnell und einfach erreichen.</p>
+						</div>
+					</div>
+					<div id="searchPlayer" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="search header-flyout-form">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Spieler</h4>
+							<div class="inner form-dark">
+								<h3>Spieler nach Name und Region finden</h3>
+								<form action="//www.fussball.de/suche.spieler" method="GET" data-rest-form>
+									<input placeholder="Vorname*" name="firstname" value="" class="small" data-ng-model="firstname" type="text">
+									<input placeholder="Nachname*" name="lastname" value="" class="small" data-ng-model="lastname" type="text">
+									<div class="location label-wrapper">
+										<label for="plz">Umgebung</label>
+										<input id="flyout-search-player-zip" placeholder="PLZ / Ort*" name="plz" value="" class="small" data-ng-model="plz" type="text">
+									</div>
+									<button class="button button-primary button-block" type="submit">Finden</button>
+								</form>
+							</div>
+						</div>
+						<div class="favs header-flyout-favorites">
+							<div class="header-flyout-link-list">
+								<div class="inner">
+									<h3>Favoriten</h3>
+									<div class="user-favorites-load" data-user-favorites="player" data-user-dependency="{'FBDE_USER_ID':'existVisible'}" data-lazyload></div>
+									<div class="favorits" data-user-dependency="{'FBDE_USER_ID':'existVisible'}">
+										<a href="https://www.fussball.de/favorites">Deine Favoriten<span class="icon-link-arrow"></span></a>
+									</div>
+								</div>
+							</div>
+							<p data-user-dependency="{'FBDE_USER_ID':'notexistVisible'}">Wenn Du dich bei unserer Community einloggst, kannst du Vereine und Mannschaften als Favoriten speichern und direkt von hier aus schnell und einfach erreichen.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="trainings" data-ng-class="{active:isActive, hidden: scopeEnv.isSubMenuHidden}" data-flyoutnavcontent="main" class="flyout-subnav">
+			<div class="container">
+				<div class="flyout-left">
+					<nav class="flyout-nav">
+						<h4 data-ng-click="scopeEnv.isMainMenuHidden = false; flyoutState.isOpen = false;"><span class="icon-angle-left"></span>Training & Service</h4>
+						<ul>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#trainings1">Trainer/in<span class="icon-angle-right"></span></div>
+							</li>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#trainings2">Spieler/in<span class="icon-angle-right"></span></div>
+							</li>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#trainings3">Lehrer/in<span class="icon-angle-right"></span></div>
+							</li>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#trainings4">Schiedsrichter/in<span class="icon-angle-right"></span></div>
+							</li>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#trainings5">Vereinsmitarbeiter/in<span class="icon-angle-right"></span></div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="flyout-right">
+					<div id="trainings1" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="header-flyout-two header-flyout-link-list">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Trainer/in</h4>
+							<div class="inner">
+								<h3 class="hidden-small">Übersicht</h3>
+								<ul>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/trainer/bambini">Bambini<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/trainer/f-juniorin">F-Junior/-in<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/trainer/e-juniorin">E-Junior/-in<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/trainer/d-juniorin">D-Junior/-in<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/trainer/c-juniorin">C-Junior/-in<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/trainer/b-juniorin">B-Junior/-in<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/trainer/a-juniorin">A-Junior/-in<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/trainer/aktiver-ue-20">Aktive/Ü 20<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/trainer/seniorin-ue-35">Senior/in Ü 35<span class="icon-link-arrow"></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="trainings2" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="header-flyout-two header-flyout-link-list">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Spieler/in</h4>
+							<div class="inner">
+								<h3 class="hidden-small">Übersicht</h3>
+								<ul>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/spieler/bis-u-11-spielerin">Bis U 11-Spieler/in<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/spieler/u-12-bis-u-15-spielerin">U 12- bis U 15-Spieler/in<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/spieler/u-16-bis-u-19-spielerin">U 16- bis U 19-Spieler/in<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/spieler/aktive-ue20">Aktive/r Ü 20<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/spieler/seniorin-ue-35">Senior/in Ü 35<span class="icon-link-arrow"></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="trainings3" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="header-flyout-two header-flyout-link-list">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Lehrer/in</h4>
+							<div class="inner">
+								<h3 class="hidden-small">Übersicht</h3>
+								<ul>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/lehrer/grundschule">Grundschule<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/lehrer/weiterfuehrende-schule">Weiterführende Schulen<span class="icon-link-arrow"></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="trainings4" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="header-flyout-two header-flyout-link-list">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Schiedsrichter/in</h4>
+							<div class="inner">
+								<h3 class="hidden-small">Übersicht</h3>
+								<ul>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/schiedsrichter/aktiver-schiedsrichterin">Aktive/r Schiedsrichter/in<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/schiedsrichter/interessentin">Interessent/in<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/schiedsrichter/funktionaerin">Funktionär/in<span class="icon-link-arrow"></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="trainings5" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="header-flyout-two header-flyout-link-list">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Vereinsmitarbeiter/in</h4>
+							<div class="inner">
+								<h3 class="hidden-small">Übersicht</h3>
+								<ul>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/vereinsmitarbeiter/vereinsvorsitzender">Vereinsvorsitzende/r<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/vereinsmitarbeiter/abteilungsleiterin-fussball">Abteilungsleiter/in<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/vereinsmitarbeiter/jugendleiterin">Jugendleiter/in<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/vereinsmitarbeiter/schatzmeisterin">Schatzmeister/in<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://training-service.fussball.de/vereinsmitarbeiter/pressesprecherin">Pressereferent/in<span class="icon-link-arrow"></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="tv" data-ng-class="{active:isActive, hidden: scopeEnv.isSubMenuHidden}" data-flyoutnavcontent="main" class="flyout-subnav">
+			<div class="container">
+				<div class="flyout-left">
+					<nav class="flyout-nav">
+						<h4 data-ng-click="scopeEnv.isMainMenuHidden = false; flyoutState.isOpen = false;"><span class="icon-angle-left"></span>Videos & Foren</h4>
+						<ul>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#tv1">Amateur-TV<span class="icon-angle-right"></span></div>
+							</li>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#tv2">Fotos<span class="icon-angle-right"></span></div>
+							</li>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#tv3">Foren<span class="icon-angle-right"></span></div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="flyout-right">
+					<div id="tv1" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="header-flyout-two header-flyout-link-list">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Amateur-TV</h4>
+							<div class="inner">
+								<h3 class="hidden-small">Übersicht</h3>
+								<ul>
+									<li>
+										<a class="link" href="http://www.fussball.de/amateur.tv.magazin">Magazin<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/amateur.tv.voting/-/rubrik/zdftw">ZDF Torwandschießen<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/fan.video">Fanvideos<span class="icon-link-arrow"></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="tv2" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="header-flyout-two header-flyout-link-list">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Fotos</h4>
+							<div class="inner">
+								<h3 class="hidden-small">Übersicht</h3>
+								<ul>
+									<li>
+										<a class="link" href="http://www.fussball.de/fan.photo">Fanfotos<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/fan.photo.alben">Fotoalben<span class="icon-link-arrow"></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="tv3" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="header-flyout-two header-flyout-link-list">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Foren</h4>
+							<div class="inner">
+								<h3 class="hidden-small">Übersicht</h3>
+								<ul>
+									<li>
+										<a class="link" href="http://www.fussball.de/ugc/-/foren/41">Das neue FUSSBALL.DE<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/ugc/-/foren/11">Alles zum Amateurfußball<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/ugc/-/foren/21">Alles, nur kein Amateurfußball<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/ugc/-/foren/31">Votings und Umfragen<span class="icon-link-arrow"></span></a>
+									</li>
+									<li>
+										<a class="link" href="http://www.fussball.de/ugc/-/foren/91">Service<span class="icon-link-arrow"></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="login" data-ng-class="{active:isActive, hidden: scopeEnv.isSubMenuHidden}" data-flyoutnavcontent="main" class="flyout-subnav">
+			<div class="container" data-user-dependency="{'FBDE_USER_ID':'existVisible'}">
+				<div class="flyout-left">
+					<nav class="flyout-nav">
+						<h4 data-ng-click="scopeEnv.isMainMenuHidden = false; flyoutState.isOpen = false;"><span class="icon-angle-left"></span>Anmelden</h4>
+						<ul>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#dashboard-content">Inhalte verwalten<span class="icon-angle-right"></span></div>
+							</li>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#dashboard-account">Kontoeinstellungen<span class="icon-angle-right"></span></div>
+							</li>
+							<li data-ng-class="{'current':isCurrent}" data-flyoutnavitem="sub">
+								<div data-flyoutitem-identifier="#dashboard-profile">Profil einrichten<span class="icon-angle-right"></span></div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="flyout-right">
+					<div id="dashboard-content" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="dashboard">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Inhalte verwalten</h4>
+							<div class="header-flyout-link-list">
+								<div class="inner">
+									<h3>Übersicht</h3>
+									<ul>
+										<li>
+											<a class="link" href="https://www.fussball.de/favorites">Deine Favoriten<span class="icon-link-arrow"></span></a>
+										</li>
+										<li class="hidden-small">
+											<a class="link" href="https://www.fussball.de/images.and.videos.overview">Deine Bilder & Videos<span class="icon-link-arrow"></span></a>
+										</li>
+										<li class="hidden-small">
+											<a class="link" href="https://www.fussball.de/account.photoalbum">Deine Fotoalben<span class="icon-link-arrow"></span></a>
+										</li>
+										<li class="hidden-mid">
+											<a class="link" href="https://www.fussball.de/account.admin.widgets">Deine Widgets<span class="icon-link-arrow"></span></a>
+										</li>
+										<li class="hidden-small">
+											<div data-user="{'FBDE_PROFILES':'TEAM'}" data-user-dependency="{'FBDE_PROFILES':'inarraystartswith'}">
+												<a class="link" href="https://www.fussball.de/account.teams">Deine Mannschaftsseiten<span class="icon-link-arrow"></span></a>
+											</div>
+										</li>
+										<li class="hidden-small">
+											<a class="link" href="https://www.fussball.de/account.news">Deine Spielberichte & News<span class="icon-link-arrow"></span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="profiles header-flyout-profiles">
+							<div class="header-flyout-link-list">
+								<div class="inner">
+									<h3>Deine Profile auf FUSSBALL.DE</h3>
+									<div class="logo-wrapper xinline_headerflyoutdashboardprofiles_1908">
+										<div class="meta xinline_headerflyoutdashboardprofiles_2011" data-user-interpolate="innerHTML" data-user-interpolate-tmpl="Angemeldet als: %FBDE_NICKNAME%"></div>
+										<img class="logo xinline_headerflyoutdashboardprofiles_3786" src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/login_logo_dfbnet.png" data-user="{'FBDE_PROVIDER':'2'}" data-user-dependency="{'FBDE_PROVIDER':'equal'}">
+										<img class="logo xinline_headerflyoutdashboardprofiles_3786" src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/provider_logo_fbde.png" data-user="{'FBDE_PROVIDER':'1'}" data-user-dependency="{'FBDE_PROVIDER':'equal'}">
+										<img class="logo xinline_headerflyoutdashboardprofiles_3786" src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/FB-f-Logo__blue_58.png" data-user="{'FBDE_PROVIDER':'3'}" data-user-dependency="{'FBDE_PROVIDER':'equal'}">
+									</div>
+									<ul>
+										<li data-user="{'FBDE_PROFILES':'FAN'}" data-user-dependency="{'FBDE_PROFILES':'inarray'}">
+											<a class="link" data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/fanprofil/-/userid/%FBDE_USER_ID%">Benutzer-Profil<span class="icon-link-arrow"></span></a>
+											<span class="meta hidden-small"><a data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/fanprofil/-/userid/%FBDE_USER_ID%">Ansehen</a> | <a href="https://www.fussball.de/fanprofil.bearbeiten">Bearbeiten</a></span>
+										</li>
+										<li data-user="{'FBDE_PROFILES':'SPIELER'}" data-user-dependency="{'FBDE_PROFILES':'inarray'}">
+											<a class="link" data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/spielerprofil/-/userid/%FBDE_USER_ID%">Spieler-Profil<span class="icon-link-arrow"></span></a>
+											<span class="meta hidden-small"><a data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/spielerprofil/-/userid/%FBDE_USER_ID%">Ansehen</a> | <a href="https://www.fussball.de/spielerprofil.bearbeiten">Bearbeiten</a></span>
+										</li>
+										<li data-user="{'FBDE_PROFILES':'REFEREE'}" data-user-dependency="{'FBDE_PROFILES':'inarray'}">
+											<a class="link" data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/schiedsrichterprofil/-/userid/%FBDE_USER_ID%">Schiedsrichter-Profil<span class="icon-link-arrow"></span></a>
+											<span class="meta hidden-small"><a data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/schiedsrichterprofil/-/userid/%FBDE_USER_ID%">Ansehen</a> | <a href="https://www.fussball.de/schiedsrichterprofil.bearbeiten">Bearbeiten</a></span>
+										</li>
+									</ul>
+									<div class="account-logout">
+										<form action="https://www.fussball.de/logout.fbde" method="POST">
+											<input id="logout_fw_url187182" name="fw_url" value="http://www.fussball.de/spiel/sc-altenrheine-ii-skiclub-nordwest-rheine/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" type="hidden">
+											<button class="button button-primary button-block" type="submit">Abmelden</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="dashboard-account" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="dashboard">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Kontoeinstellungen</h4>
+							<div class="header-flyout-link-list">
+								<div class="inner">
+									<h3>Übersicht</h3>
+									<ul>
+										<li>
+											<a class="link" href="https://www.fussball.de/account.admin">Benutzerprofil verwalten<span class="icon-link-arrow"></span></a>
+										</li>
+										<li data-user="{'FBDE_PROFILES':'SPIELER'}" data-user-dependency="{'FBDE_PROFILES':'inarray'}">
+											<a class="link" href="https://www.fussball.de/account.admin.player">Spielerprofil verwalten<span class="icon-link-arrow"></span></a>
+										</li>
+										<li data-user="{'FBDE_PROFILES':'REFEREE'}" data-user-dependency="{'FBDE_PROFILES':'inarray'}">
+											<a class="link" href="https://www.fussball.de/account.admin.referee">Schiriprofil verwalten<span class="icon-link-arrow"></span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="profiles header-flyout-profiles">
+							<div class="header-flyout-link-list">
+								<div class="inner">
+									<h3>Deine Profile auf FUSSBALL.DE</h3>
+									<div class="logo-wrapper xinline_headerflyoutdashboardprofiles_1908">
+										<div class="meta xinline_headerflyoutdashboardprofiles_2011" data-user-interpolate="innerHTML" data-user-interpolate-tmpl="Angemeldet als: %FBDE_NICKNAME%"></div>
+										<img class="logo xinline_headerflyoutdashboardprofiles_3786" src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/login_logo_dfbnet.png" data-user="{'FBDE_PROVIDER':'2'}" data-user-dependency="{'FBDE_PROVIDER':'equal'}">
+										<img class="logo xinline_headerflyoutdashboardprofiles_3786" src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/provider_logo_fbde.png" data-user="{'FBDE_PROVIDER':'1'}" data-user-dependency="{'FBDE_PROVIDER':'equal'}">
+										<img class="logo xinline_headerflyoutdashboardprofiles_3786" src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/FB-f-Logo__blue_58.png" data-user="{'FBDE_PROVIDER':'3'}" data-user-dependency="{'FBDE_PROVIDER':'equal'}">
+									</div>
+									<ul>
+										<li data-user="{'FBDE_PROFILES':'FAN'}" data-user-dependency="{'FBDE_PROFILES':'inarray'}">
+											<a class="link" data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/fanprofil/-/userid/%FBDE_USER_ID%">Benutzer-Profil<span class="icon-link-arrow"></span></a>
+											<span class="meta hidden-small"><a data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/fanprofil/-/userid/%FBDE_USER_ID%">Ansehen</a> | <a href="https://www.fussball.de/fanprofil.bearbeiten">Bearbeiten</a></span>
+										</li>
+										<li data-user="{'FBDE_PROFILES':'SPIELER'}" data-user-dependency="{'FBDE_PROFILES':'inarray'}">
+											<a class="link" data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/spielerprofil/-/userid/%FBDE_USER_ID%">Spieler-Profil<span class="icon-link-arrow"></span></a>
+											<span class="meta hidden-small"><a data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/spielerprofil/-/userid/%FBDE_USER_ID%">Ansehen</a> | <a href="https://www.fussball.de/spielerprofil.bearbeiten">Bearbeiten</a></span>
+										</li>
+										<li data-user="{'FBDE_PROFILES':'REFEREE'}" data-user-dependency="{'FBDE_PROFILES':'inarray'}">
+											<a class="link" data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/schiedsrichterprofil/-/userid/%FBDE_USER_ID%">Schiedsrichter-Profil<span class="icon-link-arrow"></span></a>
+											<span class="meta hidden-small"><a data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/schiedsrichterprofil/-/userid/%FBDE_USER_ID%">Ansehen</a> | <a href="https://www.fussball.de/schiedsrichterprofil.bearbeiten">Bearbeiten</a></span>
+										</li>
+									</ul>
+									<div class="account-logout">
+										<form action="https://www.fussball.de/logout.fbde" method="POST">
+											<input id="logout_fw_url187183" name="fw_url" value="http://www.fussball.de/spiel/sc-altenrheine-ii-skiclub-nordwest-rheine/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" type="hidden">
+											<button class="button button-primary button-block" type="submit">Abmelden</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="dashboard-profile" data-ng-class="{'active':isActive}" data-flyoutnavcontent="sub" class="flyout-tab">
+						<div class="dashboard">
+							<h4 data-ng-click="scopeEnv.isMainMenuHidden = true; scopeEnv.isSubMenuHidden = false;"><span class="icon-angle-left"></span>Profil einrichten</h4>
+							<div class="header-flyout-link-list">
+								<div class="inner">
+									<h3>Übersicht</h3>
+									<ul>
+										<li class="hidden-small" data-user="{'FBDE_PROFILES':'SPIELER'}" data-user-dependency="{'FBDE_PROFILES':'notinarray'}">
+											<a class="link" href="https://www.fussball.de/register.player?fw_url=http%3A%2F%2Fwww.fussball.de%2Fhomepage">Spielerprofil einrichten<span class="icon-link-arrow"></span></a>
+										</li>
+										<li class="hidden-small" data-user="{'FBDE_PROFILES':'REFEREE'}" data-user-dependency="{'FBDE_PROFILES':'notinarray'}">
+											<a class="link" href="https://www.fussball.de/register.referee?fw_url=http%3A%2F%2Fwww.fussball.de%2Fhomepage">Schiriprofil einrichten<span class="icon-link-arrow"></span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="profiles header-flyout-profiles">
+							<div class="header-flyout-link-list">
+								<div class="inner">
+									<h3>Deine Profile auf FUSSBALL.DE</h3>
+									<div class="logo-wrapper xinline_headerflyoutdashboardprofiles_1908">
+										<div class="meta xinline_headerflyoutdashboardprofiles_2011" data-user-interpolate="innerHTML" data-user-interpolate-tmpl="Angemeldet als: %FBDE_NICKNAME%"></div>
+										<img class="logo xinline_headerflyoutdashboardprofiles_3786" src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/login_logo_dfbnet.png" data-user="{'FBDE_PROVIDER':'2'}" data-user-dependency="{'FBDE_PROVIDER':'equal'}">
+										<img class="logo xinline_headerflyoutdashboardprofiles_3786" src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/provider_logo_fbde.png" data-user="{'FBDE_PROVIDER':'1'}" data-user-dependency="{'FBDE_PROVIDER':'equal'}">
+										<img class="logo xinline_headerflyoutdashboardprofiles_3786" src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/FB-f-Logo__blue_58.png" data-user="{'FBDE_PROVIDER':'3'}" data-user-dependency="{'FBDE_PROVIDER':'equal'}">
+									</div>
+									<ul>
+										<li data-user="{'FBDE_PROFILES':'FAN'}" data-user-dependency="{'FBDE_PROFILES':'inarray'}">
+											<a class="link" data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/fanprofil/-/userid/%FBDE_USER_ID%">Benutzer-Profil<span class="icon-link-arrow"></span></a>
+											<span class="meta hidden-small"><a data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/fanprofil/-/userid/%FBDE_USER_ID%">Ansehen</a> | <a href="https://www.fussball.de/fanprofil.bearbeiten">Bearbeiten</a></span>
+										</li>
+										<li data-user="{'FBDE_PROFILES':'SPIELER'}" data-user-dependency="{'FBDE_PROFILES':'inarray'}">
+											<a class="link" data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/spielerprofil/-/userid/%FBDE_USER_ID%">Spieler-Profil<span class="icon-link-arrow"></span></a>
+											<span class="meta hidden-small"><a data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/spielerprofil/-/userid/%FBDE_USER_ID%">Ansehen</a> | <a href="https://www.fussball.de/spielerprofil.bearbeiten">Bearbeiten</a></span>
+										</li>
+										<li data-user="{'FBDE_PROFILES':'REFEREE'}" data-user-dependency="{'FBDE_PROFILES':'inarray'}">
+											<a class="link" data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/schiedsrichterprofil/-/userid/%FBDE_USER_ID%">Schiedsrichter-Profil<span class="icon-link-arrow"></span></a>
+											<span class="meta hidden-small"><a data-user-interpolate="href" data-user-interpolate-tmpl="http://www.fussball.de/schiedsrichterprofil/-/userid/%FBDE_USER_ID%">Ansehen</a> | <a href="https://www.fussball.de/schiedsrichterprofil.bearbeiten">Bearbeiten</a></span>
+										</li>
+									</ul>
+									<div class="account-logout">
+										<form action="https://www.fussball.de/logout.fbde" method="POST">
+											<input id="logout_fw_url187184" name="fw_url" value="http://www.fussball.de/spiel/sc-altenrheine-ii-skiclub-nordwest-rheine/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" type="hidden">
+											<button class="button button-primary button-block" type="submit">Abmelden</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container displaystate" data-user-dependency="{'FBDE_USER_ID':'notexistVisible'}">
+				<h4 data-ng-click="scopeEnv.isMainMenuHidden = false; flyoutState.isOpen = false;"><span class="icon-angle-left"></span>Anmelden</h4>
+				<div class="header-flyout-login form-dark">
+					<div class="login-form">
+						<div class="login">
+							<div class="login-header">
+								<h3 class="headline">Login</h3>
+							</div>
+							<form action="https://www.fussball.de/login.fbde" method="POST">
+								<input id="login_fw_url124967" name="fw_url" value="http://www.fussball.de/spiel/sc-altenrheine-ii-skiclub-nordwest-rheine/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" type="hidden">
+								<input placeholder="Nutzername*" name="username" value="" type="text">
+								<input placeholder="Passwort*" name="password" value="" type="password">
+								<div class="form-meta">
+									<a href="https://www.fussball.de/password.forgotten">Passwort vergessen<span class="icon-link-arrow"></span></a>
+								</div>
+								<button class="button button-primary button-block" type="submit">Login</button>
+							</form>
+						</div>
+						<div class="signup">
+							<h3>Oder anmelden mit:</h3>
+							<ul class="xinline_loginform_3456">
+								<li class="xinline_loginform_5268">
+									<div class="xinline_loginform_5355">einer DFBnet Kennung</div>
+									<a href="https://www.dfbnet.org/dfbnetapi/sso/oauth/authorize?response_type=code&client_id=fb_de_techuser&redirect_uri=https%3A%2F%2Fwww.fussball.de%2Flogin.dfbnet%3Ffw_url%3Dhttp%253A%252F%252Fwww.fussball.de%252Fspiel%252Fsc-altenrheine-ii-skiclub-nordwest-rheine%252F-%252Fspiel%252F01SNJOBM08000000VS54898DVV2J9QR4">
+										<img class="logo xinline_loginform_5579" src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/login_logo_dfbnet.png">
+									</a>
+								</li>
+								<li class="xinline_loginform_5268">
+									<div class="xinline_loginform_5355">einem Facebook Account</div>
+									<a href="https://www.facebook.com/dialog/oauth?client_id=1611655509078432&scope=email&redirect_uri=https%3A%2F%2Fwww.fussball.de%2Flogin.facebook%3Ffw_url%3Dhttp%253A%252F%252Fwww.fussball.de%252Fspiel%252Fsc-altenrheine-ii-skiclub-nordwest-rheine%252F-%252Fspiel%252F01SNJOBM08000000VS54898DVV2J9QR4">
+										<img class="logo xinline_loginform_5579" src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/login_logo_facebook.png">
+									</a>
+								</li>
+							</ul>
+							<p>Du hast noch kein FUSSBALL.DE Konto</p>
+							<br>
+							<a class="button button-primary button-block" href="https://www.fussball.de/register?fw_url=http%3A%2F%2Fwww.fussball.de%2Fspiel%2Fsc-altenrheine-ii-skiclub-nordwest-rheine%2F-%2Fspiel%2F01SNJOBM08000000VS54898DVV2J9QR4">Jetzt registrieren</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="search" data-ng-class="{active:isActive, hidden: scopeEnv.isSubMenuHidden}" data-flyoutnavcontent="main" class="flyout-subnav">
+			<div class="container displaystate">
+				<h4 data-ng-click="scopeEnv.isMainMenuHidden = false; flyoutState.isOpen = false;"><span class="icon-angle-left"></span>Suche</h4>
+				<div class="header-flyout-search">
+					<form action="//www.fussball.de/suche" method="GET" data-rest-form>
+						<div class="form-group form-dark">
+							<div class="search-input">
+								<div class="label-wrapper">
+									<input id="flyout-search-query" placeholder="Suchbegriff eingeben*" name="text" value="" data-ng-model="flyoutsearchQuery" type="text">
+									<label for="flyout-search-query"><span class="icon-search"></span></label>
+								</div>
+							</div>
+							<div data-select-box="single" class="select-wrapper">
+								<select name="restriction" size="1">
+									<option value="-1">Gesamte Seite</option>
+									<option value="CLUB_AND_TEAM">Vereine</option>
+									<option value="PLAYER_PROFILE">Spielerprofile</option>
+									<option value="FAN_PROFILE">Benutzerprofile</option>
+									<option value="REFEREE_PROFILE">Schiedsrichterprofile</option>
+									<option value="NEWS">News</option>
+									<option value="UGC_NEWS">Mannschafts-News</option>
+									<option value="PROFI_NEWS">Profi-Newsflash</option>
+								</select>
+							</div>
+						</div>
+						<div class="search-button">
+							<button class="button button-primary button-block" type="submit">Finden</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</header><div id="content-block" data-ng-class="{active:flyoutState.isOpen, 'active-layer':layerState.isOpen, 'active-loader':loaderState.isActive}" data-ng-click="closeFlyout()"></div>
+
+		<nav class="in-page-nav">
+	<ul data-ng-class="{closed: isClosed, 'mobile-open': !isMobileClosed, delayed: !isDelayed, init: !isInitialized, 'highlight-active':isHighlightActive}" class="section-nav init" data-in-page-nav>
+		<li data-spy="{{item.id}}" data-ng-repeat="item in navItems">
+			<a data-scroll-to="{{item.id}}" href="#{{item.id}}">{{item.title}}</a>
+		</li>
+	</ul>
+</nav>
+
+		<nav class="in-page-share">
+	<ul data-ng-class="{closed: isClosed, 'mobile-open': !isMobileClosed, delayed: !isDelayed, init: !isInitialized, 'highlight-active':isHighlightActive}" class="section-nav init" data-in-page-nav>
+		<li class="sharing facebook">
+			<ul data-sharing>
+				<li>
+					<a href="https://www.facebook.com/sharer/sharer.php?u={{sharing.url.facebook}}" data-popup><span class="icon-facebook"></span></a>
+				</li>
+			</ul>
+		</li>
+		<li class="sharing twitter">
+			<ul data-sharing>
+				<li>
+					<a href="http://twitter.com/intent/tweet?text=Von+der+Bundesliga+bis+in+die+Kreisklasse%3A+alles+zum+Fußball+bei+fussball.de.&url={{sharing.url.twitter}}&lang=de" data-popup><span class="icon-twitter"></span></a>
+				</li>
+			</ul>
+		</li>
+		<li class="sharing googleplus">
+			<ul data-sharing>
+				<li>
+					<a href="https://plus.google.com/share?url={{sharing.url.googleplus}}" data-popup><span class="icon-googleplus"></span></a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+		<div class="content" data-ng-class="{flyoutopened:flyoutState.isOpen}" >
+
+
+
+		<section data-in-page-nav-section="stage" id="stage" class="profile-theme-blue" data-title="Bühne" data-lazyload>
+	<div data-obfuscation="8vkyknrm" class="match-stage">
+		<div class="stage grass match">
+			<div class="container">
+				<div class="stage-content">
+					<div class="stage-header">
+						<a class="competition" href="http://www.fussball.de/spieltag/kreisliga-b-staffel-1-steinfurt-kreis-steinfurt-kreisliga-b-herren-saison1617-westfalen/-/spieldatum/2016-10-30/staffel/01SNJETL9K000002VS54898DVV2J9QR4-G">Kreisliga B Staffel 1 Steinfurt<span class="icon-link-arrow-circle"></span></a>
+						<div class="date-wrapper">
+							<div class="date"><span data-obfuscation="d21r131h">&#xE6CF;&#xE6F6;&#xE6F0;&#xE6F0;&#xE688;&#xE6D8;&#xE673;&#xE691;&#x0020;&#xE70D;&#xE672;&#xE68E;&#xE705;&#xE672;&#xE68E;&#xE6BE;&#xE672;&#xE705;&#xE6B0;<span data-obfuscation="d21r131h" class="hidden-small inline">&#xE691;</span> </span><span data-obfuscation="d21r131h">&#xE705;&#xE70D;&#xE685;&#xE672;&#xE672;&#x0020;&#xE69D;&#xE6BB;&#xE656;</span></div>
+							<div class="previous">
+								<a rel="prev" href="http://www.fussball.de/spiel/sv-mesum-ii-sv-gruen-weiss-rheine-ii/-/spiel/01SNJOBLS4000000VS54898DVV2J9QR4"><span class="icon-angle-light-left"></span><span class="icon-angle-ultralight-left"></span></a>
+							</div>
+							<div class="next">
+								<a rel="next" href="http://www.fussball.de/spiel/spvg-emsdetten-05-ii-fc-eintracht-rheine-iii/-/spiel/01SNJOBL3K000000VS54898DVV2J9QR4"><span class="icon-angle-light-right"></span><span class="icon-angle-ultralight-right"></span></a>
+							</div>
+						</div>
+						<a target="_blank" class="location" href="https://www.google.de/maps?q=Sch%C3%BCrweg+3%2C+48432+RHEINE">Rasenplatz, Sportpark Altenrheine II, Schürweg 3, 48432 RHEINE<span class="icon-location"></span></a>
+					</div>
+					<div class="stage-body">
+						<div class="team-home">
+							<div class="team-logo">
+								<a href="http://www.fussball.de/verein/sc-altenrheine-westfalen/-/id/00ES8GN8TC00000DVV0AG08LVUPGND5I">
+									<div class="hexagon white">
+										<span class="icon-hexagon"></span>
+										<div class="inner">
+											<div class="valign-wrapper">
+												<div class="valign-inner">
+													<img src="//www.fussball.de/export.media/-/action/getLogo/format/0/id/00ES8GN8TC00000DVV0AG08LVUPGND5I/verband/0123456789ABCDEF0123456700004130">
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="team-name">
+								<a href="http://www.fussball.de/mannschaft/sc-altenrheine-ii-sc-altenrheine-westfalen/-/saison/1617/team-id/011MI9NTE8000000VTVG0001VTR8C1K7">SC Altenrheine II</a>
+							</div>
+						</div>
+						<div class="wrapper">
+							<div class="result"><span class="end-result"><span data-obfuscation="qcjvg10s" class="score-left">&#xE691;</span><span class="colon">:</span><span data-obfuscation="qcjvg10s" class="score-right">&#xE69E;</span><sub>&nbsp;<span class="icon-verified"></span></sub></span><span class="half-result">[2 : 2]</span></div>
+							<div class="team-away">
+								<div class="team-logo">
+									<a href="http://www.fussball.de/verein/ski-club-nord-west-rheine-westfalen/-/id/00ES8GN8TC00001DVV0AG08LVUPGND5I">
+										<div class="hexagon white">
+											<span class="icon-hexagon"></span>
+											<div class="inner">
+												<div class="valign-wrapper">
+													<div class="valign-inner">
+														<img src="//www.fussball.de/export.media/-/action/getLogo/format/0/id/00ES8GN8TC00001DVV0AG08LVUPGND5I/verband/0123456789ABCDEF0123456700004130">
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="team-name">
+									<a href="http://www.fussball.de/mannschaft/skiclub-nordwest-rheine-ski-club-nord-west-rheine-westfalen/-/saison/1617/team-id/011MICFJLG000000VTVG0001VTR8C1K7">Skiclub Nordwest Rheine</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="stage-footer">
+						<div data-live-ticker-clock></div>
+						<div class="button-group"></div>
+					</div>
+				</div>
+				<ul class="stage-meta-left">
+					<li>
+						<span data-obfuscation="8vkyknrm">Schiedsrichter: &#xE68D;&#xE69B;&#xE76D;&#xEAD0;&#x0020;&#xE8D9;&#xE76D;&#xE69B;&#xE849;&#xE69B;&#xE662;&#xE6A8;&#xE69B;&#xE662;&#xE80D;&#xE7A3;&#xE82E;&#xEA9B;&#xE88D;</span>
+						<div>Assistenten:<span data-obfuscation="8vkyknrm" class="profile"> </span><span data-obfuscation="8vkyknrm" class="profile"> </span></div>
+						<span data-obfuscation="8vkyknrm">Zuschauer: </span>
+					</li>
+				</ul>
+				<ul class="stage-meta-right">
+					<li><span data-obfuscation="8vkyknrm">Staffel-ID: 210971</span><span data-obfuscation="8vkyknrm">Spiel: 210971091 / 12. Spieltag</span></li>
+					<li>
+						<a href="http://www.fussball.de/verband/westfalen/-/verband/0123456789ABCDEF0123456700004130">
+							<img src="//www.fussball.de/export.media/-/action/getLogo/format/1/id/0123456789ABCDEF0123456700004130">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section id="course-quick-view">
+	<div class="match-course-quick-view">
+		<div class="container">
+			<div class="wrapper">
+				<div class="blur"></div>
+				<div class="info-home">
+					<div class="club-name">SC Altenrheine II</div>
+					<div class="goals">(27') <span data-obfuscation="z8gmnuq0" class="hidden-small inline">&#xE875;&#xEA4D;&#xE67F;&#xEA5D;&#xE974;</span><span data-obfuscation="z8gmnuq0">&#x0020;&#xE923;&#xEA4D;&#xEA4D;&#xE82B;&#xE68B;&#xE876;&#xE974;&#xE974;</span> | (29', 90' +4) <span data-obfuscation="z8gmnuq0" class="hidden-small inline">&#xEAAF;&#xEA97;&#xEA4D;&#xEAFD;&#xE876;&#xE974;&#xE8B6;&#xEA4D;&#xE82B;</span><span data-obfuscation="z8gmnuq0">&#x0020;&#xEAAD;&#xE7B2;&#xE719;&#xE974;</span> | (65') <span data-obfuscation="z8gmnuq0" class="hidden-small inline">&#xEAAD;&#xEB27;&#xE6D4;&#xE876;</span><span data-obfuscation="z8gmnuq0">&#x0020;&#xE875;&#xEA4D;&#xE82B;&#xE749;&#xE8E7;&#xEA5D;&#xE974;&#xEAA0;</span></div>
+				</div>
+				<div class="ranges-wrapper">
+					<div class="ranges-scroller">
+						<div id="rangescontainer" data-match-events="{'first-half': {'start': 0,'end': 45,'events': [{'time':'14','type':'yellow-card','team':'away'},{'time':'17','type':'yellow-card','team':'away'},{'time':'21','type':'yellow-card','team':'home'},{'time':'21','type':'goal','team':'away'},{'time':'27','type':'goal','team':'home'},{'time':'29','type':'goal','team':'home'},{'time':'40','type':'goal','team':'away'}]},'second-half': {'start': 45,'end': 90,'events': [{'time':'46','type':'substitute','team':'home'},{'time':'48','type':'substitute','team':'home'},{'time':'48','type':'substitute','team':'away'},{'time':'49','type':'substitute','team':'away'},{'time':'58','type':'goal','team':'away'},{'time':'62','type':'yellow-card','team':'home'},{'time':'63','type':'goal','team':'away'},{'time':'65','type':'goal','team':'home'},{'time':'74','type':'substitute','team':'away'},{'time':'76','type':'substitute','team':'home'},{'time':'85','type':'yellow-card','team':'home'},{'time':'89','type':'yellow-card','team':'away'},{'time':'90','type':'goal','team':'home'},{'time':'90','type':'yellow-card','team':'away'},{'time':'90','type':'yellow-card','team':'away'}]}}" class="ranges" data-match-quick-view>
+							<div>
+								<div class="result"><span class="home-icon icon-soccer-ball"></span><span class="away-icon icon-soccer-ball"></span><span data-obfuscation="ztef8v5l" class="home-goals">&#xE655;</span><span data-obfuscation="ztef8v5l" class="away-goals">&#xE6B0;</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="blur"></div>
+				</div>
+				<div class="info-away">
+					<div class="goals">
+						(21', 40', 58')
+						<span data-obfuscation="z8gmnuq0" class="hidden-small inline">&#xE7A5;&#xE876;&#xE82B;&#xE6D4;&#xEA4D;&#xEA97;</span>
+						<span data-obfuscation="z8gmnuq0">&#x0020;&#xE788;&#xEB07;&#xE8E7;&#xE8E7;&#xEA4D;&#xEB0C;&#xEA4D;&#xE82B;&#xE8E7;</span>
+						 |
+						(63')
+						<span data-obfuscation="z8gmnuq0" class="hidden-small inline">&#xEA49;&#xE876;&#xE974;&#xE974;&#xEA5D;&#xE6D4;&#xE854;</span>
+						<span data-obfuscation="z8gmnuq0">&#x0020;&#xEAF0;&#xE719;&#xE876;&#xEA97;&#xEA4D;</span>
+						<div class="club-name">SKICLUB NORDWEST RHEINE</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section data-in-page-nav-section="teamNews" id="teamNews" data-title="Spielberichte">
+	<div class="ticker-container match">
+		<h2><span>Spielberichte & News</span></h2>
+		<div class="info">
+			<p>Es wurden leider noch keine Spielberichte angelegt. Unterstütze Deinen Verein, Deine Mannschaft und ihre Fans, indem Du den ersten Spielbericht anlegst.</p>
+			<div class="profile-edit hidden-small" data-user-dependency="{'FBDE_USER_ID':'exist'}">
+				<a href="https://www.fussball.de/ugc.spielbericht.bearbeiten/-/object-ref/01SNJOBM08000000VS54898DVV2J9QR4/object-type/spiel"><span class="button-small button button-primary">Spielbericht anlegen</span></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section id="mediastream" data-in-page-nav-section data-title="Mediastream">
+    <div class="wrapper" data-mediastream="http://service.media.fussball.de/api/mediastream/ajax/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4"
+         data-mediastream-id="xxxxxx"
+         data-streamitemmeta="http://service.media.fussball.de/api/global/ajax_view.html"
+         data-offsetleft='{"desktop":0, "tablet":0, "mobile":0}'
+         data-user-dependency="{'FBDE_USER_ID':'exist'}"
+         data-tv-video-quality-selector-binding="quality" > <!-- [patch:3746] component:quality -->
+
+        <div class="loader" data-ng-class="{loaded:initalized}" data-lazyload></div>
+
+        <div class="stream">
+            <div class="info-box counter">
+                <span class="primary" data-ng-bind="streamitem.maxIndex">0</span>
+                <div class="secondary">Bilder / Videos</div>
+            </div>
+
+            <div class="background-wrapper">
+                <ul data-itemwidth="180">
+                    <li data-ng-repeat="item in streamItems | orderBy:'item.id'" data-mediastreamitem="{{item.id}}" data-ng-class="{active:active, infront:infront, adjusting:adjusting, video:item.type=='video'}">
+                        <a data-ng-click="openBigView()">
+                            <img data-ng-src="{{item.thumb}}" data-imageload/>
+                        </a>
+                    </li>
+
+                    <li class="no-uploads" data-mediastreamitemfallback>
+                        <span>Zeig&#x27;s uns! Lade dein Video oder Foto hoch!</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info-box upload" data-ng-click="showUpload()">
+                <span class="primary">+</span>
+                <div class="secondary">Jetzt Hochladen</div>
+            </div>
+        </div>
+
+        <div class="sub-view" data-ng-class="{show:subView.open, item: subView.current == 'item', upload: subView.current == 'upload'}">
+            <div class="sub-view-wrapper">
+
+                <span data-ng-click="closeSubView()" class="icon-close"></span>
+
+                <div class="item-view" data-ng-class="{show:subView.current == 'item'}">
+                    <div class="bigimage">
+                        <div class="control-wrapper">
+
+                            <p class="itemindex">{{streamitem.content.streamDataIndex+1}} / {{streamitem.maxIndex}}</p>
+
+                            <div class="bigimage-image" data-ng-class="{show:streamitem.content.type == 'image'}">
+                                <img data-ng-src="{{streamitem.image}}" alt="galerie" data-imageload='{"setSize":true}'>
+                            </div>
+
+                            <div class="bigimage-video" data-ng-class="{show:streamitem.content.type == 'video'}">
+								<!-- components::video_player -->
+<div class="video-player"  data-video data-swf="//www.fussball.de/static/por/6.20.95.2439/swf/videoplayer.swf">
+	<video autobuffer controls data-ng-hide="video.flashFallback()">
+
+	</video>
+
+	<div class="flash-fallback" data-ng-show="video.flashFallback()">
+
+	</div>
+
+	<a href="" class="flashPlayPause" data-ng-show="video.flashFallback()" data-ng-click="playPause()"></a>
+
+</div>
+<!-- /components::video_player -->
+
+							</div>
+
+                            <div class="previous" data-ng-class="{available:streamitem.enablePrev}">
+								              <a href="javascript://" rel="prev" data-ng-click="prevStreamitem()">
+                                	<span class="icon-angle-ultralight-left"></span>
+                           		</a>
+                            </div>
+                            <div class="next" data-ng-class="{available:streamitem.enableNext}">
+                            	<a href="javascript://" rel="next" data-ng-click="nextStreamitem()">
+                                	<span class="icon-angle-ultralight-right"></span>
+                                </a>
+                            </div>
+
+                            <!-- snippet::video_quality_horizontal -->
+<!-- .hide-qualities - die Klasse wird zur Steuerung der Sichtbarkeit in Media-Stream verwendet! -->
+<div class="form-kit" ng-class="{ 'hide-qualities' : !showQualities }" >
+  <div class="form-element quality-form-element"
+       data-ng-controller="TvVideoQualityController"
+       data-radio-group="quality">
+
+      <label class="main quality-level quality-title" >Qualität</label>
+      <div class="quality-level quality-entry"
+           data-ng-repeat="qualityItem in qualities" >
+          <label class="radio small" >
+              <span class="radio-button"></span>
+              <input type="radio"
+                     name="quality"
+                     value="{{ qualityItem.value }}" />
+              <span class="label">{{ qualityItem.title }}</span>
+          </label>
+      </div>
+
+  </div>
+</div>
+<!-- /snippet::video_quality_horizontal -->
+
+
+                            <div class="mediastream-content">
+                                <span class="meta" data-ng-if="streamitem.content.user">
+									Hochgeladen am {{streamitem.content.date}} um {{streamitem.content.time}} Uhr von <a data-ng-href="{{streamitem.content.userurl}}">{{streamitem.content.user}}<span class="icon-link-arrow"></span></a>
+								</span>
+								<span class="meta" data-ng-if="!streamitem.content.user">
+									Hochgeladen am {{streamitem.content.date}} um {{streamitem.content.time}} Uhr
+								</span>
+                                <h3>{{streamitem.content.title}}</h3>
+                                <p>
+                                    {{streamitem.content.description}}
+                                </p>
+                                <div class="detailed-informations" data-ng-show="streamitem.content.loaded">
+                                    <div class="numberOfViews">
+                                        <span data-ng-bind="streamitem.content.views">0</span>
+                                        <span class="text" data-ng-pluralize count="streamitem.content.views" when="{'1': 'Aufruf', 'other': 'Aufrufe'}"></span>
+                                    </div>
+                                    <div class="seperator">|</div>
+                                    <div class="number-of-comments">
+                                        <span data-ng-bind="streamitem.content.comments">0</span>
+                                        <span class="text" data-ng-pluralize count="streamitem.content.comments" when="{'1': 'Kommentar', 'other': 'Kommentare'}"></span>
+                                    </div>
+                                    <div class="seperator">|</div>
+                                    <div class="rating">
+                                        <div class="stars">
+                                            <span class="star" data-ng-class="{active:getStarRating(1)}"></span>
+                                            <span class="star" data-ng-class="{active:getStarRating(2)}"></span>
+                                            <span class="star" data-ng-class="{active:getStarRating(3)}"></span>
+                                            <span class="star" data-ng-class="{active:getStarRating(4)}"></span>
+                                            <span class="star" data-ng-class="{active:getStarRating(5)}"></span>
+                                        </div>
+                                        <span data-ng-bind="streamitem.content.ratings">0</span>
+                                        <span data-ng-pluralize count="streamitem.content.ratings" when="{'1': 'Bewertung', 'other': 'Bewertungen'}"></span>
+                                    </div>
+                                </div>
+                                <a data-ng-href="{{streamitem.content.targetName}}" class="commentAndShare">Kommentieren, bewerten und melden<span class="icon-link-arrow"></span></a>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+                <div class="upload-view upload-component" data-ng-class="{show:subView.current == 'upload'}" data-fileupload="http://service.media.fussball.de/api/upload/ajax"  data-fileupload-check="true" data-postdef='{"key1":"value1", "key2":"value2", "key3":"value3"}'>
+                        <!-- components::upload -->
+<form id="fileupload" action="#" method="POST" enctype="multipart/form-data">
+    <div class="header-intro">
+        <div class="before-upload">
+            <h3 class="headline">
+                Zeig’s uns! Lade deine Bilder und Videos hoch!
+            </h3>
+
+            <p class="upload-informations">
+                Mögliche Bildformate sind JPG, PNG und GIF. Die Dateigröße sollte 2 MB nicht überschreiten. Wir unterstützen folgende Videoformate MPG, MP4, AVI, MOV und WMV. Dein Video sollte nicht größer als 100 MB sein.
+				<br>
+				Bitte beachte nach dem Veröffentlichen Deiner Bilder und Videos, dass die Konvertierung der Dateien etwas Zeit beansprucht, sodass Du die Bilder bzw. Videos nicht sofort siehst. Habe bitte etwas Geduld.
+            </p>
+
+            <div class="form-kit">
+                <div class="form-element buttons step">
+                    <span class="button button-primary add-files" data-ng-class="{disabled: disabled}">
+                        <span class="text"><span>+</span>Dateien hinzufügen</span>
+                        <input data-ng-file-select type="file" multiple>
+                    </span>
+                    <button class="button button-primary" type="button" data-ng-click="uploader.uploadAll()" data-ng-disabled="!uploader.getNotUploadedItems().length">
+                        Upload starten
+                    </button>
+                    <button class="button button-primary" type="button" data-ng-click="releaseAllFiles(uploader.queue)" data-ng-show="allFilesUploaded(uploader.queue)" data-ng-disabled="!allFilesReadyTorelease(uploader.queue)">
+                        Alle Veroeffentlichen
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div class="files">
+    <ul>
+        <li data-ng-repeat="item in uploader.queue" data-meta data-url-release="https://service.media.fussball.de/api/upload/release/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" data-url-update="https://service.media.fussball.de/api/upload/update/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" data-url-delete="https://service.media.fussball.de/api/upload/delete">
+
+            <div class="item-wrapper">
+                <div class="file-thumbnail-wrapper">
+                    <div class="file-thumbnail">
+                        <div data-ng-show="uploader.isHTML5 && controller.filetype(item.file) == 'image'" data-thumb="{ file: item.file, height: 70 }"></div>
+                        <img data-ng-show="!uploader.isHTML5 && controller.filetype(item.file) == 'image'" src="//www.fussball.de/static/por/6.20.95.2439/images/fileupload/type_image.png" alt="">
+                        <img data-ng-show="controller.filetype(item.file) == 'video'" src="//www.fussball.de/static/por/6.20.95.2439/images/fileupload/type_video.png" alt="">
+                        <img data-ng-show="controller.filetype(item.file) == 'default'" src="//www.fussball.de/static/por/6.20.95.2439/images/fileupload/type_default.png" alt="">
+                    </div>
+                </div>
+
+                <div class="file-meta" data-ng-class="{'video':item.isUploaded && item.isSuccess && controller.filetype(item.file) == 'video'}">
+                    <span class="file-name">
+                        {{item.file.name}}
+                    </span>
+                    <span class="file-size" data-ng-show="uploader.isHTML5">
+                        {{ item.file.size/1024/1024|number:2 }} Mb
+                    </span>
+                    <span class="file-error" data-ng-show="item.error.show">
+                        {{item.error.plainText ? item.error.message : (item.error.message | translate)}}
+                    </span>
+                    <div class="span file-convert" data-ng-show="item.isUploaded && item.isSuccess && controller.filetype(item.file) == 'video'">
+                        Dein hochgeladenes Video wird noch konvertiert, was einige Zeit dauern kann. Du kannst dein Video später unter &quot;Meine Bilder und Videos&quot; freigeben und eine Beschreibung hinzufügen.
+                    </div>
+                </div>
+
+                <div class="file-progress" data-ng-show="item.isUploading && uploader.isHTML5">
+                    <div class="file-progressbar" data-ng-style="{ 'width': item.progress + '%' }"></div>
+                </div>
+
+                <div class="file-action">
+                    <div class="form-kit">
+                        <div class="form-element buttons step">
+                            <button class="button file-button-cancel" type="button" data-ng-click="item.cancel()" data-ng-show="item.isUploading">
+                                <span class="icon-close"></span>
+                                Abbrechen
+                            </button>
+                            <button class="button file-button-delete" type="button" data-ng-click="item.remove()" data-ng-show="!item.isUploading && !item.isSuccess">
+
+                                Löschen
+                            </button>
+                            <button class="button file-button-edit" type="button" data-ng-click="item.tab = !item.tab"  data-ng-show="item.isUploaded && item.isSuccess">
+                                <span class="icon-edit"></span>
+                                Bearbeiten
+                            </button>
+                            <button class="button button-primary file-button-release" data-ng-click="releaseItem(item)" type="button" data-ng-show="item.isUploaded && item.isSuccess" data-ng-disabled="!checkMetaTitle()">
+                                Veröffentlichen
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab" data-ng-show="item.tab">
+                <form ng-submit>
+                    <div class="form-element text">
+                        <label class="main">Titel
+                            <input type="text" data-ng-model="metaTitle" name="title" maxlength="100">
+                            <p data-remainingchars="nomodel" data-ng-cloak class="ng-cloak">{{remainingchars}} Zeichen möglich</p>
+                        </label>
+                    </div>
+
+                    <div class="form-element textarea">
+                        <label class="main">Beschreibung
+                            <textarea name="message" data-ng-model="metaMessage" maxlength="1000" cols="30" rows="10"></textarea>
+                            <p data-remainingchars="nomodel" data-ng-cloak class="ng-cloak">{{remainingchars}} Zeichen möglich</p>
+                        </label>
+                    </div>
+
+                    <div class="form-element buttons step">
+                        <a href="javascript://" data-ng-click="abortEdit()">Abbrechen<span class="icon-link-arrow"></span></a>
+                        <a href="javascript://" data-ng-click="updateItem(item)">Speichern<span class="icon-link-arrow"></span></a>
+                        <a href="javascript://" data-ng-click="deleteItem(item)">Löschen<span class="icon-link-arrow"></span></a>
+                        <a href="javascript://" data-ng-click="overwriteSiblings(item)">Titel/Text für alle Dateien übernehmen<span class="icon-link-arrow"></span></a>
+                    </div>
+                </form>
+            </div>
+
+        </li>
+    </ul>
+</div>
+<!-- /components::upload -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="wm-section">
+	<div class="wm-container" data-wm-type="super">
+		<div class="wm-container-inner">
+			<div data-ad-local-link="http://www.fussball.de/newsdetail/push-ticker-und-mehr-das-bietet-unsere-app/-/article-id/127931#!/section/stage" data-ad-local-link-target="_top" data-ad-sizes="[[320,50], [468,60], [728,90]]" class="wm-iframe" data-ad-breakpoints="phone,tablet,desktop" data-ad="//www.fussball.de/ad.iframe?sid=2895180&wp_id=2895180&prf[Plz]=48432&prf[Mannschaftsart]=1&prf[Spieltyp]=1&prf[Spielklasse]=100&prf[Verband]=21" data-ad-local-image="{'desktop': 'http://www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/components/banner/placeholder-sb.png', 'tablet': 'http://www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/components/banner/placeholder-fsb.png', 'phone':'http://www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/components/banner/placeholder-mb.png'}">
+				<p>Anzeige</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section data-in-page-nav-section="course" id="course" data-title="Spielverlauf">
+	<div class="kick-off">
+		<div class="container">
+			<div class="home">
+				<a href="http://www.fussball.de/mannschaft/sc-altenrheine-ii-sc-altenrheine-westfalen/-/saison/1617/team-id/011MI9NTE8000000VTVG0001VTR8C1K7">
+					<div class="club">
+						<div class="club-logo table-image">
+							<div class="hexagon white">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">
+											<img title="SC Altenrheine II" alt="SC Altenrheine II" src="//www.fussball.de/export.media/-/action/getLogo/format/5/id/00ES8GN8TC00000DVV0AG08LVUPGND5I/verband/0123456789ABCDEF0123456700004130">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="club-name">SC Altenrheine II</div>
+					</div>
+				</a>
+			</div>
+			<div class="headline">
+				<h3>Anpfiff</h3>
+				<span>13:00Uhr</span>
+			</div>
+			<div class="away">
+				<a href="http://www.fussball.de/mannschaft/skiclub-nordwest-rheine-ski-club-nord-west-rheine-westfalen/-/saison/1617/team-id/011MICFJLG000000VTVG0001VTR8C1K7">
+					<div class="club">
+						<div class="club-name">SKICLUB NORDWEST RHEINE</div>
+						<div class="club-logo table-image">
+							<div class="hexagon white">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">
+											<img title="SKICLUB NORDWEST RHEINE" alt="SKICLUB NORDWEST RHEINE" src="//www.fussball.de/export.media/-/action/getLogo/format/5/id/00ES8GN8TC00001DVV0AG08LVUPGND5I/verband/0123456789ABCDEF0123456700004130">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div data-ng-controller="AjaxController" data-type="ajax" class="tab-group" data-toggle="li a" data-tab-group>
+		<a class="prev"><span class="icon-angle-left"></span></a>
+		<ul>
+			<li class="on">
+				<a data-ajax-type="html" data-ajax-target="#match_course_body" data-ajax-resource="http://www.fussball.de/ajax.match.course/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" data-tracking="{'href':'http://www.fussball.de/ajax.match.course/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4'}" href="http://www.fussball.de/ajax.match.course/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" data-ajax data-match-course-tab>Spielverlauf</a>
+			</li>
+			<li>
+				<a data-ajax-type="html" data-ajax-target="#match_course_body" data-ajax-resource="http://www.fussball.de/ajax.match.lineup/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" data-tracking="{'href':'http://www.fussball.de/ajax.match.lineup/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4'}" href="http://www.fussball.de/ajax.match.lineup/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" data-ajax data-match-course-tab>Aufstellung</a>
+			</li>
+		</ul>
+		<a class="next"><span class="icon-angle-right"></span></a>
+	</div>
+	<div id="match_course_body" class="match-course">
+		<div class="first-half ingame">
+			<div class="events">
+				<div class="container">
+					<div class="row-event event-right">
+						<div class="column-time">
+							<div class="hexagon black">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">14&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<i class="icon-card yellow-card"></i>
+								</div>
+							</div>
+						</div>
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">Gelbe Karte</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-right">
+						<div class="column-time">
+							<div class="hexagon black">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">17&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<i class="icon-card yellow-card"></i>
+								</div>
+							</div>
+						</div>
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">Gelbe Karte</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-left">
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">Gelbe Karte</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<i class="icon-card yellow-card"></i>
+								</div>
+							</div>
+						</div>
+						<div class="column-time">
+							<div class="hexagon black">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">21&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-right">
+						<div class="column-time">
+							<div class="hexagon green">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">21&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<div class="even"><span data-obfuscation="tlracfmt" class="score-left">&#xE69C;</span><span class="colon">:</span><span data-obfuscation="tlracfmt" class="score-right">&#xE6B5;</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<a href="http://www.fussball.de/spielerprofil/-/player-id/00MC9JFBM8000000VV0AG85VVSMHI0R7">
+										<span class="player-image table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getPlayerImage/format/13/image-id/NPI_1234567890123456789012345678"></span></span>
+										<div class="player-name"><span data-obfuscation="h7reo49i">&#xE6F0;&#xE65C;&#xE6C9;&#xE6E6;&#xE6B0;&#xE664;</span><span data-obfuscation="h7reo49i">&#xE6C9;&#xE687;&#xE6BA;&#xE6BA;&#xE6B0;&#xE6B2;&#xE6B0;&#xE6C9;&#xE6BA;&#x0020;&#xE6C8;&#xE6B5;&#xE6DC;&#xE6C6;</span></div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-left">
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<a href="http://www.fussball.de/spielerprofil/-/player-id/00MC6R5S68000000VV0AG85VVSMHI0R7">
+										<span class="player-image table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getPlayerImage/format/13/image-id/NPI_1234567890123456789012345678"></span></span>
+										<div class="player-name"><span data-obfuscation="h7reo49i">&#xE69B;&#xE6B0;&#xE68A;&#xE653;&#xE6A4;</span><span data-obfuscation="h7reo49i">&#xE656;&#xE6B0;&#xE6B0;&#xE6C9;&#xE6F0;&#xE65C;&#xE6A4;&#xE6A4;&#x0020;&#xE6C8;&#xE6DC;&#xE70E;&#xE6C6;</span></div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<div class="even"><span data-obfuscation="tlracfmt" class="score-left">&#xE6AD;</span><span class="colon">:</span><span data-obfuscation="tlracfmt" class="score-right">&#xE66C;</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="column-time">
+							<div class="hexagon green">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">27&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-left">
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<a href="http://www.fussball.de/spielerprofil/-/player-id/00MC6K111O000000VV0AG85VVSMHI0R7">
+										<span class="player-image table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getPlayerImage/format/13/image-id/NPI_1234567890123456789012345678"></span></span>
+										<div class="player-name"><span data-obfuscation="h7reo49i">&#xE65C;&#xE664;&#xE6B0;&#xE70B;&#xE65C;&#xE6A4;&#xE6A3;&#xE6B0;&#xE6C9;</span><span data-obfuscation="h7reo49i">&#xE664;&#xE6DB;&#xE66F;&#xE6A4;&#x0020;&#xE6C8;&#xE6C4;&#xE6C6;</span></div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<div class="even"><span data-obfuscation="tlracfmt" class="score-left">&#xE69A;</span><span class="colon">:</span><span data-obfuscation="tlracfmt" class="score-right">&#xE68F;</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="column-time">
+							<div class="hexagon green">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">29&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-right">
+						<div class="column-time">
+							<div class="hexagon green">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">40&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<div class="even"><span data-obfuscation="tlracfmt" class="score-left">&#xE681;</span><span class="colon">:</span><span data-obfuscation="tlracfmt" class="score-right">&#xE6A2;</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<a href="http://www.fussball.de/spielerprofil/-/player-id/00MC9JFBM8000000VV0AG85VVSMHI0R7">
+										<span class="player-image table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getPlayerImage/format/13/image-id/NPI_1234567890123456789012345678"></span></span>
+										<div class="player-name"><span data-obfuscation="h7reo49i">&#xE6F0;&#xE65C;&#xE6C9;&#xE6E6;&#xE6B0;&#xE664;</span><span data-obfuscation="h7reo49i">&#xE6C9;&#xE687;&#xE6BA;&#xE6BA;&#xE6B0;&#xE6B2;&#xE6B0;&#xE6C9;&#xE6BA;&#x0020;&#xE6C8;&#xE6B5;&#xE6DC;&#xE6C6;</span></div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row-time">45'</div>
+			<div class="arrow"></div>
+		</div>
+		<div class="second-half ingame">
+			<div class="events">
+				<div class="container">
+					<div class="row-event event-left">
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<div>Auswechslung</div>
+									<div class="substitute">
+										<a href="http://www.fussball.de/spielerprofil/-/player-id/00N625ENQ8000000VTVG0001VVR502K5">
+											<div class="player-name"><span data-obfuscation="p6kvwjw8">&#xE959;&#xE7FF;&#xE9A3;&#xE90D;&#xE9A3;&#xE775;&#xE775;&#x0020;&#xE78C;&#xE90D;&#xE6C3;&#xE836;&#xE9A3;&#xE6AE;&#xE836;&#x0020;&#xEB66;&#xEB0C;&#xEA07;&#xE824;</span></div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<i class="icon-substitute"></i>
+								</div>
+							</div>
+						</div>
+						<div class="column-time">
+							<div class="hexagon black">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">46&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-left">
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<div>Auswechslung</div>
+									<div class="substitute">
+										<a href="http://www.fussball.de/spielerprofil/-/player-id/01I11M8Q18000000VV0AG811VSB122Q5">
+											<div class="player-name"><span data-obfuscation="p6kvwjw8">&#xEB48;&#xEA0D;&#xE95C;&#xE713;&#xEB10;&#xE6C5;&#xEA0D;&#x0020;&#xEB3E;&#xE6C3;&#xE95C;&#xE78F;&#xE9A3;&#xE713;&#xEB10;&#xE9C8;&#xEA0D;&#x0020;&#xEB66;&#xEB0C;&#xE93E;&#xE824;</span></div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<i class="icon-substitute"></i>
+								</div>
+							</div>
+						</div>
+						<div class="column-time">
+							<div class="hexagon black">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">48&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-right">
+						<div class="column-time">
+							<div class="hexagon black">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">48&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<i class="icon-substitute"></i>
+								</div>
+							</div>
+						</div>
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<div>Auswechslung</div>
+									<div class="substitute">
+										<a href="http://www.fussball.de/spielerprofil/-/player-id/00MC6GQFSC000000VV0AG85VVSMHI0R7">
+											<div class="player-name"><span data-obfuscation="p6kvwjw8">&#xE994;&#xE6C3;&#xEB10;&#xEB10;&#xE9A3;&#xE82F;&#xE92E;&#x0020;&#xEA1A;&#xE7FF;&#xE6C3;&#xE90D;&#xE713;&#x0020;&#xEB66;&#xEB0C;&#xEA43;&#xE824;</span></div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-right">
+						<div class="column-time">
+							<div class="hexagon black">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">49&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<i class="icon-substitute"></i>
+								</div>
+							</div>
+						</div>
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<div>Auswechslung</div>
+									<div class="substitute">
+										<a href="http://www.fussball.de/spielerprofil/-/player-id/00MC70A75G000000VV0AG85VVSMHI0R7">
+											<div class="player-name"><span data-obfuscation="p6kvwjw8">&#xE7C4;&#xE713;&#xE90D;&#xE9A3;&#xE883;&#x0020;&#xE926;&#xEA0D;&#xE84A;&#x0020;&#xEB66;&#xE93E;&#xEA07;&#xE824;</span></div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-right">
+						<div class="column-time">
+							<div class="hexagon green">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">58&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<div class="even"><span data-obfuscation="tlracfmt" class="score-left">&#xE665;</span><span class="colon">:</span><span data-obfuscation="tlracfmt" class="score-right">&#xE6A0;</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<a href="http://www.fussball.de/spielerprofil/-/player-id/00MC9JFBM8000000VV0AG85VVSMHI0R7">
+										<span class="player-image table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getPlayerImage/format/13/image-id/NPI_1234567890123456789012345678"></span></span>
+										<div class="player-name"><span data-obfuscation="h7reo49i">&#xE6F0;&#xE65C;&#xE6C9;&#xE6E6;&#xE6B0;&#xE664;</span><span data-obfuscation="h7reo49i">&#xE6C9;&#xE687;&#xE6BA;&#xE6BA;&#xE6B0;&#xE6B2;&#xE6B0;&#xE6C9;&#xE6BA;&#x0020;&#xE6C8;&#xE6B5;&#xE6DC;&#xE6C6;</span></div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-left">
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">Gelbe Karte</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<i class="icon-card yellow-card"></i>
+								</div>
+							</div>
+						</div>
+						<div class="column-time">
+							<div class="hexagon black">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">62&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-right">
+						<div class="column-time">
+							<div class="hexagon green">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">63&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<div class="even"><span data-obfuscation="tlracfmt" class="score-left">&#xE682;</span><span class="colon">:</span><span data-obfuscation="tlracfmt" class="score-right">&#xE6B7;</span><span class="event-info">Strafstoßtor</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<a href="http://www.fussball.de/spielerprofil/-/player-id/00MC6GQFSC000000VV0AG85VVSMHI0R7">
+										<span class="player-image table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getPlayerImage/format/13/image-id/NPI_1234567890123456789012345678"></span></span>
+										<div class="player-name"><span data-obfuscation="h7reo49i">&#xE652;&#xE65C;&#xE6A4;&#xE6A4;&#xE653;&#xE6E6;&#xE69B;</span><span data-obfuscation="h7reo49i">&#xE6BA;&#xE66F;&#xE65C;&#xE664;&#xE6B0;&#x0020;&#xE6C8;&#xE6DC;&#xE68F;&#xE6C6;</span></div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-left">
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<a href="http://www.fussball.de/spielerprofil/-/player-id/00MC6QQJ3O000000VV0AG85VVSMHI0R7">
+										<span class="player-image table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getPlayerImage/format/13/image-id/NPI_1234567890123456789012345678"></span></span>
+										<div class="player-name"><span data-obfuscation="h7reo49i">&#xE664;&#xE6ED;&#xE6E6;&#xE65C;</span><span data-obfuscation="h7reo49i">&#xE69B;&#xE6B0;&#xE6C9;&#xE697;&#xE6BA;&#xE653;&#xE6A4;&#xE705;&#x0020;&#xE6C8;&#xE6DC;&#xE6DC;&#xE6C6;</span></div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<div class="even"><span data-obfuscation="tlracfmt" class="score-left">&#xE65E;</span><span class="colon">:</span><span data-obfuscation="tlracfmt" class="score-right">&#xE6B7;</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="column-time">
+							<div class="hexagon green">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">65&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-right">
+						<div class="column-time">
+							<div class="hexagon black">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">74&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<i class="icon-substitute"></i>
+								</div>
+							</div>
+						</div>
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<div>Auswechslung</div>
+									<div class="substitute">
+										<a href="http://www.fussball.de/spielerprofil/-/userid/01LH5TTFCK000000VS541L4QVVNVDP5M">
+											<div class="player-name"><span data-obfuscation="p6kvwjw8">&#xEAC5;&#xE7FF;&#xE95C;&#xE9A3;&#xE836;&#xE9C8;&#xE9A3;&#xE6C3;&#xEB10;&#x0020;&#xE8A5;&#xEA76;&#xE90D;&#xE90D;&#xE713;&#xE95C;&#x0020;&#xEB66;&#xEA43;&#xE824;</span></div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-left">
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<div>Auswechslung</div>
+									<div class="substitute">
+										<a href="http://www.fussball.de/spielerprofil/-/player-id/00MC6MOMK4000000VV0AG85VVSMHI0R7">
+											<div class="player-name"><span data-obfuscation="p6kvwjw8">&#xEA1A;&#xE9A3;&#xE90D;&#xE90D;&#x0020;&#xE925;&#xE713;&#xE9A3;&#xE829;&#xE829;&#xE713;&#xE95C;&#xE9C8;&#x0020;&#xEB66;&#xEB0C;&#xEA67;&#xE824;</span></div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<i class="icon-substitute"></i>
+								</div>
+							</div>
+						</div>
+						<div class="column-time">
+							<div class="hexagon black">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">76&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-left">
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">Gelbe Karte</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<i class="icon-card yellow-card"></i>
+								</div>
+							</div>
+						</div>
+						<div class="column-time">
+							<div class="hexagon black">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">85&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-right">
+						<div class="column-time">
+							<div class="hexagon black">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">89&rsquo;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<i class="icon-card yellow-card"></i>
+								</div>
+							</div>
+						</div>
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">Gelbe Karte</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-left">
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<a href="http://www.fussball.de/spielerprofil/-/player-id/00MC6K111O000000VV0AG85VVSMHI0R7">
+										<span class="player-image table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getPlayerImage/format/13/image-id/NPI_1234567890123456789012345678"></span></span>
+										<div class="player-name"><span data-obfuscation="h7reo49i">&#xE65C;&#xE664;&#xE6B0;&#xE70B;&#xE65C;&#xE6A4;&#xE6A3;&#xE6B0;&#xE6C9;</span><span data-obfuscation="h7reo49i">&#xE664;&#xE6DB;&#xE66F;&#xE6A4;&#x0020;&#xE6C8;&#xE6C4;&#xE6C6;</span></div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<div class="even"><span data-obfuscation="tlracfmt" class="score-left">&#xE679;</span><span class="colon">:</span><span data-obfuscation="tlracfmt" class="score-right">&#xE69E;</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="column-time">
+							<div class="hexagon green">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">
+											90&rsquo;
+											<div>+4</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-right">
+						<div class="column-time">
+							<div class="hexagon black">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">
+											90&rsquo;
+											<div>+4</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<i class="icon-card yellow-card"></i>
+								</div>
+							</div>
+						</div>
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">Gelbe Karte</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-event event-right">
+						<div class="column-time">
+							<div class="hexagon black">
+								<span class="icon-hexagon"></span>
+								<div class="inner">
+									<div class="valign-wrapper">
+										<div class="valign-inner">
+											90&rsquo;
+											<div>+4</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column-event">
+							<div class="valign-table">
+								<div class="valign-cell">
+									<i class="icon-card yellow-card"></i>
+								</div>
+							</div>
+						</div>
+						<div class="column-player">
+							<div class="valign-table">
+								<div class="valign-cell">Gelbe Karte</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row-time">90'</div>
+			<div class="arrow"></div>
+		</div>
+		<div class="final">
+			<div class="headline">
+				<h3>Abpfiff</h3>
+				<span>14:52Uhr</span>
+			</div>
+		</div>
+	</div>
+</section><div class="wm-container" data-wm-type="super">
+	<div class="wm-container-inner">
+		<div data-ad-local-link="http://www.fussball.de/newsdetail/push-ticker-und-mehr-das-bietet-unsere-app/-/article-id/127931#!/section/stage" data-ad-local-link-target="_top" data-ad-sizes="[[320,50], [468,60], [728,90]]" class="wm-iframe" data-ad-breakpoints="phone,tablet,desktop" data-ad="//www.fussball.de/ad.iframe?sid=2895459&wp_id=2895459&prf[Plz]=48432&prf[Mannschaftsart]=1&prf[Spieltyp]=1&prf[Spielklasse]=100&prf[Verband]=21" data-ad-local-image="{'desktop': 'http://www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/components/banner/placeholder-sb.png', 'tablet': 'http://www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/components/banner/placeholder-fsb.png', 'phone':'http://www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/components/banner/placeholder-mb.png'}">
+			<p>Anzeige</p>
+		</div>
+	</div>
+</div>
+<section data-in-page-nav-section="compare" id="compare" data-title="Teamvergleich">
+	<div data-type="ajax" class="tab-group" data-toggle="li a" data-tab-group>
+		<a class="prev"><span class="icon-angle-left"></span></a>
+		<ul>
+			<li class="on">
+				<a data-ajax-type="html" data-ajax-target="#match_compare_table" data-ajax-resource="http://www.fussball.de/ajax.season.stats/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" data-tracking="{'href':'http://www.fussball.de/ajax.season.stats/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4'}" href="http://www.fussball.de/ajax.season.stats/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" data-ajax>Saisonstatistik</a>
+			</li>
+			<li>
+				<a data-ajax-type="html" data-ajax-target="#match_compare_table" data-ajax-resource="http://www.fussball.de/ajax.fevercurve/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" data-tracking="{'href':'http://www.fussball.de/ajax.fevercurve/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4'}" href="http://www.fussball.de/ajax.fevercurve/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" data-ajax>Saisonverlauf</a>
+			</li>
+			<li>
+				<a data-ajax-type="html" data-ajax-target="#match_compare_table" data-ajax-resource="http://www.fussball.de/ajax.matches.stats/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" data-tracking="{'href':'http://www.fussball.de/ajax.matches.stats/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4'}" href="http://www.fussball.de/ajax.matches.stats/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" data-ajax>Spiele Gegeneinander</a>
+			</li>
+			<li>
+				<a data-ajax-type="html" data-ajax-target="#match_compare_table" data-ajax-resource="http://www.fussball.de/ajax.matches.history/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" data-tracking="{'href':'http://www.fussball.de/ajax.matches.history/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4'}" href="http://www.fussball.de/ajax.matches.history/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" data-ajax>Historie</a>
+			</li>
+		</ul>
+		<a class="next"><span class="icon-angle-right"></span></a>
+	</div>
+	<div id="match_compare_table" class="match-compare-season-stats">
+		<div class="table-container">
+			<table class="table table-striped table-full-width">
+				<thead>
+					<tr>
+						<th>
+							<a href="http://www.fussball.de/verein/sc-altenrheine-westfalen/-/id/00ES8GN8TC00000DVV0AG08LVUPGND5I">
+								<img alt="" src="//www.fussball.de/export.media/-/action/getLogo/format/5/id/00ES8GN8TC00000DVV0AG08LVUPGND5I/verband/0123456789ABCDEF0123456700004130">
+							</a>
+						</th>
+						<th>:</th>
+						<th>
+							<a href="http://www.fussball.de/verein/ski-club-nord-west-rheine-westfalen/-/id/00ES8GN8TC00001DVV0AG08LVUPGND5I">
+								<img alt="" src="//www.fussball.de/export.media/-/action/getLogo/format/5/id/00ES8GN8TC00001DVV0AG08LVUPGND5I/verband/0123456789ABCDEF0123456700004130">
+							</a>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd">
+						<td class="column-stats">6</td>
+						<td>Aktuelle Platzierung</td>
+						<td class="column-stats">3</td>
+					</tr>
+					<tr>
+						<td class="column-stats">27</td>
+						<td>Aktuelle Punktzahl</td>
+						<td class="column-stats">32</td>
+					</tr>
+					<tr class="odd">
+						<td class="column-stats">42:23</td>
+						<td>Aktuelles Torverhältnis</td>
+						<td class="column-stats">40:19</td>
+					</tr>
+					<tr>
+						<td class="column-stats"><span class="small">U | N | S | U | S</span></td>
+						<td>Aktueller Trend</td>
+						<td class="column-stats"><span class="small">S | S | S | S | N</span></td>
+					</tr>
+					<tr class="odd">
+						<td class="column-stats">
+							<a href="http://www.fussball.de/spielerprofil/-/player-id/00MC6MKQSK000000VV0AG85VVSMHI0R7"><span class="small">Marcel Kruse (7)</span></a>
+						</td>
+						<td>Bester Torjäger (Tore)</td>
+						<td class="column-stats">
+							<a href="http://www.fussball.de/spielerprofil/-/player-id/00MC9JFBM8000000VV0AG85VVSMHI0R7"><span class="small">Marcel Rottewert (14)</span></a>
+						</td>
+					</tr>
+					<tr>
+						<td class="column-stats"><span class="card-with-label"><span class="label">29</span><span class="icon-card yellow-card"></span></span><span class="card-with-label"><span class="label">1</span><span class="icon-stack"><span class="icon-card-half yellow-card"></span><span class="icon-card red-card"></span></span></span><span class="card-with-label"><span>1</span><span class="icon-card red-card"></span></span></td>
+						<td>Karten</td>
+						<td class="column-stats"><span class="card-with-label"><span class="label">23</span><span class="icon-card yellow-card"></span></span><span class="card-with-label"><span class="label">0</span><span class="icon-stack"><span class="icon-card-half yellow-card"></span><span class="icon-card red-card"></span></span></span><span class="card-with-label"><span>0</span><span class="icon-card red-card"></span></span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="table-meta" data-toggle=".legend > span, .note > span">
+		<ul class="functions">
+			<li class="legend"><span data-toggle-content=".table-legend">Legende<span class="icon-angle-down"></span></span></li>
+			<li class="print">
+				<a href="javascript: window.print();">Drucken<span class="icon-link-arrow"></span></a>
+			</li>
+		</ul>
+		<div class="table-legend">
+			<h3>Spaltenüberschriften</h3>
+			<div class="row">
+				<div class="wrapper">
+					<div class="column">
+						<div class="item"><span class="icon-card yellow-card"></span></div>
+						<div class="description">Anzahl der gelben Karten</div>
+					</div>
+					<div class="column">
+						<div class="item"><span class="icon-stack"><span class="icon-card-half yellow-card"></span><span class="icon-card red-card"></span></span></div>
+						<div class="description">Anzahl der gelb-roten Karten</div>
+					</div>
+					<div class="column">
+						<div class="item"><span class="icon-card red-card"></span></div>
+						<div class="description">Anzahl der roten Karten</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="wrapper">
+					<div class="column">
+						<div class="item"><span>S</span></div>
+						<div class="description">Siege</div>
+					</div>
+					<div class="column">
+						<div class="item"><span>U</span></div>
+						<div class="description">Unentschieden</div>
+					</div>
+					<div class="column">
+						<div class="item"><span>N</span></div>
+						<div class="description">Niederlagen</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="teaser-group" data-toggle=".tab" data-toggle-close=".link-close">
+		<div class="container">
+			<div class="column-one">
+				<div class="tab">
+					<h3 onClick="angular.element(document.querySelector('.captcha>a')).triggerHandler('click');"><span class="icon-contact"></span>Falsches Ergebnis melden</h3>
+				</div>
+				<div class="tab-content">
+					<a class="link-close" href="#"><span class="icon-close"></span></a>
+					<div class="inner">
+						<form data-ajax-method="post" data-ajax-type="html" data-ng-controller="AjaxController" data-ajax="replace" data-ajax-target=".contact-form-wrapper" class="contact-form-wrapper" data-tracking="{'href':'http://www.fussball.de/ajax.contact.form/-/staffel/01SNJETL9K000002VS54898DVV2J9QR4-G'}" data-ajax-resource="http://www.fussball.de/ajax.contact.form/-/staffel/01SNJETL9K000002VS54898DVV2J9QR4-G">
+							<div class="container">
+								<p class="description">Trotz aller Sorgfalt können hin und wieder Fehler auftreten. Solltest Du also z.B. auf falsche Ergebnisse oder Tabellenstände stoßen – Kein Problem. Gib dem zuständigen Staffelleiter einfach einen Hinweis. Vielen Dank!</p>
+							</div>
+							<div class="container contact-form form-small">
+								<div class="column-left">
+									<input placeholder="Dein Vorname*" name="firstname" value="" class="input-firstname" data-ajaxmodel="firstname" data-ng-model="ngFirstname" type="text">
+									<input placeholder="Dein Nachname*" name="lastname" value="" class="input-lastname" data-ajaxmodel="lastname" data-ng-model="ngLastname" type="text">
+									<input placeholder="Deine E-Mail-Adresse*" name="address" value="" class="input-email" data-ajaxmodel="address" data-ng-model="ngSender" type="text">
+									<input placeholder="Dein Betreff*" name="subject" value="Falsches Ergebnis für das Spiel SC Altenrheine II-SKICLUB NORDWEST RHEINE am 30.10.2016 13:00" class="input-subject" data-ajaxmodel="subject" data-ng-init="ngSubject='Falsches Ergebnis für das Spiel SC Altenrheine II-SKICLUB NORDWEST RHEINE am 30.10.2016 13:00'" data-ng-model="ngSubject" type="text">
+									<textarea placeholder="Deine Nachricht*" name="content" data-ajaxmodel="content" data-ng-model="content"></textarea>
+								</div>
+								<div class="column-right">
+									<div id="captcha_1" class="captcha">
+										<div>
+											<img>
+										</div>
+										<a data-ajax-method="post" data-ajax-type="html" data-ajax-target=".contact-form-wrapper #captcha_1" data-ajax-resource="//www.fussball.de/ajax.captcha/-/captcha-scope/.contact-form-wrapper" data-tracking="{'href':'//www.fussball.de/ajax.captcha/-/captcha-scope/.contact-form-wrapper'}" href="//www.fussball.de/ajax.captcha/-/captcha-scope/.contact-form-wrapper" data-ajax><span class="icon-reload"></span></a>
+										<input name="captcha-digest" value="" data-ajaxmodel="captcha-digest" data-ng-model="digest" type="hidden">
+									</div>
+									<input placeholder="Sicherheitscode*" name="captcha-code" value="" data-ajaxmodel="captcha-code" data-ng-model="securityCode" type="text">
+									<button class="button button-primary">Nachricht senden</button>
+									<p class="info">* Pflichtfelder</p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section data-in-page-nav-section="comments" id="comments" data-title="Kommentare" data-ajaxcontent="http://service.media.fussball.de/api/comment/ajax/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4"></section>
+<section data-in-page-nav-section="news" id="news" data-title="Aktuelle News">
+	<div class="news-list-related news-list">
+		<div class="container grid-view">
+			<ul>
+				<li class="item nth1"><article class="news-article" >
+	<a href="/newsdetail/wir-hatten-eh-tag-der-offenen-tuer-geplant/-/article-id/161760">
+
+
+
+				<span data-responsive-image="" data-src-folder="/assets/-/" data-src="{
+					'small':  'fileadmin/_processed_/csm_128999-Mauer_8324a8ad73.jpg',
+					'medium': 'fileadmin/_processed_/csm_128999-Mauer_5f182bdda6.jpg',
+					'large':  'fileadmin/_processed_/csm_128999-Mauer_4cb9f57764.jpg'
+					}"
+					>
+				</span>
+
+
+
+		<div class="article-content">
+			<div class="meta">
+
+						<span class="category">
+							<!-- categories -->
+
+		Magazin
+
+
+						</span>
+						<span class="date">
+							10.02.2017 | 16:05
+						</span>
+
+			</div>
+			<div class="headline">
+				<h2>
+					<span>"Wir hatten eh Tag der offenen Tür geplant"</span>
+				</h2>
+			</div>
+			<p class="excerpt">Ein alkoholisierter Fahranfänger hinterlässt ein Loch im Stadion. Der deutsche Sergio Ramos, nur schneller, größer und breiter. Ein Holzhacker auf dem Platz.<strong>FUSSBALL.DE</strong> hat wieder die besten Sprüche der Woche aus dem Amateurfußball gesammelt.</p>
+			<p class="read-more">Mehr lesen<span class="icon-link-arrow"></span></p>
+		</div>
+	</a>
+</article></li>
+				<li class="item nth2">
+					<div class="news-article news-teaser-banner">
+						<div class="filling">
+							<div class="wm-container" data-wm-type="medium-rectangle">
+								<div class="wm-container-inner">
+									<div data-ad-local-link="http://www.fussball.de/newsdetail/push-ticker-und-mehr-das-bietet-unsere-app/-/article-id/127931#!/section/stage" data-ad-local-link-target="_top" data-ad-sizes="[[300,250], [300,250], [300,250]]" class="wm-iframe" data-ad-breakpoints="phone,tablet,desktop" data-ad="//www.fussball.de/ad.iframe?sid=2895450&wp_id=2895450&prf[Plz]=48432&prf[Mannschaftsart]=1&prf[Spieltyp]=1&prf[Spielklasse]=100&prf[Verband]=21" data-ad-local-image="{'desktop': 'http://www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/components/banner/placeholder-mrb.png', 'tablet': 'http://www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/components/banner/placeholder-mrb.png', 'phone':'http://www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/components/banner/placeholder-mrb.png'}">
+										<p>Anzeige</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="item nth3"><article class="news-article" >
+	<a href="/newsdetail/kultfiguren-im-amateurfussball-alle-folgen/-/article-id/111452">
+
+
+
+				<span data-responsive-image="" data-src-folder="/assets/-/" data-src="{
+					'small':  'fileadmin/_processed_/csm_129112-Kultfiguren_Kultfigur_29e389be9a.jpg',
+					'medium': 'fileadmin/_processed_/csm_129112-Kultfiguren_Kultfigur_8386cd2910.jpg',
+					'large':  'fileadmin/_processed_/csm_129112-Kultfiguren_Kultfigur_b2590831b9.jpg'
+					}"
+					>
+				</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="article-content">
+			<div class="meta">
+
+						<span class="category">
+							<!-- categories -->
+
+		Magazin
+
+
+						</span>
+						<span class="date">
+							10.02.2017 | 07:00
+						</span>
+
+			</div>
+			<div class="headline">
+				<h2>
+					<span>Kultfiguren des Amateurfußballs: Alle Folgen</span>
+				</h2>
+			</div>
+			<p class="excerpt">Was wäre der Amateurfußball ohne seine <i>Kultfiguren?</i> Menschen, die ihrem Verein über Jahrzehnte hinweg die Treue halten, die dem Vereinsleben mit unermüdlichem Engagement Leben einhauchen. <strong>FUSSBALL.DE</strong> würdigt diese Personen mit einer eigenen redaktionellen Serie und stellt immer freitags die besonderen <i>Kultfiguren</i> vor.</p>
+			<p class="read-more">Mehr lesen<span class="icon-link-arrow"></span></p>
+		</div>
+	</a>
+</article></li>
+				<li class="item nth4"><div class="news-teaser-default" style="background-image: url(/assets/-/id/oma-fan-409x430.jpg);">
+	<a href="http://www.fussball.de/news">
+		<div class="inner">
+			<p class="large">
+				Ein Leben lang.
+				<br>
+				Aus Liebe zum Fußball.
+			</p>
+			<p class="link">Zum News-Bereich</p>
+		</div>
+	</a>
+</div></li>
+				<li class="item nth5"><div class="news-teaser-default" style="background-image: url(/assets/-/id/tornetz-409x430.jpg);">
+	<a href="http://www.fussball.de/news">
+		<div class="inner">
+			<p class="large">
+				Eure Geschichten.
+				<br>
+				Unsere News.
+			</p>
+			<p class="link">Zum News-Bereich</p>
+		</div>
+	</a>
+</div></li>
+				<li class="item nth6"><div class="news-teaser-default" style="background-image: url(/assets/-/id/opa-degen-409x430.jpg);">
+	<a href="http://www.fussball.de/news">
+		<div class="inner">
+			<p class="large">
+				Eure Geschichten.
+				<br>
+				Unsere News.
+			</p>
+			<p class="link">Zum News-Bereich</p>
+		</div>
+	</a>
+</div></li>
+			</ul>
+		</div>
+	</div>
+</section>
+		</div>
+		<footer>
+	<div id="sharing" class="visible-small">
+		<h6>Teile diese Seite</h6>
+		<ul data-sharing>
+			<li class="whatsapp mobile-only">
+				<a href="whatsapp://send?text={{sharing.url.whatsapp}}" data-popup><span class="icon-whatsapp"></span></a>
+			</li>
+			<li class="facebook">
+				<a href="https://www.facebook.com/sharer/sharer.php?u={{sharing.url.facebook}}" data-popup><span class="icon-facebook"></span></a>
+			</li>
+			<li class="twitter">
+				<a href="http://twitter.com/intent/tweet?text=Von%20der%20Bundesliga%20bis%20in%20die%20Kreisklasse%3A%20alles%20zum%20Fu%C3%9Fball%20bei%20fussball.de.&url={{sharing.url.twitter}}&lang=de" data-popup><span class="icon-twitter"></span></a>
+			</li>
+			<li class="googleplus">
+				<a href="https://plus.google.com/share?url={{sharing.url.googleplus}}" data-popup><span class="icon-googleplus"></span></a>
+			</li>
+		</ul>
+	</div>
+	<div class="footer-partner">
+		<div class="container">
+			<ul>
+				<li class="hidden-small">
+					<a href="http://www.fussball.de/partner">
+						<img src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/DP_LM_weiss_200px.png">
+					</a>
+				</li>
+				<li class="visible-small">
+					<a href="http://www.fussball.de/partner">
+						<img src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/partner/footer-partner-post-small.png">
+					</a>
+				</li>
+				<li>
+					<a href="http://www.fussball.de/partner">
+						<img src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/partner/footer-partner-coba.png">
+					</a>
+				</li>
+				<li class="visible-full">
+					<a href="http://www.fussball.de/partner">
+						<img src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/DP_LM_weiss_200px.png">
+					</a>
+				</li>
+				<li>
+					<a href="http://www.fussball.de/partner">
+						<img src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/content/footer-partner-adidas.jpg">
+					</a>
+				</li>
+				<li class="visible-full">
+					<a href="http://www.fussball.de/partner">
+						<img src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/DP_LM_weiss_200px.png">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-meta-links">
+		<div class="container">
+			<nav class="metalinks">
+				<ul>
+					<li>
+						<a href="http://www.fussball.de/imprint">Impressum</a>
+						<span class="divider">&#124;</span>
+					</li>
+					<li>
+						<a href="http://www.fussball.de/contact">Kontakt</a>
+						<span class="divider">&#124;</span>
+					</li>
+					<li>
+						<a href="http://www.fussball.de/privacy">Datenschutz</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="http://www.fussball.de/terms.and.conditions">Nutzungsbedingungen</a>
+						<span class="divider">&#124;</span>
+					</li>
+					<li>
+						<a href="http://www.fussball.de/youth.protection">Jugendschutz</a>
+						<span class="divider">&#124;</span>
+					</li>
+					<li>
+						<a href="http://www.fussball.de/content.responsibility">Inhalteverantwortung</a>
+						<span class="divider">&#124;</span>
+					</li>
+					<li>
+						<a href="http://training-service.fussball.de/faq/">FAQ</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="copyright">&copy; DFB</div>
+		</div>
+	</div>
+</footer>
+		<div id="login-layer" data-layer="login" class="page-layer">
+	<div class="login-layer">
+		<a class="link-close" href=""><span class="icon-close"></span></a>
+		<div class="login-form">
+			<div class="login">
+				<div class="login-header">
+					<h3 class="headline">Login</h3>
+				</div>
+				<form action="https://www.fussball.de/login.fbde" method="POST">
+					<input id="login_fw_url124968" name="fw_url" value="http://www.fussball.de/spiel/sc-altenrheine-ii-skiclub-nordwest-rheine/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4" type="hidden">
+					<input placeholder="Nutzername*" name="username" value="" type="text">
+					<input placeholder="Passwort*" name="password" value="" type="password">
+					<div class="form-meta">
+						<a href="https://www.fussball.de/password.forgotten">Passwort vergessen<span class="icon-link-arrow"></span></a>
+					</div>
+					<button class="button button-primary button-block" type="submit">Login</button>
+				</form>
+			</div>
+			<div class="signup">
+				<h3>Oder anmelden mit:</h3>
+				<ul class="xinline_loginform_3456">
+					<li class="xinline_loginform_5268">
+						<div class="xinline_loginform_5355">einer DFBnet Kennung</div>
+						<a href="https://www.dfbnet.org/dfbnetapi/sso/oauth/authorize?response_type=code&client_id=fb_de_techuser&redirect_uri=https%3A%2F%2Fwww.fussball.de%2Flogin.dfbnet%3Ffw_url%3Dhttp%253A%252F%252Fwww.fussball.de%252Fspiel%252Fsc-altenrheine-ii-skiclub-nordwest-rheine%252F-%252Fspiel%252F01SNJOBM08000000VS54898DVV2J9QR4">
+							<img class="logo xinline_loginform_5579" src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/login_logo_dfbnet.png">
+						</a>
+					</li>
+					<li class="xinline_loginform_5268">
+						<div class="xinline_loginform_5355">einem Facebook Account</div>
+						<a href="https://www.facebook.com/dialog/oauth?client_id=1611655509078432&scope=email&redirect_uri=https%3A%2F%2Fwww.fussball.de%2Flogin.facebook%3Ffw_url%3Dhttp%253A%252F%252Fwww.fussball.de%252Fspiel%252Fsc-altenrheine-ii-skiclub-nordwest-rheine%252F-%252Fspiel%252F01SNJOBM08000000VS54898DVV2J9QR4">
+							<img class="logo xinline_loginform_5579" src="//www.fussball.de/static/layout/fbde2/por/6.20.95.2439/images/login_logo_facebook.png">
+						</a>
+					</li>
+				</ul>
+				<p>Du hast noch kein FUSSBALL.DE Konto</p>
+				<br>
+				<a class="button button-primary button-block" href="https://www.fussball.de/register?fw_url=http%3A%2F%2Fwww.fussball.de%2Fspiel%2Fsc-altenrheine-ii-skiclub-nordwest-rheine%2F-%2Fspiel%2F01SNJOBM08000000VS54898DVV2J9QR4">Jetzt registrieren</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div id="cookie-layer" data-autoload="true" data-layer="cookie" class="page-layer cookie-layer-width">
+		<a class="link-close" href="#"><span class="icon-close"></span></a>
+		<div class="cookie-layer">
+			<div class="cookie-content">
+				<div class="headline">Cookie Richtlinie</div>
+				<div class="copytext">Um FUSSBALL.DE benutzerfreundlich zu gestalten, setzen wir in einigen Bereichen Cookies ein. Cookies sind kleine Textdateien, die lokal auf der Festplatte deines Computers abgelegt und für einen späteren Abruf bereitgehalten werden, um Dir die Nutzung von FUSSBALL.DE zu erleichtern.</div>
+				<div class="cookies-more-info">
+					<a href="http://www.fussball.de/privacy">Weitere Informationen zu Cookies<span class="icon-link-arrow"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="ajax-survey" data-survey="survey-1" data-ajaxsurvey="//www.fussball.de/ajax.survey/-/path/_path_" data-survey-path-variable="_path_"></div>
+
+
+
+
+		<script type="text/javascript" src="//www.fussball.de/static/por/6.20.95.2439/js/script.js"></script>
+		<script type="text/javascript" src="//www.fussball.de/static/por/6.20.95.2439/js/click-tracker.js" async></script>
+
+		<!-- snippet::remarketing -->
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 955767689;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/955767689/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '443643769176748');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=443643769176748&ev=PageView&noscript=1"
+/></noscript>
+
+<!-- /snippet::remarketing -->
+	</body>
+</html>

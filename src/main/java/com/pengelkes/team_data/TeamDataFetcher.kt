@@ -2,77 +2,144 @@ package com.pengelkes.team_data
 
 import java.net.URL
 
-
-/**
- * Created by patrickengelkes on 05/02/2017.
- */
 fun main(args: Array<String>) {
-    val previousMatchData =
-            URL("http://www.fussball.de/ajax.team.prev.games/-/team-id/011MICFJLG000000VTVG0001VTR8C1K7")
-                    .readText(Charsets.UTF_8)
-    val matchDataStart = previousMatchData.indexOf("<tbody>")
-    val matchDataEnd = previousMatchData.indexOf("</tbody>")
+    val previousGamesString = URL("http://www.fussball.de/ajax.team.prev.games/-/team-id/011MICFJLG000000VTVG0001VTR8C1K7")
+            .readText(Charsets.UTF_8)
 
-    var matchData = previousMatchData.substring(matchDataStart + "<tbody>".length, matchDataEnd)
+    val gameDataFetcher = GameDataFetcher(previousGamesString)
+    gameDataFetcher.getAllGames().forEach(::println)
+}
 
-    while (matchData.contains("</tr>")) {
+
+data class Game(var gameTime: String? = null, var homeTeamName: String? = null,
+                var awayTeamName: String? = null, var score: Score? = null)
+
+data class Score(val homeTeamGoals: Int, val awayTeamGoals: Int)
+
+class GameDataFetcher(val completeGameInfo: String) {
+
+    companion object {
+        val tableBodyStart = "<tbody>"
+        val tableBodyEnd = "</tbody>"
+        val tableRowEnd = "</tr>"
+    }
+
+    fun getGameData(): String {
+        val gameDataStart = completeGameInfo.indexOf(tableBodyStart)
+        val gameDataEnd = completeGameInfo.indexOf(tableBodyEnd)
+
+        return completeGameInfo.substring(gameDataStart + tableBodyStart.length, gameDataEnd).trim()
+    }
+
+    fun getAllGames(): List<Game> {
+        val allGames = mutableListOf<Game>()
+        var gameData = getGameData()
+        while (gameData.contains(tableRowEnd)) {
+            val game = Game()
+            val gameString = getSingleGameData(gameData)
+            gameData = gameData.replace(gameString, "")
+            game.gameTime = getGameTime(gameString)
+            val gameWithoutTimeData = removeGameTime(gameString)
+
+            game.homeTeamName = getClubFromString(gameWithoutTimeData)
+
+            val gameWithoutTimeAndFirstClub = removeFirstClub(gameWithoutTimeData, game.homeTeamName!!)
+            game.awayTeamName = getClubFromString(gameWithoutTimeAndFirstClub)
+
+            val score = getScoreString(gameWithoutTimeAndFirstClub)
+
+            if (score.contains("colon")) {
+                //game was not cancelled
+                val gameDetailsUrl = getGameDetailsUrl(gameWithoutTimeAndFirstClub)
+                val gameScoreFetcher = GameScoreFetcher(URL(gameDetailsUrl).readText(Charsets.UTF_8))
+                game.score = gameScoreFetcher.getScore()
+            }
+
+            allGames.add(game)
+        }
+
+        return allGames
+    }
+
+    fun getSingleGameData(gameData: String): String {
         var matchEndIndex = 0
-        var match: String
         for (i in 0..2) {
-            matchEndIndex = matchData.indexOf("</tr>", startIndex = matchEndIndex + 5)
+            matchEndIndex = gameData.indexOf(tableRowEnd, startIndex = matchEndIndex + tableRowEnd.length)
         }
-        match = matchData.substring(0, matchEndIndex + 5)
-        matchData = matchData.replace(match, "")
 
-        val matchTimeLineStart = match.indexOf("<td")
-        val matchTimeLineEnd = match.indexOf("</tr>")
-        val matchTimeLine = match.substring(matchTimeLineStart, matchTimeLineEnd)
+        return gameData.substring(0, matchEndIndex + tableRowEnd.length)
+    }
 
-        val matchTimeStart = matchTimeLine.indexOf(">")
-        val matchTimeEnd = matchTimeLine.indexOf(" | ")
-        val matchTime = matchTimeLine.substring(matchTimeStart + 1, matchTimeEnd)
+    fun getGameTime(game: String): String {
+        val gameTimeLineStart = game.indexOf("<td")
+        val gameTimeLineEnd = game.indexOf("</tr>")
+        val gameTimeLine = game.substring(gameTimeLineStart, gameTimeLineEnd)
 
-        match = match.substring(matchTimeLineEnd + "</tr>".length, match.length)
-        match = match.substring(match.indexOf("</tr>") + "</tr>".length, match.length)
+        val gameTimeStart = gameTimeLine.indexOf(">")
+        val gameTimeEnd = gameTimeLine.indexOf(" | ")
 
-        val firstClub = getClubFromString(match)
+        return gameTimeLine.substring(gameTimeStart + 1, gameTimeEnd)
+    }
 
-        match = match.substring(match.indexOf(firstClub) + firstClub.length, match.length)
+    fun removeGameTime(game: String): String {
+        var timeEndIndex = 0
+        for (i in 0..1) {
+            timeEndIndex = game.indexOf(tableRowEnd, startIndex = timeEndIndex + tableRowEnd.length)
+        }
 
-        val secondClub = getClubFromString(match)
+        return game.substring(timeEndIndex + tableRowEnd.length, game.length).trim()
+    }
 
+    fun getClubFromString(data: String): String {
+        val clubDiv = "<div class=\"club-name\">"
+        val clubData = data.substring(data.indexOf(clubDiv) + clubDiv.length, data.length)
+        return clubData.substring(0, clubData.indexOf("</div>"))
+    }
+
+    fun removeFirstClub(game: String, firstClub: String): String {
+        return game.substring(game.indexOf(firstClub) + firstClub.length, game.length)
+    }
+
+    fun getScoreString(game: String): String {
         val columnScoreDiv = "<td class=\"column-score\">"
-        val score = match.substring(match.indexOf(columnScoreDiv) + columnScoreDiv.length, match.length)
+        return game.substring(game.indexOf(columnScoreDiv) + columnScoreDiv.length, game.length).trim()
+    }
 
-        if (score.contains("colon")) {
-            val columnDetailDiv = "<td class=\"column-detail\">"
-            match = match.substring(match.indexOf(columnDetailDiv) + columnDetailDiv.length, match.length)
-
-            val anchor = "<a href=\""
-            val gameDetails = match.substring(match.indexOf(anchor) + anchor.length, match.indexOf("\">"))
-
-            val gameDetailsData = URL(gameDetails)
-                    .readText(Charsets.UTF_8)
-
-            val goalsDiv = "<div class=\"goals\">"
-            var homeTeamGoals = gameDetailsData.substring(gameDetailsData.indexOf(goalsDiv) + goalsDiv.length, gameDetailsData.length)
-            homeTeamGoals = homeTeamGoals.substring(0, homeTeamGoals.indexOf("</div>"))
-
-            val goalsRegex = Regex("\\(\\d{1,2}'\\)")
-            val homeGoals = goalsRegex.findAll(homeTeamGoals)
-
-            var awayTeamGoals = gameDetailsData.substring(gameDetailsData.indexOf(goalsDiv, gameDetailsData.indexOf(goalsDiv) + goalsDiv.length), gameDetailsData.length)
-            awayTeamGoals = awayTeamGoals.substring(0, awayTeamGoals.indexOf("</div>"))
-
-            val awayGoals = goalsRegex.findAll(awayTeamGoals)
-
-            println("$firstClub ${homeGoals.count()} : ${awayGoals.count()} $secondClub ")
-        }
+    fun getGameDetailsUrl(game: String): String {
+        val columnDetailDiv = "<td class=\"column-detail\">"
+        val gameDetails = game.substring(game.indexOf(columnDetailDiv) + columnDetailDiv.length, game.length)
+        val anchor = "<a href=\""
+        return gameDetails.substring(gameDetails.indexOf(anchor) + anchor.length, gameDetails.indexOf("\">"))
     }
 }
 
-fun getClubFromString(data: String): String {
-    val clubDiv = "<div class=\"club-name\">"
-    val clubData = data.substring(data.indexOf(clubDiv) + clubDiv.length, data.length)
-    return clubData.substring(0, clubData.indexOf("</div>"))
+class GameScoreFetcher(val gameScoreData: String) {
+
+    companion object {
+        val goalsDiv = "<div class=\"goals\">"
+    }
+
+    fun getScore(): Score {
+        val homeTeamString = getHomeTeamGoals()
+        val awayTeamString = getAwayTeamGoals()
+
+        return Score(countGoals(homeTeamString), countGoals(awayTeamString))
+    }
+
+    fun getHomeTeamGoals(): String {
+        val homeTeamGoals = gameScoreData.substring(
+                gameScoreData.indexOf(goalsDiv) + goalsDiv.length, gameScoreData.length)
+        return homeTeamGoals.substring(0, homeTeamGoals.indexOf("</div>"))
+    }
+
+    fun getAwayTeamGoals(): String {
+        val awayTeamGoals = gameScoreData.substring(
+                gameScoreData.indexOf(goalsDiv, gameScoreData.indexOf(goalsDiv) + goalsDiv.length) + goalsDiv.length, gameScoreData.length)
+        return awayTeamGoals.substring(0, awayTeamGoals.indexOf("</div")).trim()
+    }
+
+    fun countGoals(scoreString: String): Int {
+        val goalsRegex = Regex("\\d{1,2}'")
+        return goalsRegex.findAll(scoreString).count()
+    }
 }

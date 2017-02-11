@@ -1,0 +1,22 @@
+<tr class="odd">
+				<td class="hidden-small"></td>
+				<td class="column-club">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/sus-neuenkirchen-iii-sus-neuenkirchen-westfalen/-/saison/1617/team-id/011MIBJ5GG000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00000RVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">SuS Neuenkirchen III</div>
+					</a>
+				</td>
+				<td class="column-colon">:</td>
+				<td class="column-club no-border">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/skiclub-nordwest-rheine-ski-club-nord-west-rheine-westfalen/-/saison/1617/team-id/011MICFJLG000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00001DVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">SKICLUB NORDWEST RHEINE</div>
+					</a>
+				</td>
+				<td class="column-score">
+					<a href="http://www.fussball.de/spiel/sus-neuenkirchen-iii-skiclub-nordwest-rheine/-/spiel/01U1FPA2A0000000VS54898EVU34LTP2"><span class="info-text">Abse.</span></a>
+				</td>
+				<td class="column-detail">
+					<a href="http://www.fussball.de/spiel/sus-neuenkirchen-iii-skiclub-nordwest-rheine/-/spiel/01U1FPA2A0000000VS54898EVU34LTP2"><span class="icon-angle-right hidden-full"></span><span class="visible-full">Zum Spiel<span class="icon-link-arrow"></span></span></a>
+				</td>
+			</tr>

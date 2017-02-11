@@ -1,0 +1,473 @@
+<div id="team-matchplan-table" class="table-container fixtures-matches-table club-matchplan-table">
+	<table class="table table-striped table-full-width">
+		<thead>
+			<tr class="thead hidden-small">
+				<th class="hidden-small">Datum | Zeit</th>
+				<th colspan="3">Wettbewerb</th>
+				<th colspan="2"><span class="hidden-small">Info</span></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="row-headline visible-small">
+				<td colspan="6">Samstag, 28.01.2017 - 17:00 Uhr | Kreisfreundschaftsspiele</td>
+			</tr>
+			<tr class="odd row-competition hidden-small">
+				<td class="column-date"><span class="hidden-small inline">Sa, 28.01.17 |&nbsp;</span>17:00</td>
+				<td colspan="3" class="column-team">
+					<a>Kreisfreundschaftsspiele</a>
+				</td>
+				<td colspan="2">
+					<a>FS | 240016265</a>
+				</td>
+			</tr>
+			<tr class="odd">
+				<td class="hidden-small"></td>
+				<td class="column-club">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/sus-neuenkirchen-iii-sus-neuenkirchen-westfalen/-/saison/1617/team-id/011MIBJ5GG000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00000RVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">SuS Neuenkirchen III</div>
+					</a>
+				</td>
+				<td class="column-colon">:</td>
+				<td class="column-club no-border">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/skiclub-nordwest-rheine-ski-club-nord-west-rheine-westfalen/-/saison/1617/team-id/011MICFJLG000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00001DVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">SKICLUB NORDWEST RHEINE</div>
+					</a>
+				</td>
+				<td class="column-score">
+					<a href="http://www.fussball.de/spiel/sus-neuenkirchen-iii-skiclub-nordwest-rheine/-/spiel/01U1FPA2A0000000VS54898EVU34LTP2"><span class="info-text">Abse.</span></a>
+				</td>
+				<td class="column-detail">
+					<a href="http://www.fussball.de/spiel/sus-neuenkirchen-iii-skiclub-nordwest-rheine/-/spiel/01U1FPA2A0000000VS54898EVU34LTP2"><span class="icon-angle-right hidden-full"></span><span class="visible-full">Zum Spiel<span class="icon-link-arrow"></span></span></a>
+				</td>
+			</tr>
+			<tr class="row-headline visible-small">
+				<td colspan="6">Sonntag, 11.12.2016 - 14:30 Uhr | Kreisliga B</td>
+			</tr>
+			<tr class="row-competition hidden-small">
+				<td class="column-date"><span class="hidden-small inline">So, 11.12.16 |&nbsp;</span>14:30</td>
+				<td colspan="3" class="column-team">
+					<a>Kreisliga B</a>
+				</td>
+				<td colspan="2">
+					<a>ME | 210971134</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="hidden-small"></td>
+				<td class="column-club">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/tus-st-arnold-tus-st-arnold-westfalen/-/saison/1617/team-id/011MIB15BC000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00000EVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">TuS St. Arnold</div>
+					</a>
+				</td>
+				<td class="column-colon">:</td>
+				<td class="column-club no-border">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/skiclub-nordwest-rheine-ski-club-nord-west-rheine-westfalen/-/saison/1617/team-id/011MICFJLG000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00001DVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">Skiclub Nordwest Rheine</div>
+					</a>
+				</td>
+				<td class="column-score">
+					<a href="http://www.fussball.de/spiel/tus-st-arnold-skiclub-nordwest-rheine/-/spiel/01SNJOD2VK000000VS54898DVV2J9QR4"><span data-obfuscation="cu7hydkd" class="score-left">&#xE68A;</span><span class="colon">:</span><span data-obfuscation="cu7hydkd" class="score-right">&#xE6B3;<span class="icon-verified"></span></span></a>
+				</td>
+				<td class="column-detail">
+					<a href="http://www.fussball.de/spiel/tus-st-arnold-skiclub-nordwest-rheine/-/spiel/01SNJOD2VK000000VS54898DVV2J9QR4"><span class="icon-angle-right hidden-full"></span><span class="visible-full">Zum Spiel<span class="icon-link-arrow"></span></span></a>
+				</td>
+			</tr>
+			<tr class="row-headline visible-small">
+				<td colspan="6">Freitag, 02.12.2016 - 20:00 Uhr | Kreisliga B</td>
+			</tr>
+			<tr class="odd row-competition hidden-small">
+				<td class="column-date"><span class="hidden-small inline">Fr, 02.12.16 |&nbsp;</span>20:00</td>
+				<td colspan="3" class="column-team">
+					<a>Kreisliga B</a>
+				</td>
+				<td colspan="2">
+					<a>ME | 210971126</a>
+				</td>
+			</tr>
+			<tr class="odd">
+				<td class="hidden-small"></td>
+				<td class="column-club">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/skiclub-nordwest-rheine-ski-club-nord-west-rheine-westfalen/-/saison/1617/team-id/011MICFJLG000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00001DVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">Skiclub Nordwest Rheine</div>
+					</a>
+				</td>
+				<td class="column-colon">:</td>
+				<td class="column-club no-border">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/vorwaerts-wettringen-iii-vorwaerts-wettringen-westfalen/-/saison/1617/team-id/011MIFCKGG000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC000013VV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">Vorwärts Wettringen III</div>
+					</a>
+				</td>
+				<td class="column-score">
+					<a href="http://www.fussball.de/spiel/skiclub-nordwest-rheine-vorwaerts-wettringen-iii/-/spiel/01SNJOD57O000000VS54898DVV2J9QR4"><span data-obfuscation="cu7hydkd" class="score-left">&#xE6A1;</span><span class="colon">:</span><span data-obfuscation="cu7hydkd" class="score-right">&#xE65C;<span class="icon-verified"></span></span></a>
+				</td>
+				<td class="column-detail">
+					<a href="http://www.fussball.de/spiel/skiclub-nordwest-rheine-vorwaerts-wettringen-iii/-/spiel/01SNJOD57O000000VS54898DVV2J9QR4"><span class="icon-angle-right hidden-full"></span><span class="visible-full">Zum Spiel<span class="icon-link-arrow"></span></span></a>
+				</td>
+			</tr>
+			<tr class="row-headline visible-small">
+				<td colspan="6">Sonntag, 27.11.2016 - 14:30 Uhr | Kreisliga B</td>
+			</tr>
+			<tr class="row-competition hidden-small">
+				<td class="column-date"><span class="hidden-small inline">So, 27.11.16 |&nbsp;</span>14:30</td>
+				<td colspan="3" class="column-team">
+					<a>Kreisliga B</a>
+				</td>
+				<td colspan="2">
+					<a>ME | 210971118</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="hidden-small"></td>
+				<td class="column-club">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/skiclub-nordwest-rheine-ski-club-nord-west-rheine-westfalen/-/saison/1617/team-id/011MICFJLG000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00001DVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">Skiclub Nordwest Rheine</div>
+					</a>
+				</td>
+				<td class="column-colon">:</td>
+				<td class="column-club no-border">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/portu-rheine-portu-rheine-westfalen/-/saison/1617/team-id/011MIB5MHG000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC000012VV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">Portu Rheine</div>
+					</a>
+				</td>
+				<td class="column-score">
+					<a href="http://www.fussball.de/spiel/skiclub-nordwest-rheine-portu-rheine/-/spiel/01SNJOBIR4000000VS54898DVV2J9QR4"><span data-obfuscation="cu7hydkd" class="score-left">&#xE685;</span><span class="colon">:</span><span data-obfuscation="cu7hydkd" class="score-right">&#xE670;<span class="icon-verified"></span></span></a>
+				</td>
+				<td class="column-detail">
+					<a href="http://www.fussball.de/spiel/skiclub-nordwest-rheine-portu-rheine/-/spiel/01SNJOBIR4000000VS54898DVV2J9QR4"><span class="icon-angle-right hidden-full"></span><span class="visible-full">Zum Spiel<span class="icon-link-arrow"></span></span></a>
+				</td>
+			</tr>
+			<tr class="row-headline visible-small">
+				<td colspan="6">Sonntag, 13.11.2016 - 13:00 Uhr | Kreisliga B</td>
+			</tr>
+			<tr class="odd row-competition hidden-small">
+				<td class="column-date"><span class="hidden-small inline">So, 13.11.16 |&nbsp;</span>13:00</td>
+				<td colspan="3" class="column-team">
+					<a>Kreisliga B</a>
+				</td>
+				<td colspan="2">
+					<a>ME | 210971105</a>
+				</td>
+			</tr>
+			<tr class="odd">
+				<td class="hidden-small"></td>
+				<td class="column-club">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/fortuna-emsdetten-ii-fortuna-emsdetten-westfalen/-/saison/1617/team-id/011MIAE26S000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00000IVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">Fortuna Emsdetten II</div>
+					</a>
+				</td>
+				<td class="column-colon">:</td>
+				<td class="column-club no-border">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/skiclub-nordwest-rheine-ski-club-nord-west-rheine-westfalen/-/saison/1617/team-id/011MICFJLG000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00001DVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">Skiclub Nordwest Rheine</div>
+					</a>
+				</td>
+				<td class="column-score">
+					<a href="http://www.fussball.de/spiel/fortuna-emsdetten-ii-skiclub-nordwest-rheine/-/spiel/01SNJOBJN8000000VS54898DVV2J9QR4"><span data-obfuscation="cu7hydkd" class="score-left">&#xE65E;</span><span class="colon">:</span><span data-obfuscation="cu7hydkd" class="score-right">&#xE6B5;<span class="icon-verified"></span></span></a>
+				</td>
+				<td class="column-detail">
+					<a href="http://www.fussball.de/spiel/fortuna-emsdetten-ii-skiclub-nordwest-rheine/-/spiel/01SNJOBJN8000000VS54898DVV2J9QR4"><span class="icon-angle-right hidden-full"></span><span class="visible-full">Zum Spiel<span class="icon-link-arrow"></span></span></a>
+				</td>
+			</tr>
+			<tr class="row-headline visible-small">
+				<td colspan="6">Sonntag, 06.11.2016 - 14:30 Uhr | Kreisliga B</td>
+			</tr>
+			<tr class="row-competition hidden-small">
+				<td class="column-date"><span class="hidden-small inline">So, 06.11.16 |&nbsp;</span>14:30</td>
+				<td colspan="3" class="column-team">
+					<a>Kreisliga B</a>
+				</td>
+				<td colspan="2">
+					<a>ME | 210971101</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="hidden-small"></td>
+				<td class="column-club">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/skiclub-nordwest-rheine-ski-club-nord-west-rheine-westfalen/-/saison/1617/team-id/011MICFJLG000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00001DVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">Skiclub Nordwest Rheine</div>
+					</a>
+				</td>
+				<td class="column-colon">:</td>
+				<td class="column-club no-border">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/sv-mesum-ii-sv-mesum-westfalen/-/saison/1617/team-id/011MI9I0PK000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00000PVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">SV Mesum II</div>
+					</a>
+				</td>
+				<td class="column-score">
+					<a href="http://www.fussball.de/spiel/skiclub-nordwest-rheine-sv-mesum-ii/-/spiel/01SNJOBKG4000000VS54898DVV2J9QR4"><span data-obfuscation="cu7hydkd" class="score-left">&#xE66F;</span><span class="colon">:</span><span data-obfuscation="cu7hydkd" class="score-right">&#xE6AF;<span class="icon-verified"></span></span></a>
+				</td>
+				<td class="column-detail">
+					<a href="http://www.fussball.de/spiel/skiclub-nordwest-rheine-sv-mesum-ii/-/spiel/01SNJOBKG4000000VS54898DVV2J9QR4"><span class="icon-angle-right hidden-full"></span><span class="visible-full">Zum Spiel<span class="icon-link-arrow"></span></span></a>
+				</td>
+			</tr>
+			<tr class="row-headline visible-small">
+				<td colspan="6">Sonntag, 30.10.2016 - 13:00 Uhr | Kreisliga B</td>
+			</tr>
+			<tr class="odd row-competition hidden-small">
+				<td class="column-date"><span class="hidden-small inline">So, 30.10.16 |&nbsp;</span>13:00</td>
+				<td colspan="3" class="column-team">
+					<a>Kreisliga B</a>
+				</td>
+				<td colspan="2">
+					<a>ME | 210971091</a>
+				</td>
+			</tr>
+			<tr class="odd">
+				<td class="hidden-small"></td>
+				<td class="column-club">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/sc-altenrheine-ii-sc-altenrheine-westfalen/-/saison/1617/team-id/011MI9NTE8000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00000DVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">SC Altenrheine II</div>
+					</a>
+				</td>
+				<td class="column-colon">:</td>
+				<td class="column-club no-border">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/skiclub-nordwest-rheine-ski-club-nord-west-rheine-westfalen/-/saison/1617/team-id/011MICFJLG000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00001DVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">Skiclub Nordwest Rheine</div>
+					</a>
+				</td>
+				<td class="column-score">
+					<a href="http://www.fussball.de/spiel/sc-altenrheine-ii-skiclub-nordwest-rheine/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4"><span data-obfuscation="cu7hydkd" class="score-left">&#xE6B4;</span><span class="colon">:</span><span data-obfuscation="cu7hydkd" class="score-right">&#xE6B5;<span class="icon-verified"></span></span></a>
+				</td>
+				<td class="column-detail">
+					<a href="http://www.fussball.de/spiel/sc-altenrheine-ii-skiclub-nordwest-rheine/-/spiel/01SNJOBM08000000VS54898DVV2J9QR4"><span class="icon-angle-right hidden-full"></span><span class="visible-full">Zum Spiel<span class="icon-link-arrow"></span></span></a>
+				</td>
+			</tr>
+			<tr class="row-headline visible-small">
+				<td colspan="6">Sonntag, 23.10.2016 - 15:00 Uhr | Kreisliga B</td>
+			</tr>
+			<tr class="row-competition hidden-small">
+				<td class="column-date"><span class="hidden-small inline">So, 23.10.16 |&nbsp;</span>15:00</td>
+				<td colspan="3" class="column-team">
+					<a>Kreisliga B</a>
+				</td>
+				<td colspan="2">
+					<a>ME | 210971085</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="hidden-small"></td>
+				<td class="column-club">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/skiclub-nordwest-rheine-ski-club-nord-west-rheine-westfalen/-/saison/1617/team-id/011MICFJLG000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00001DVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">Skiclub Nordwest Rheine</div>
+					</a>
+				</td>
+				<td class="column-colon">:</td>
+				<td class="column-club no-border">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/spvg-emsdetten-05-ii-spvg-emsdetten-05-westfalen/-/saison/1617/team-id/011MIE7SB0000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00000JVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">SpVg Emsdetten 05 II</div>
+					</a>
+				</td>
+				<td class="column-score">
+					<a href="http://www.fussball.de/spiel/skiclub-nordwest-rheine-spvg-emsdetten-05-ii/-/spiel/01SNJOBMHC000000VS54898DVV2J9QR4"><span data-obfuscation="cu7hydkd" class="score-left">&#xE69C;</span><span class="colon">:</span><span data-obfuscation="cu7hydkd" class="score-right">&#xE695;<span class="icon-verified"></span></span></a>
+				</td>
+				<td class="column-detail">
+					<a href="http://www.fussball.de/spiel/skiclub-nordwest-rheine-spvg-emsdetten-05-ii/-/spiel/01SNJOBMHC000000VS54898DVV2J9QR4"><span class="icon-angle-right hidden-full"></span><span class="visible-full">Zum Spiel<span class="icon-link-arrow"></span></span></a>
+				</td>
+			</tr>
+			<tr class="row-headline visible-small">
+				<td colspan="6">Freitag, 14.10.2016 - 19:00 Uhr | Kreisliga B</td>
+			</tr>
+			<tr class="odd row-competition hidden-small">
+				<td class="column-date"><span class="hidden-small inline">Fr, 14.10.16 |&nbsp;</span>19:00</td>
+				<td colspan="3" class="column-team">
+					<a>Kreisliga B</a>
+				</td>
+				<td colspan="2">
+					<a>ME | 210971073</a>
+				</td>
+			</tr>
+			<tr class="odd">
+				<td class="hidden-small"></td>
+				<td class="column-club">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/djk-amisia-rheine-ii-amisia-rheine-westfalen/-/saison/1617/team-id/011MIBAHVK000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00000UVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">DJK Amisia Rheine II</div>
+					</a>
+				</td>
+				<td class="column-colon">:</td>
+				<td class="column-club no-border">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/skiclub-nordwest-rheine-ski-club-nord-west-rheine-westfalen/-/saison/1617/team-id/011MICFJLG000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00001DVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">Skiclub Nordwest Rheine</div>
+					</a>
+				</td>
+				<td class="column-score">
+					<a href="http://www.fussball.de/spiel/djk-amisia-rheine-ii-skiclub-nordwest-rheine/-/spiel/01SNJOBNBS000000VS54898DVV2J9QR4"><span data-obfuscation="cu7hydkd" class="score-left">&#xE69D;</span><span class="colon">:</span><span data-obfuscation="cu7hydkd" class="score-right">&#xE6AB;<span class="icon-verified"></span></span></a>
+				</td>
+				<td class="column-detail">
+					<a href="http://www.fussball.de/spiel/djk-amisia-rheine-ii-skiclub-nordwest-rheine/-/spiel/01SNJOBNBS000000VS54898DVV2J9QR4"><span class="icon-angle-right hidden-full"></span><span class="visible-full">Zum Spiel<span class="icon-link-arrow"></span></span></a>
+				</td>
+			</tr>
+			<tr class="row-headline visible-small">
+				<td colspan="6">Sonntag, 09.10.2016 - 15:00 Uhr | Kreisliga B</td>
+			</tr>
+			<tr class="row-competition hidden-small">
+				<td class="column-date"><span class="hidden-small inline">So, 09.10.16 |&nbsp;</span>15:00</td>
+				<td colspan="3" class="column-team">
+					<a>Kreisliga B</a>
+				</td>
+				<td colspan="2">
+					<a>ME | 210971069</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="hidden-small"></td>
+				<td class="column-club">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/skiclub-nordwest-rheine-ski-club-nord-west-rheine-westfalen/-/saison/1617/team-id/011MICFJLG000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00001DVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">Skiclub Nordwest Rheine</div>
+					</a>
+				</td>
+				<td class="column-colon">:</td>
+				<td class="column-club no-border">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/fc-eintracht-rheine-iii-fc-eintracht-rheine-westfalen/-/saison/1617/team-id/011MIEM63O000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00000VVV0AG08LVUPGND5I"></span></div>
+						<div class="club-name">FC Eintracht Rheine III</div>
+					</a>
+				</td>
+				<td class="column-score">
+					<a href="http://www.fussball.de/spiel/skiclub-nordwest-rheine-fc-eintracht-rheine-iii/-/spiel/01SNJOBORK000000VS54898DVV2J9QR4"><span data-obfuscation="cu7hydkd" class="score-left">&#xE681;</span><span class="colon">:</span><span data-obfuscation="cu7hydkd" class="score-right">&#xE678;<span class="icon-verified"></span></span></a>
+				</td>
+				<td class="column-detail">
+					<a href="http://www.fussball.de/spiel/skiclub-nordwest-rheine-fc-eintracht-rheine-iii/-/spiel/01SNJOBORK000000VS54898DVV2J9QR4"><span class="icon-angle-right hidden-full"></span><span class="visible-full">Zum Spiel<span class="icon-link-arrow"></span></span></a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="table-meta" data-toggle=".legend > span, .note > span">
+		<ul class="functions">
+			<li class="legend"><span data-toggle-content=".table-legend">Legende<span class="icon-angle-down"></span></span></li>
+			<li class="print">
+				<a href="javascript: window.print();">Drucken<span class="icon-link-arrow"></span></a>
+			</li>
+		</ul>
+		<div class="table-legend">
+			<h3>Kürzel bei einem Spiel</h3>
+			<div class="row">
+				<div class="wrapper">
+					<div class="column">
+						<div class="item"><span>u</span></div>
+						<div class="description">(U) Sportgerichtsurteil (bestätigt)</div>
+					</div>
+					<div class="column">
+						<div class="item"><span>Annu.</span></div>
+						<div class="description">Annullierung</div>
+					</div>
+					<div class="column">
+						<div class="item"><span>v</span></div>
+						<div class="description">(V) Verwaltungsentscheid (bestätigt)</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="wrapper">
+					<div class="column">
+						<div class="item"><span>Abse.</span></div>
+						<div class="description">Spielabsetzung</div>
+					</div>
+					<div class="column">
+						<div class="item"><span>w</span></div>
+						<div class="description">(W) Wertung Spielinstanz (bestätigt)</div>
+					</div>
+					<div class="column">
+						<div class="item"><span>Ausf.</span></div>
+						<div class="description">Spielausfall</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="wrapper">
+					<div class="column">
+						<div class="item"><span>t</span></div>
+						<div class="description">(T) Testspiel (bestätigt)</div>
+					</div>
+					<div class="column">
+						<div class="item"><span>Abbr.</span></div>
+						<div class="description">Spielabbruch</div>
+					</div>
+					<div class="column">
+						<div class="item"><span>zg.</span></div>
+						<div class="description">Diese Mannschaft wurde zurückgezogen, die Ergebnisse werden aber eingerechnet.</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="wrapper">
+					<div class="column">
+						<div class="item"><span>n.an.</span></div>
+						<div class="description">nicht angetretene Mannschaft(en)</div>
+					</div>
+					<div class="column">
+						<div class="item"><span>nV</span></div>
+						<div class="description">nach Verlängerung</div>
+					</div>
+					<div class="column">
+						<div class="item"><span>nE</span></div>
+						<div class="description">nach Elfmeterschießen</div>
+					</div>
+				</div>
+			</div>
+			<h3>Sonstiges</h3>
+			<div class="row">
+				<div class="wrapper">
+					<div class="column">
+						<div class="item"><span>**</span></div>
+						<div class="description">Die Anstoßzeit steht noch nicht fest oder ist nicht bekannt.</div>
+					</div>
+					<div class="column">
+						<div class="item"><span>o.E.</span></div>
+						<div class="description">Keine Ergebnisanzeige, da die Staffel nicht im Leistungsbetrieb spielt.</div>
+					</div>
+					<div class="column">
+						<div class="item"><span>oW</span></div>
+						<div class="description">Mannschaften mit diesem Kennzeichen spielen außer Konkurrenz.</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="wrapper">
+					<div class="column">
+						<div class="item"><span class="icon-verified"></span></div>
+						<div class="description">Ergebnis bestätigt</div>
+					</div>
+					<div class="column">
+						<div class="item"><span>Live</span></div>
+						<div class="description">Liveticker</div>
+					</div>
+					<div class="column">
+						<div class="item"><span>SPIELFREI</span></div>
+						<div class="description">An diesem Datum hat die Mannschaft spielfrei.</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="wrapper">
+					<div class="column">
+						<div class="item"><span class="icon-article"></span></div>
+						<div class="description">Spielbericht vorhanden</div>
+					</div>
+					<div class="column">
+						<div class="item"><span class="icon-foto"></span></div>
+						<div class="description">Foto oder Video vorhanden</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

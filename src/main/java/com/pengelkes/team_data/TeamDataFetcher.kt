@@ -2,26 +2,18 @@ package com.pengelkes.team_data
 
 import java.net.URL
 
-fun main(args: Array<String>) {
-    val previousGamesString = URL("http://www.fussball.de/ajax.team.prev.games/-/team-id/011MICFJLG000000VTVG0001VTR8C1K7")
-            .readText(Charsets.UTF_8)
-
-    val gameDataFetcher = GameDataFetcher(previousGamesString)
-    gameDataFetcher.getAllGames().forEach(::println)
-}
-
-
 data class Game(var gameTime: String? = null, var homeTeamName: String? = null,
                 var awayTeamName: String? = null, var score: Score? = null)
 
 data class Score(val homeTeamGoals: Int, val awayTeamGoals: Int)
 
-class GameDataFetcher(val completeGameInfo: String) {
+class GameDataFetcher(var completeGameInfo: String, var calculateScore: Boolean) {
 
     companion object {
         val tableBodyStart = "<tbody>"
         val tableBodyEnd = "</tbody>"
         val tableRowEnd = "</tr>"
+        val goalsDiv = "<div class=\"goals\">"
     }
 
     fun getGameData(): String {
@@ -48,11 +40,12 @@ class GameDataFetcher(val completeGameInfo: String) {
 
             val score = getScoreString(gameWithoutTimeAndFirstClub)
 
-            if (score.contains("colon")) {
-                //game was not cancelled
-                val gameDetailsUrl = getGameDetailsUrl(gameWithoutTimeAndFirstClub)
-                val gameScoreFetcher = GameScoreFetcher(URL(gameDetailsUrl).readText(Charsets.UTF_8))
-                game.score = gameScoreFetcher.getScore()
+            if (calculateScore) {
+                if (score.contains("colon")) {
+                    //game was not cancelled
+                    val gameDetailsUrl = getGameDetailsUrl(gameWithoutTimeAndFirstClub)
+                    game.score = getScore(URL(gameDetailsUrl).readText(Charsets.UTF_8))
+                }
             }
 
             allGames.add(game)
@@ -111,28 +104,21 @@ class GameDataFetcher(val completeGameInfo: String) {
         val anchor = "<a href=\""
         return gameDetails.substring(gameDetails.indexOf(anchor) + anchor.length, gameDetails.indexOf("\">"))
     }
-}
 
-class GameScoreFetcher(val gameScoreData: String) {
-
-    companion object {
-        val goalsDiv = "<div class=\"goals\">"
-    }
-
-    fun getScore(): Score {
-        val homeTeamString = getHomeTeamGoals()
-        val awayTeamString = getAwayTeamGoals()
+    fun getScore(gameScoreData: String): Score {
+        val homeTeamString = getHomeTeamGoals(gameScoreData)
+        val awayTeamString = getAwayTeamGoals(gameScoreData)
 
         return Score(countGoals(homeTeamString), countGoals(awayTeamString))
     }
 
-    fun getHomeTeamGoals(): String {
+    fun getHomeTeamGoals(gameScoreData: String): String {
         val homeTeamGoals = gameScoreData.substring(
                 gameScoreData.indexOf(goalsDiv) + goalsDiv.length, gameScoreData.length)
         return homeTeamGoals.substring(0, homeTeamGoals.indexOf("</div>"))
     }
 
-    fun getAwayTeamGoals(): String {
+    fun getAwayTeamGoals(gameScoreData: String): String {
         val awayTeamGoals = gameScoreData.substring(
                 gameScoreData.indexOf(goalsDiv, gameScoreData.indexOf(goalsDiv) + goalsDiv.length) + goalsDiv.length, gameScoreData.length)
         return awayTeamGoals.substring(0, awayTeamGoals.indexOf("</div")).trim()

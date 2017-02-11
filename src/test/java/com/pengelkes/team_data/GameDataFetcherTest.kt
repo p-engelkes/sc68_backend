@@ -16,7 +16,14 @@ class GameDataFetcherTest {
     fun setup() {
         val gameDataFile = javaClass.classLoader.getResource("files/previous_games_data/example_match_data.txt")
         gameData = gameDataFile.readText(Charsets.UTF_8)
-        gameDataFetcher = GameDataFetcher(gameData)
+        gameDataFetcher = GameDataFetcher(gameData, true)
+    }
+
+    @Test
+    fun getAllGames() {
+        val expectedNumberOfGames = 10
+
+        assertEquals(expectedNumberOfGames, gameDataFetcher.getAllGames().size)
     }
 
     @Test

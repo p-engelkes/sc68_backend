@@ -1,0 +1,17 @@
+<tr class="row-promotion">
+				<td class="column-icon"><span class="icon-arrow-right"></span></td>
+				<td class="column-rank">1.</td>
+				<td class="column-club">
+					<a class="club-wrapper" href="http://www.fussball.de/mannschaft/spvg-emsdetten-05-ii-spvg-emsdetten-05-westfalen/-/saison/1617/team-id/011MIE7SB0000000VTVG0001VTR8C1K7">
+						<div class="club-logo table-image"><span data-responsive-image="//www.fussball.de/export.media/-/action/getLogo/format/3/id/00ES8GN8TC00000JVV0AG08LVUPGND5I/verband/0123456789ABCDEF0123456700004130"></span></div>
+						<div class="club-name">SpVg Emsdetten 05 II</div>
+					</a>
+				</td>
+				<td>15</td>
+				<td class="hidden-small">12</td>
+				<td class="hidden-small">2</td>
+				<td class="hidden-small">1</td>
+				<td class="no-wrap">52 : 13</td>
+				<td class="hidden-small">39</td>
+				<td class="column-points">38</td>
+			</tr>

@@ -294,7 +294,7 @@
 
     <profiles>
         <profile>
-            <id>no-unit-tests</id>
+            <id>skip-tests</id>
             <build>
                 <plugins>
                     <plugin>

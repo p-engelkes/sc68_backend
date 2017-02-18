@@ -1,15 +1,32 @@
 package com.pengelkes.team_data
 
+import com.pengelkes.service.Game
+import com.pengelkes.service.GameType
+import com.pengelkes.service.Score
+import com.pengelkes.service.Team
 import java.net.URL
 
-data class Game(var gameTime: String? = null, var homeTeamName: String? = null,
-                var awayTeamName: String? = null, var score: Score? = null)
+class GameDataFetcher(var team: Team? = null, var gameType: GameType) {
 
-data class Score(val homeTeamGoals: Int, val awayTeamGoals: Int)
+    var completeGameInfo: String? = null
 
-class GameDataFetcher(var completeGameInfo: String, var calculateScore: Boolean) {
+    init {
+        team?.let {
+            it.teamId?.let {
+                var gameUrl: String
+                when (gameType) {
+                    GameType.PREVIOUS -> gameUrl = previousGameUrl
+                    GameType.PAST -> gameUrl = nextGameUrl
+                }
+                gameUrl += it
+                completeGameInfo = URL(gameUrl).readText(Charsets.UTF_8)
+            }
+        }
+    }
 
     companion object {
+        val previousGameUrl = "http://www.fussball.de/ajax.team.prev.games/-/team-id/"
+        val nextGameUrl = "http://www.fussball.de/ajax.team.next.games/-/team-id/"
         val tableBodyStart = "<tbody>"
         val tableBodyEnd = "</tbody>"
         val tableRowEnd = "</tr>"
@@ -17,41 +34,52 @@ class GameDataFetcher(var completeGameInfo: String, var calculateScore: Boolean)
     }
 
     fun getAllGames(): List<Game> {
-        val allGames = mutableListOf<Game>()
-        var gameData = getGameData()
-        while (gameData.contains(tableRowEnd)) {
-            val game = Game()
-            val gameString = gameData.getSingleGameData()
-            gameData = gameData.replace(gameString, "")
-            game.gameTime = gameString.getGameTime()
-            val gameWithoutTimeData = gameString.removeGameTime()
+        completeGameInfo?.let {
+            val allGames = mutableListOf<Game>()
+            val gameData = getGameData()
+            gameData?.let {
+                var data = it
+                while (data.contains(tableRowEnd)) {
+                    val game = Game()
+                    val gameString = data.getSingleGameData()
+                    data = data.replace(gameString, "")
+                    game.gameTime = gameString.getGameTime()
+                    val gameWithoutTimeData = gameString.removeGameTime()
 
-            game.homeTeamName = gameWithoutTimeData.getClub()
+                    game.homeTeamName = gameWithoutTimeData.getClub()
 
-            val gameWithoutTimeAndFirstClub = gameWithoutTimeData.removeFirstClub(game.homeTeamName!!)
-            game.awayTeamName = gameWithoutTimeAndFirstClub.getClub()
+                    val gameWithoutTimeAndFirstClub = gameWithoutTimeData.removeFirstClub(game.homeTeamName!!)
+                    game.awayTeamName = gameWithoutTimeAndFirstClub.getClub()
 
-            val score = gameWithoutTimeAndFirstClub.getScoreString()
+                    val score = gameWithoutTimeAndFirstClub.getScoreString()
 
-            if (calculateScore) {
-                if (score.contains("colon")) {
-                    //game was not cancelled
-                    val gameDetailsUrl = gameWithoutTimeAndFirstClub.getGameDetailsUrl()
-                    game.score = URL(gameDetailsUrl).readText(Charsets.UTF_8).getScore()
+                    if (GameType.PREVIOUS == this.gameType) {
+                        if (score.contains("colon")) {
+                            //game was not cancelled
+                            val gameDetailsUrl = gameWithoutTimeAndFirstClub.getGameDetailsUrl()
+                            game.score = URL(gameDetailsUrl).readText(Charsets.UTF_8).getScore()
+                        }
+                    }
+
+                    allGames.add(game)
                 }
-            }
 
-            allGames.add(game)
+                return allGames
+            }
         }
 
-        return allGames
+        return emptyList()
     }
 
-    private fun getGameData(): String {
-        val gameDataStart = completeGameInfo.indexOf(tableBodyStart)
-        val gameDataEnd = completeGameInfo.indexOf(tableBodyEnd)
+    private fun getGameData(): String? {
+        completeGameInfo?.let {
+            val gameDataStart = it.indexOf(tableBodyStart)
+            val gameDataEnd = it.indexOf(tableBodyEnd)
 
-        return completeGameInfo.substring(gameDataStart + tableBodyStart.length, gameDataEnd).trim()
+            return it.substring(gameDataStart + tableBodyStart.length, gameDataEnd).trim()
+        }
+
+        return null
     }
 }
 

@@ -1,5 +1,8 @@
 package com.pengelkes.team_data
 
+import com.pengelkes.service.Game
+import com.pengelkes.service.GameType
+import com.pengelkes.service.Score
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
@@ -16,11 +19,12 @@ class GameDataFetcherTest {
     fun setup() {
         val gameDataFile = javaClass.classLoader.getResource("files/previous_games_data/example_match_data.txt")
         gameData = gameDataFile.readText(Charsets.UTF_8)
-        gameDataFetcher = GameDataFetcher(gameData, true)
+        gameDataFetcher = GameDataFetcher(null, GameType.PREVIOUS)
     }
 
     @Test
-    fun getAllGames() {
+    fun getAllGamesWithGameInfoString() {
+        gameDataFetcher.completeGameInfo = gameData
         val firstGame = Game(
                 gameTime = "Samstag, 28.01.2017 - 17:00 Uhr",
                 homeTeamName = "SuS Neuenkirchen III",
@@ -38,5 +42,10 @@ class GameDataFetcherTest {
         assertEquals(expectedNumberOfGames, gameDataFetcher.getAllGames().size)
         assertEquals(firstGame, games[0])
         assertEquals(lastGame, games[9])
+    }
+
+    @Test
+    fun getAllGamesWithoutAnyGameInfo() {
+        assertEquals(emptyList<Game>(), gameDataFetcher.getAllGames())
     }
 }

@@ -1,0 +1,2 @@
+ALTER TABLE team
+  ADD COLUMN team_id TEXT;

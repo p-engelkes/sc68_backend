@@ -6,14 +6,19 @@ import com.pengelkes.service.Score
 import com.pengelkes.service.Team
 import java.net.URL
 
-class GameDataFetcher(var team: Team? = null, var gameType: GameType) {
+open class GameDataFetcher {
+    var team: Team? = null
+    var gameType: GameType? = null
 
-    var completeGameInfo: String? = null
+    constructor()
 
-    init {
+    constructor(team: Team? = null, gameType: GameType? = null) {
+        this.team = team
+        this.gameType = gameType
+
         team?.let {
             it.teamId?.let {
-                var gameUrl: String
+                var gameUrl: String = ""
                 when (gameType) {
                     GameType.PREVIOUS -> gameUrl = previousGameUrl
                     GameType.PAST -> gameUrl = nextGameUrl
@@ -24,6 +29,8 @@ class GameDataFetcher(var team: Team? = null, var gameType: GameType) {
         }
     }
 
+    var completeGameInfo: String? = null
+
     companion object {
         val previousGameUrl = "http://www.fussball.de/ajax.team.prev.games/-/team-id/"
         val nextGameUrl = "http://www.fussball.de/ajax.team.next.games/-/team-id/"
@@ -33,7 +40,7 @@ class GameDataFetcher(var team: Team? = null, var gameType: GameType) {
         val goalsDiv = "<div class=\"goals\">"
     }
 
-    fun getAllGames(): List<Game> {
+    open fun getAllGames(): List<Game> {
         completeGameInfo?.let {
             val allGames = mutableListOf<Game>()
             val gameData = getGameData()

@@ -32,10 +32,11 @@ class Team {
 
     constructor()
 
-    constructor(id: Int = 0, name: String, trainingTimes: HashMap<String, String>) {
+    constructor(id: Int = 0, name: String, trainingTimes: HashMap<String, String>, teamId: String? = null) {
         this.id = id
         this.name = name
         this.trainingTimes = trainingTimes
+        this.teamId = teamId
     }
 
     constructor(teamRecord: TeamRecord) {

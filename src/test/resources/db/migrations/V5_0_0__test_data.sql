@@ -1,4 +1,5 @@
-INSERT INTO team (name, training_times) VALUES ('Herren 1. Mannschaft', '"Friday"=>"19:00"');
+INSERT INTO team (name, training_times, team_id)
+VALUES ('Herren 1. Mannschaft', '"Friday"=>"19:00"', '011MICFJLG000000VTVG0001VTR8C1K7');
 INSERT INTO user_account (email, password) VALUES ('test@test.com', 'test');
 INSERT INTO article (title, content) VALUES ('Test Title', 'Test Content');
 INSERT INTO article (title, content, author_id) VALUES ('I have an author title', 'I have an author content', 1);
@@ -9,4 +10,10 @@ INSERT INTO user_profile_picture (picture, width, height, ratio, user_id) VALUES
   500,
   3,
   1
-)
+);
+INSERT INTO game (game_time, home_team_name, away_team_name, home_team_goals, away_team_goals, game_type, team_id)
+VALUES ('13:30', 'Skiclub Nordwest Rheine', 'Portu Rheine', 6, 0, 'PREVIOUS', 1);
+INSERT INTO game (game_time, home_team_name, away_team_name, home_team_goals, away_team_goals, game_type, team_id)
+VALUES ('14:30', 'Skiclub Nordwest Rheine', 'Portu Rheine', 6, 0, 'PREVIOUS', 1);
+INSERT INTO game (game_time, home_team_name, away_team_name, home_team_goals, away_team_goals, game_type, team_id)
+VALUES ('13:30', 'Skiclub Nordwest Rheine', 'Portu Rheine', 6, 0, 'PAST', 1)

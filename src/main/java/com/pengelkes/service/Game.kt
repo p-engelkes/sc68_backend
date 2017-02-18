@@ -4,6 +4,7 @@ import com.pengelkes.backend.jooq.tables.Game.GAME
 import com.pengelkes.backend.jooq.tables.records.GameRecord
 import com.pengelkes.team_data.GameDataFetcher
 import org.jooq.DSLContext
+import org.jooq.Result
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 import org.springframework.stereotype.Service
@@ -79,32 +80,80 @@ class Game {
 
 @Service
 interface GameService {
-    fun updateGamesByTeamAndType(team: Team, gameType: GameType)
+    fun updateGamesByTeamAndType(team: Team, gameType: GameType): IntArray
+    fun findByTeamAndType(teamId: Int, gameType: GameType): List<Game>
 }
 
 @Service
 @Transactional
-open class GameServiceImpl {
+open class GameServiceImpl
+@Autowired
+constructor(private val gameServiceController: GameServiceController) : GameService {
+    override fun findByTeamAndType(teamId: Int, gameType: GameType): List<Game> {
+        return gameServiceController.findByTeamAndType(teamId, gameType)
+    }
+
+    override fun updateGamesByTeamAndType(team: Team, gameType: GameType): IntArray {
+        return gameServiceController.updateGamesByTeamAndType(team, gameType)
+    }
 
 }
 
 @Component
 open class GameServiceController @Autowired constructor(private val dsl: DSLContext) {
-    fun updateGamesByTeamAndType(team: Team, gameType: GameType) {
+    fun updateGamesByTeamAndType(team: Team, gameType: GameType): IntArray {
         deleteGamesByTeamAndType(team, gameType)
+        return createGamesByTeamAndType(team, gameType)
+    }
+
+    fun findByTeamAndType(teamId: Int, gameType: GameType): List<Game> {
+        return getEntities(dsl.selectFrom(GAME).where(GAME.TEAM_ID.eq(teamId))
+                .and(GAME.GAME_TYPE.eq(gameType.toString())).fetch())
+    }
+
+    private fun getEntities(result: Result<GameRecord>): List<Game> {
+        val allGames = mutableListOf<Game>()
+        result.forEach { getEntity(it)?.let { allGames.add(it) } }
+
+        return allGames
+    }
+
+    private fun getEntity(gameRecord: GameRecord?): Game? {
+        gameRecord?.let { return Game(it) }
+        return null
     }
 
     private fun deleteGamesByTeamAndType(team: Team, gameType: GameType) {
         dsl.deleteFrom(GAME)
                 .where(GAME.TEAM_ID.eq(team.id), GAME.GAME_TYPE.eq(gameType.toString()))
+                .execute()
     }
 
-    private fun createGamesByTeamAndType(team: Team, gameType: GameType) {
-        val games = GameDataFetcher(team, gameType).getAllGames()
+    private fun createGamesByTeamAndType(team: Team, gameType: GameType): IntArray {
+        val gameDataFetcher = GameDataFetcher(team, gameType)
+        val games = gameDataFetcher.getAllGames()
+
+        return dsl.batchInsert(createGameRecords(games, team)).execute()
+    }
+
+    private fun createGameRecords(games: List<Game>, team: Team): List<GameRecord> {
+        val gameRecords = mutableListOf<GameRecord>()
 
         games.forEach {
             val gameRecord = GameRecord()
-            gameRecord.id = it.id
+            gameRecord.gameTime = it.gameTime
+            gameRecord.homeTeamName = it.homeTeamName
+            gameRecord.awayTeamName = it.awayTeamName
+            gameRecord.gameType = it.gameType.toString()
+            gameRecord.teamId = team.id
+            it.score?.let {
+                gameRecord.homeTeamGoals = it.homeTeamGoals
+                gameRecord.awayTeamGoals = it.awayTeamGoals
+            }
+
+            gameRecords.add(gameRecord)
         }
+
+        return gameRecords
     }
 }

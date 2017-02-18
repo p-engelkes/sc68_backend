@@ -21,82 +21,22 @@ class GameDataFetcherTest {
 
     @Test
     fun getAllGames() {
+        val firstGame = Game(
+                gameTime = "Samstag, 28.01.2017 - 17:00 Uhr",
+                homeTeamName = "SuS Neuenkirchen III",
+                awayTeamName = "SKICLUB NORDWEST RHEINE"
+        )
+        val lastGame = Game(
+                gameTime = "Sonntag, 09.10.2016 - 15:00 Uhr",
+                homeTeamName = "Skiclub Nordwest Rheine",
+                awayTeamName = "FC Eintracht Rheine III",
+                score = Score(4, 3)
+        )
         val expectedNumberOfGames = 10
+        val games = gameDataFetcher.getAllGames()
 
         assertEquals(expectedNumberOfGames, gameDataFetcher.getAllGames().size)
-    }
-
-    @Test
-    fun getMatchData() {
-        val expected = javaClass.classLoader.getResource("files/previous_games_data/expected_previous_game_data.txt")
-                .readText(Charsets.UTF_8)
-
-        assertEquals(expected, gameDataFetcher.getGameData())
-    }
-
-    @Test
-    fun getSingleMatchFromMatchData() {
-        val matchData = javaClass.classLoader.getResource("files/previous_games_data/expected_previous_game_data.txt")
-                .readText(Charsets.UTF_8)
-        val expected = javaClass.classLoader.getResource("files/previous_games_data/expected_game_data.txt")
-                .readText(Charsets.UTF_8)
-
-        assertEquals(expected, gameDataFetcher.getSingleGameData(matchData))
-    }
-
-    @Test
-    fun getGameTime() {
-        val gameData = javaClass.classLoader.getResource("files/previous_games_data/expected_game_data.txt")
-                .readText(Charsets.UTF_8)
-        val expected = "Samstag, 28.01.2017 - 17:00 Uhr"
-
-        assertEquals(expected, gameDataFetcher.getGameTime(gameData))
-    }
-
-    @Test
-    fun removeGameTime() {
-        val gameData = javaClass.classLoader.getResource("files/previous_games_data/expected_game_data.txt")
-                .readText(Charsets.UTF_8)
-        val expected = javaClass.classLoader.getResource("files/previous_games_data/expected_game_data_without_time.txt")
-                .readText(Charsets.UTF_8)
-
-        assertEquals(expected, gameDataFetcher.removeGameTime(gameData))
-    }
-
-    @Test
-    fun getClubFromString() {
-        val gameDataWithoutTime = javaClass.classLoader.getResource("files/previous_games_data/expected_game_data_without_time.txt")
-                .readText(Charsets.UTF_8)
-        val expected = "SuS Neuenkirchen III"
-
-        assertEquals(expected, gameDataFetcher.getClubFromString(gameDataWithoutTime))
-    }
-
-    @Test
-    fun removeFirstClub() {
-        val gameDataWithoutTime = javaClass.classLoader.getResource("files/previous_games_data/expected_game_data_without_time.txt")
-                .readText(Charsets.UTF_8)
-        val expected = javaClass.classLoader.getResource("files/previous_games_data/expected_game_data_without_time_and_club.txt")
-                .readText(Charsets.UTF_8)
-
-        assertEquals(expected, gameDataFetcher.removeFirstClub(gameDataWithoutTime, "SuS Neuenkirchen III"))
-    }
-
-    @Test
-    fun getScoreString() {
-        val gameDataWithoutTimeAndClub = javaClass.classLoader.getResource("files/previous_games_data/expected_game_data_without_time_and_club.txt")
-                .readText(Charsets.UTF_8)
-        val expected = javaClass.classLoader.getResource("files/previous_games_data/score.txt").readText(Charsets.UTF_8)
-
-        assertEquals(expected, gameDataFetcher.getScoreString(gameDataWithoutTimeAndClub))
-    }
-
-    @Test
-    fun getGameDetailsUrl() {
-        val gameDataWithoutTimeAndClub = javaClass.classLoader.getResource("files/previous_games_data/expected_game_data_without_time_and_club.txt")
-                .readText(Charsets.UTF_8)
-        val expected = "http://www.fussball.de/spiel/sus-neuenkirchen-iii-skiclub-nordwest-rheine/-/spiel/01U1FPA2A0000000VS54898EVU34LTP2"
-
-        assertEquals(expected, gameDataFetcher.getGameDetailsUrl(gameDataWithoutTimeAndClub))
+        assertEquals(firstGame, games[0])
+        assertEquals(lastGame, games[9])
     }
 }

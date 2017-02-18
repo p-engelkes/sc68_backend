@@ -69,7 +69,7 @@ class TableDataFetcherTest {
                 .readText(Charsets.UTF_8)
 
         assertEquals(expected, tableDataFetcher.getDataBetweenTags(
-                data, TableDataFetcher.tableDataStartTag, TableDataFetcher.tableDataEndTag, 647
+                data, TableDataFetcher.tableDataStartTag, TableDataFetcher.tableDataEndTag, 638
         ))
     }
 
@@ -97,9 +97,9 @@ class TableDataFetcherTest {
         val stringToSearchIn = javaClass.classLoader.getResource("files/table_data/sanitized_table_data.txt")
                 .readText(Charsets.UTF_8)
 
-        val expectedIndex = 647
+        val expectedIndex = 654
         assertEquals(expectedIndex,
-                tableDataFetcher.findNthIndexOf(3, stringToSearchFor = "<td", stringToSearchIn = stringToSearchIn))
+                tableDataFetcher.findNthIndexOf(4, stringToSearchFor = "<td", stringToSearchIn = stringToSearchIn))
     }
 
     @Test

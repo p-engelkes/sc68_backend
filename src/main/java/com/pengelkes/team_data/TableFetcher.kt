@@ -1,11 +1,27 @@
 package com.pengelkes.team_data
 
+import com.pengelkes.service.Table
+import com.pengelkes.service.TableTeam
+import com.pengelkes.service.Team
+import java.net.URL
+
 /**
  * Created by pengelkes on 11.02.2017.
  */
-class TableFetcher(private val tableData: String) {
+class TableFetcher {
+    var team: Team? = null
+    var tableData: String? = null
+
+    constructor(team: Team? = null) {
+        this.team = team
+        team?.teamId?.let {
+            val url = tableUrl + it
+            tableData = URL(url).readText(Charsets.UTF_8)
+        }
+    }
 
     companion object {
+        val tableUrl = "http://www.fussball.de/ajax.team.table/-/staffel/01SNJETL9K000002VS54898DVV2J9QR4-G/team-id/"
         val closingDiv = "</div>"
         val clubNameStartingDiv = "<div class=\"club-name\">"
         val logoStartString = "data-responsive-image=\"//"
@@ -16,50 +32,6 @@ class TableFetcher(private val tableData: String) {
         val tableRowEndTag = "</tr>"
         val tableDataStartTag = "<td"
         val tableDataEndTag = "</td>"
-    }
-
-    fun getTable(): Map<Int, TableTeam> {
-        val table = mutableMapOf<Int, TableTeam>()
-
-        getTableData().forEachIndexed { position, teamData ->
-            val tableTeam = TableTeam()
-            tableTeam.name = teamData.getTeamName()
-            tableTeam.icon = teamData.getTeamIcon()
-            tableTeam.games = teamData.nthValueBetweenTag(TableTeam.gamesIndex, tableDataStartTag).toInt()
-            tableTeam.wonGames = teamData.nthValueBetweenTag(TableTeam.wonGamesIndex, tableDataStartTag).toInt()
-            tableTeam.tiedGames = teamData.nthValueBetweenTag(TableTeam.tiedGamesIndex, tableDataStartTag).toInt()
-            tableTeam.lostGames = teamData.nthValueBetweenTag(TableTeam.lostGamesIndex, tableDataStartTag).toInt()
-            tableTeam.goalRatio = teamData.nthValueBetweenTag(TableTeam.goalRatioIndex, tableDataStartTag)
-            tableTeam.goalDifference = teamData.nthValueBetweenTag(
-                    TableTeam.goalDifferenceIndex, tableDataStartTag).toInt()
-            tableTeam.points = teamData.nthValueBetweenTag(TableTeam.pointsIndex, tableDataStartTag).toInt()
-
-            table.put(position + 1, tableTeam)
-        }
-
-        return table
-    }
-
-    private fun getTableData(): List<String> {
-        val teamDataList = mutableListOf<String>()
-        var sanitizedTableData = tableData.valueBetweenTag(tableBodyStartTag, tableBodyEndTag)
-        while (sanitizedTableData.contains(tableRowEndTag)) {
-            val teamData = sanitizedTableData.getDataWithTags(tableRowStartTag, tableRowEndTag)
-            sanitizedTableData = sanitizedTableData.replace(teamData, "")
-            teamDataList.add(teamData)
-        }
-
-        return teamDataList
-    }
-}
-
-data class TableTeam(var name: String? = null, var icon: String? = null,
-                     var games: Int? = null, var wonGames: Int? = null,
-                     var tiedGames: Int? = null, var lostGames: Int? = null,
-                     var goalRatio: String? = null, var goalDifference: Int? = null,
-                     var points: Int? = null) {
-
-    companion object {
         val gamesIndex = 3
         val wonGamesIndex = 4
         val tiedGamesIndex = 5
@@ -67,6 +39,47 @@ data class TableTeam(var name: String? = null, var icon: String? = null,
         val goalRatioIndex = 7
         val goalDifferenceIndex = 8
         val pointsIndex = 9
+    }
+
+    fun getTable(): Table? {
+        tableData?.let {
+            val table = mutableListOf<TableTeam>()
+
+            getTableData().forEachIndexed { position, teamData ->
+                val tableTeam = TableTeam()
+                tableTeam.position = position + 1
+                tableTeam.name = teamData.getTeamName()
+                tableTeam.icon = teamData.getTeamIcon()
+                tableTeam.games = teamData.nthValueBetweenTag(gamesIndex, tableDataStartTag).toInt()
+                tableTeam.wonGames = teamData.nthValueBetweenTag(wonGamesIndex, tableDataStartTag).toInt()
+                tableTeam.tiedGames = teamData.nthValueBetweenTag(tiedGamesIndex, tableDataStartTag).toInt()
+                tableTeam.lostGames = teamData.nthValueBetweenTag(lostGamesIndex, tableDataStartTag).toInt()
+                tableTeam.goalRatio = teamData.nthValueBetweenTag(goalRatioIndex, tableDataStartTag)
+                tableTeam.goalDifference = teamData.nthValueBetweenTag(
+                        goalDifferenceIndex, tableDataStartTag).toInt()
+                tableTeam.points = teamData.nthValueBetweenTag(pointsIndex, tableDataStartTag).toInt()
+
+                table.add(tableTeam)
+            }
+
+            return Table(table.sortedBy { it.position }, team)
+        }
+
+        return null
+    }
+
+    private fun getTableData(): List<String> {
+        val teamDataList = mutableListOf<String>()
+        tableData?.let {
+            var sanitizedTableData = it.valueBetweenTag(tableBodyStartTag, tableBodyEndTag)
+            while (sanitizedTableData.contains(tableRowEndTag)) {
+                val teamData = sanitizedTableData.getDataWithTags(tableRowStartTag, tableRowEndTag)
+                sanitizedTableData = sanitizedTableData.replace(teamData, "")
+                teamDataList.add(teamData)
+            }
+        }
+
+        return teamDataList
     }
 }
 

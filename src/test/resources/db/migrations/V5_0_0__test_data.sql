@@ -16,4 +16,13 @@ VALUES ('13:30', 'Skiclub Nordwest Rheine', 'Portu Rheine', 6, 0, 'PREVIOUS', 1)
 INSERT INTO game (game_time, home_team_name, away_team_name, home_team_goals, away_team_goals, game_type, team_id)
 VALUES ('14:30', 'Skiclub Nordwest Rheine', 'Portu Rheine', 6, 0, 'PREVIOUS', 1);
 INSERT INTO game (game_time, home_team_name, away_team_name, home_team_goals, away_team_goals, game_type, team_id)
-VALUES ('13:30', 'Skiclub Nordwest Rheine', 'Portu Rheine', 6, 0, 'PAST', 1)
+VALUES ('13:30', 'Skiclub Nordwest Rheine', 'Portu Rheine', 6, 0, 'PAST', 1);
+
+INSERT INTO "table" (position, name, icon, games, won_games, tied_games, lost_games, goal_ratio, goal_difference, points, team_id)
+VALUES (1, 'Skiclub Rheine', 'Icon', 15, 15, 0, 0, '50:0', 50, 45, 1);
+INSERT INTO "table" (position, name, icon, games, won_games, tied_games, lost_games, goal_ratio, goal_difference, points, team_id)
+VALUES (1, 'Emsdetten 05', 'Icon', 15, 14, 0, 1, '50:10', 40, 42, 1);
+INSERT INTO "table" (position, name, icon, games, won_games, tied_games, lost_games, goal_ratio, goal_difference, points, team_id)
+VALUES (1, 'Tus St. Arnold', 'Icon', 15, 13, 0, 2, '50:20', 30, 39, 1);
+INSERT INTO "table" (position, name, icon, games, won_games, tied_games, lost_games, goal_ratio, goal_difference, points, team_id)
+VALUES (1, 'SF Gellendorf', 'Icon', 15, 12, 0, 3, '50:30', 20, 36, 1);

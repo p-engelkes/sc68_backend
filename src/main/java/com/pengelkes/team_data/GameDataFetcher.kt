@@ -7,8 +7,8 @@ import com.pengelkes.service.Team
 import java.net.URL
 
 open class GameDataFetcher {
-    var team: Team? = null
-    var gameType: GameType? = null
+    private var team: Team? = null
+    private var gameType: GameType? = null
 
     constructor()
 

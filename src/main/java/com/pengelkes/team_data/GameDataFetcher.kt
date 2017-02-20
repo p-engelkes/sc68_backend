@@ -17,7 +17,7 @@ open class GameDataFetcher {
         this.gameType = gameType
 
         team?.let {
-            it.teamId?.let {
+            it.soccerInfoId?.let {
                 var gameUrl: String = ""
                 when (gameType) {
                     GameType.PREVIOUS -> gameUrl = previousGameUrl

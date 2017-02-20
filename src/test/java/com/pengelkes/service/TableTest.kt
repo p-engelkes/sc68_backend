@@ -20,7 +20,7 @@ class TableTest : SpringTestCase() {
 
     @Test
     fun testUpdateTableByTeamWithNoValue() {
-        databaseTeam.teamId = null
+        databaseTeam.soccerInfoId = null
         tableService.updateTable(databaseTeam).size.should.equal(0)
     }
 

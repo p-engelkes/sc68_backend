@@ -27,7 +27,7 @@ class Team {
     var id: Int = 0
     var name: String? = null
     var trainingTimes: HashMap<String, String>? = null
-    var teamId: String? = null
+    var soccerInfoId: String? = null
     var created: Date? = null
 
     constructor()
@@ -36,7 +36,7 @@ class Team {
         this.id = id
         this.name = name
         this.trainingTimes = trainingTimes
-        this.teamId = teamId
+        this.soccerInfoId = teamId
     }
 
     constructor(teamRecord: TeamRecord) {

@@ -14,7 +14,7 @@ class TableFetcher {
 
     constructor(team: Team? = null) {
         this.team = team
-        team?.teamId?.let {
+        team?.soccerInfoId?.let {
             val url = tableUrl + it
             tableData = URL(url).readText(Charsets.UTF_8)
         }

@@ -13,7 +13,35 @@ import org.springframework.transaction.annotation.Transactional
 /**
  * Created by pengelkes on 19.02.2017.
  */
-data class Table(val tableTeams: List<TableTeam>, val team: Team? = null)
+class Table {
+    var tableTeams = emptyList<TableTeam>()
+    var teamId: Int? = null
+
+    constructor()
+
+    constructor(tableTeams: List<TableTeam>, teamId: Int?) {
+        this.tableTeams = tableTeams
+        this.teamId = teamId
+    }
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other?.javaClass != javaClass) return false
+
+        other as Table
+
+        if (tableTeams != other.tableTeams) return false
+        if (teamId != other.teamId) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = tableTeams.hashCode()
+        result = 31 * result + (teamId ?: 0)
+        return result
+    }
+}
 
 class TableTeam {
     var id: Int? = null
@@ -48,6 +76,7 @@ class TableTeam {
 
     constructor(tableRecord: TableRecord) {
         this.id = tableRecord.id
+        this.position = tableRecord.position
         this.name = tableRecord.name
         this.icon = tableRecord.icon
         this.games = tableRecord.games
@@ -56,7 +85,7 @@ class TableTeam {
         this.lostGames = tableRecord.lostGames
         this.goalRatio = tableRecord.goalRatio
         this.goalDifference = tableRecord.goalDifference
-        this.points = points
+        this.points = tableRecord.points
     }
 
     override fun equals(other: Any?): Boolean {
@@ -99,7 +128,7 @@ class TableTeam {
 @Service
 interface TableService {
     fun updateTable(team: Team): IntArray
-    fun findByTeam(team: Team): Table
+    fun findByTeam(teamId: Int): Table
 }
 
 @Service
@@ -110,8 +139,8 @@ open class TableServiceImpl
         return tableServiceController.updateTable(team)
     }
 
-    override fun findByTeam(team: Team): Table {
-        return tableServiceController.findByTeam(team)
+    override fun findByTeam(teamId: Int): Table {
+        return tableServiceController.findByTeam(teamId)
     }
 }
 
@@ -122,9 +151,9 @@ open class TableServiceController @Autowired constructor(private val dsl: DSLCon
         return createTable(team)
     }
 
-    fun findByTeam(team: Team): Table {
-        val tableTeams = getEntities(dsl.selectFrom(TABLE).where(TABLE.TEAM_ID.eq(team.id)).fetch())
-        return Table(tableTeams, team)
+    fun findByTeam(teamId: Int): Table {
+        val tableTeams = getEntities(dsl.selectFrom(TABLE).where(TABLE.TEAM_ID.eq(teamId)).fetch())
+        return Table(tableTeams, teamId)
     }
 
     fun deleteTable(teamId: Int) {

@@ -15,7 +15,7 @@ class TableTest : SpringTestCase() {
 
     @Test
     fun testGetByTeam() {
-        tableService.findByTeam(databaseTeam).tableTeams.size.should.equal(4)
+        tableService.findByTeam(databaseTeam.id).tableTeams.size.should.equal(4)
     }
 
     @Test

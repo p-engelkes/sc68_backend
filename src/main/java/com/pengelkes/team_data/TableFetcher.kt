@@ -62,7 +62,7 @@ class TableFetcher {
                 table.add(tableTeam)
             }
 
-            return Table(table.sortedBy { it.position }, team)
+            return Table(table.sortedBy { it.position }, team?.id)
         }
 
         return null

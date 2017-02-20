@@ -37,6 +37,11 @@ abstract class SpringTestCase {
         lateinit var databaseGameOne: Game
         lateinit var databaseGameTwo: Game
         lateinit var databaseGameThree: Game
+        lateinit var databaseTableTeamOne: TableTeam
+        lateinit var databaseTableTeamTwo: TableTeam
+        lateinit var databaseTableTeamThree: TableTeam
+        lateinit var databaseTableTeamFour: TableTeam
+        lateinit var databaseTable: Table
     }
 
     @Before
@@ -64,6 +69,15 @@ abstract class SpringTestCase {
                 awayTeamName = "Portu Rheine", score = Score(6, 0), gameType = GameType.PREVIOUS, id = 2)
         databaseGameThree = Game(gameTime = "Sonntag, 5.02.2017 - 12:00 Uhr", homeTeamName = "Skiclub Nordwest Rheine",
                 awayTeamName = "Portu Rheine", score = Score(6, 0), gameType = GameType.PAST, id = 3)
+
+        databaseTableTeamOne = TableTeam(1, 1, "Skiclub Rheine", "Icon", 15, 15, 0, 0, "50:0", 50, 45)
+        databaseTableTeamTwo = TableTeam(2, 2, "Emsdetten 05", "Icon", 15, 14, 0, 1, "50:10", 40, 42)
+        databaseTableTeamThree = TableTeam(3, 3, "Tus St. Arnold", "Icon", 15, 13, 0, 2, "50:20", 30, 39)
+        databaseTableTeamFour = TableTeam(4, 4, "SF Gellendorf", "Icon", 15, 12, 0, 3, "50:30", 20, 36)
+        databaseTable = Table(
+                listOf(databaseTableTeamOne, databaseTableTeamTwo, databaseTableTeamThree, databaseTableTeamFour),
+                databaseTeam.id
+        )
     }
 
     fun setUserAuthenticationForTesting() {

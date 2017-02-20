@@ -18,7 +18,37 @@ enum class GameType {
     PAST
 }
 
-data class Score(val homeTeamGoals: Int, val awayTeamGoals: Int)
+class Score {
+    var homeTeamGoals: Int? = null
+    var awayTeamGoals: Int? = null
+
+    constructor()
+
+    constructor(homeTeamGoals: Int, awayTeamGoals: Int) {
+        this.homeTeamGoals = homeTeamGoals
+        this.awayTeamGoals = awayTeamGoals
+    }
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other?.javaClass != javaClass) return false
+
+        other as Score
+
+        if (homeTeamGoals != other.homeTeamGoals) return false
+        if (awayTeamGoals != other.awayTeamGoals) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = homeTeamGoals ?: 0
+        result = 31 * result + (awayTeamGoals ?: 0)
+        return result
+    }
+
+
+}
 
 class Game {
     var id: Int? = null

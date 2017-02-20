@@ -12,11 +12,11 @@ INSERT INTO user_profile_picture (picture, width, height, ratio, user_id) VALUES
   1
 );
 INSERT INTO game (game_time, home_team_name, away_team_name, home_team_goals, away_team_goals, game_type, team_id)
-VALUES ('13:30', 'Skiclub Nordwest Rheine', 'Portu Rheine', 6, 0, 'PREVIOUS', 1);
+VALUES ('Sonntag, 19.02.2017 - 12:00 Uhr', 'Skiclub Nordwest Rheine', 'Portu Rheine', 6, 0, 'PREVIOUS', 1);
 INSERT INTO game (game_time, home_team_name, away_team_name, home_team_goals, away_team_goals, game_type, team_id)
-VALUES ('14:30', 'Skiclub Nordwest Rheine', 'Portu Rheine', 6, 0, 'PREVIOUS', 1);
+VALUES ('Sonntag, 12.02.2017 - 12:00 Uhr', 'Skiclub Nordwest Rheine', 'Portu Rheine', 6, 0, 'PREVIOUS', 1);
 INSERT INTO game (game_time, home_team_name, away_team_name, home_team_goals, away_team_goals, game_type, team_id)
-VALUES ('13:30', 'Skiclub Nordwest Rheine', 'Portu Rheine', 6, 0, 'PAST', 1);
+VALUES ('Sonntag, 5.02.2017 - 12:00 Uhr', 'Skiclub Nordwest Rheine', 'Portu Rheine', 6, 0, 'PAST', 1);
 
 INSERT INTO "table" (position, name, icon, games, won_games, tied_games, lost_games, goal_ratio, goal_difference, points, team_id)
 VALUES (1, 'Skiclub Rheine', 'Icon', 15, 15, 0, 0, '50:0', 50, 45, 1);

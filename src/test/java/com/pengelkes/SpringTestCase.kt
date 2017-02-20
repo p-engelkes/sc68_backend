@@ -1,9 +1,7 @@
 package com.pengelkes
 
 import com.pengelkes.database.Migrator
-import com.pengelkes.service.Article
-import com.pengelkes.service.ProfilePicture
-import com.pengelkes.service.Team
+import com.pengelkes.service.*
 import org.junit.Before
 import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
@@ -36,6 +34,9 @@ abstract class SpringTestCase {
         lateinit var databaseArticleWithAuthor: Article
         lateinit var databaseArticleWithTeam: Article
         lateinit var databaseTeam: Team
+        lateinit var databaseGameOne: Game
+        lateinit var databaseGameTwo: Game
+        lateinit var databaseGameThree: Game
     }
 
     @Before
@@ -57,8 +58,12 @@ abstract class SpringTestCase {
         databaseArticleWithAuthor.author = databaseUser
         databaseArticleWithTeam = Article(3, "I have a team title", "I have a team content", teamId = 1)
         databaseArticleWithTeam.team = databaseTeam
-
-
+        databaseGameOne = Game(gameTime = "Sonntag, 19.02.2017 - 12:00 Uhr", homeTeamName = "Skiclub Nordwest Rheine",
+                awayTeamName = "Portu Rheine", score = Score(6, 0), gameType = GameType.PREVIOUS, id = 1)
+        databaseGameTwo = Game(gameTime = "Sonntag, 12.02.2017 - 12:00 Uhr", homeTeamName = "Skiclub Nordwest Rheine",
+                awayTeamName = "Portu Rheine", score = Score(6, 0), gameType = GameType.PREVIOUS, id = 2)
+        databaseGameThree = Game(gameTime = "Sonntag, 5.02.2017 - 12:00 Uhr", homeTeamName = "Skiclub Nordwest Rheine",
+                awayTeamName = "Portu Rheine", score = Score(6, 0), gameType = GameType.PAST, id = 3)
     }
 
     fun setUserAuthenticationForTesting() {

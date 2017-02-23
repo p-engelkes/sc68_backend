@@ -20,12 +20,12 @@ class GameTest : SpringTestCase() {
 
     @Test
     fun testUpdateGamesByTeamAndTypeWithNoNewValues() {
-        databaseTeam.soccerInfoId = null
-        gameService.updateGamesByTeamAndType(databaseTeam, GameType.PREVIOUS).size.should.equal(0)
+        databaseTeamOne.soccerInfoId = null
+        gameService.updateGamesByTeamAndType(databaseTeamOne, GameType.PREVIOUS).size.should.equal(0)
     }
 
     @Test
     fun testUpdateGamesByTeamAndTypeWithNewValues() {
-        gameService.updateGamesByTeamAndType(databaseTeam, GameType.PREVIOUS).size.should.equal(10)
+        gameService.updateGamesByTeamAndType(databaseTeamOne, GameType.PREVIOUS).size.should.equal(10)
     }
 }

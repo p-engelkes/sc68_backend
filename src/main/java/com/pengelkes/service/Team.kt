@@ -43,6 +43,7 @@ class Team {
         this.id = teamRecord.id
         this.name = teamRecord.name
         this.trainingTimes = teamRecord.trainingTimes
+        this.soccerInfoId = teamRecord.teamId
     }
 
     companion object {
@@ -74,6 +75,8 @@ class Team {
         if (id != other.id) return false
         if (name != other.name) return false
         if (trainingTimes != other.trainingTimes) return false
+        if (soccerInfoId != other.soccerInfoId) return false
+        if (created != other.created) return false
 
         return true
     }
@@ -82,6 +85,8 @@ class Team {
         var result = id
         result = 31 * result + (name?.hashCode() ?: 0)
         result = 31 * result + (trainingTimes?.hashCode() ?: 0)
+        result = 31 * result + (soccerInfoId?.hashCode() ?: 0)
+        result = 31 * result + (created?.hashCode() ?: 0)
         return result
     }
 

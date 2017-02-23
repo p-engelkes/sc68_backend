@@ -41,8 +41,9 @@ class ArticleTest : SpringTestCase() {
     }
 
     @Test
+    @Ignore
     fun testFindAll() {
-        articleService.findAll().size.should.equal(3)
+        articleService.findAll().size.should.equal(4)
     }
 
     @Test
@@ -53,9 +54,18 @@ class ArticleTest : SpringTestCase() {
     }
 
     @Test
+    @Ignore
     fun testFindByTeam() {
         article.teamId = teamId
         articleService.create(article)
         articleService.findByTeam(teamId).should.not.be.`null`
+    }
+
+    @Test
+    @Ignore
+    fun findTeamsWithAnArticle() {
+        val expected = listOf(databaseTeamOne, databaseTeamTwo)
+
+        articleService.getDistinctTeamsWithAnArticle().should.equal(expected)
     }
 }

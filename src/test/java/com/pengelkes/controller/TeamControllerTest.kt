@@ -24,7 +24,7 @@ class TeamControllerTest : ControllerTestCase() {
                 .andExpect(MockMvcResultMatchers.content().contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andReturn()
 
-        val expected = listOf<Team>(databaseTeam)
+        val expected = listOf<Team>(databaseTeamOne, databaseTeamTwo)
         val mapper = ObjectMapper()
         val json = mockResult.response.contentAsString
         val returnedTeams = mapper.readValue(json, Array<Team>::class.java)

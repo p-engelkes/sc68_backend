@@ -92,6 +92,7 @@ interface ArticleService {
     fun findAll(): List<Article>
     fun findByAuthor(authorId: Int): List<Article>
     fun findByTeam(teamId: Int): List<Article>
+    fun getDistinctTeamsWithAnArticle(): List<Team>
 }
 
 @Service
@@ -102,6 +103,8 @@ open class ArticleServiceImpl @Autowired constructor(val articleServiceControlle
     override fun findAll(): List<Article> = articleServiceController.findAll()
     override fun findByAuthor(authorId: Int): List<Article> = articleServiceController.findByAuthor(authorId)
     override fun findByTeam(teamId: Int): List<Article> = articleServiceController.findByTeam(teamId)
+    override fun getDistinctTeamsWithAnArticle(): List<Team> = articleServiceController.getTeamsWithAnArticle()
+
 }
 
 @Component
@@ -141,6 +144,18 @@ open class ArticleServiceController @Autowired constructor(val dsl: DSLContext,
 
     fun findByTeam(teamId: Int): List<Article> = getEntities(dsl.selectFrom(ARTICLE)
             .where(ARTICLE.TEAM_ID.eq(teamId)).fetch())
+
+    fun getTeamsWithAnArticle(): List<Team> {
+        println("getting distinct teams with an article")
+        val teamsWithAnArticle = mutableListOf<Team>()
+        val distinctRecords = dsl.selectDistinct(ARTICLE.TEAM_ID).from(ARTICLE).where(ARTICLE.TEAM_ID.isNotNull)
+                .fetch()
+        distinctRecords.forEach {
+            teamService.findById(it.value1())?.let { teamsWithAnArticle.add(it) }
+        }
+
+        return teamsWithAnArticle
+    }
 
     private fun getEntities(result: Result<ArticleRecord>): List<Article> {
         val allArticles = mutableListOf<Article>()

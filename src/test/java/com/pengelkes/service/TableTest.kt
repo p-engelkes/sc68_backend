@@ -15,17 +15,17 @@ class TableTest : SpringTestCase() {
 
     @Test
     fun testGetByTeam() {
-        tableService.findByTeam(databaseTeam.id).tableTeams.size.should.equal(4)
+        tableService.findByTeam(databaseTeamOne.id).tableTeams.size.should.equal(4)
     }
 
     @Test
     fun testUpdateTableByTeamWithNoValue() {
-        databaseTeam.soccerInfoId = null
-        tableService.updateTable(databaseTeam).size.should.equal(0)
+        databaseTeamOne.soccerInfoId = null
+        tableService.updateTable(databaseTeamOne).size.should.equal(0)
     }
 
     @Test
     fun testUpdateTableByTeamWithValues() {
-        tableService.updateTable(databaseTeam).size.should.equal(14)
+        tableService.updateTable(databaseTeamOne).size.should.equal(14)
     }
 }

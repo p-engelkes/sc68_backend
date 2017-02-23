@@ -1,5 +1,6 @@
 package com.pengelkes.controller
 
+import com.pengelkes.service.User
 import com.pengelkes.service.UserService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.PathVariable
@@ -19,9 +20,9 @@ constructor(private val userService: UserService) {
 
     @RequestMapping(value = "/verifyLogin/{email:.+}")
     @Throws(ServletException::class)
-    fun verifyToken(@PathVariable email: String): Int {
+    fun verifyToken(@PathVariable email: String): User {
         userService.findByEmail(email)?.let {
-            return it.id
+            return it
         }
 
         throw ServletException("Ein Benutzer mit dieser Adresse existiert nicht")

@@ -2,6 +2,7 @@ package com.pengelkes.controller
 
 import com.pengelkes.service.Article
 import com.pengelkes.service.ArticleService
+import com.pengelkes.service.Team
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
 
@@ -13,6 +14,9 @@ import org.springframework.web.bind.annotation.*
 class ArticleController @Autowired constructor(val articleService: ArticleService) {
     @RequestMapping(value = "/articles", method = arrayOf(RequestMethod.GET))
     fun findAll(): List<Article> = articleService.findAll()
+
+    @RequestMapping(value = "/articles/distinct/team", method = arrayOf(RequestMethod.GET))
+    fun getDistinctTeamsWithAnArticle(): List<Team> = articleService.getDistinctTeamsWithAnArticle()
 
     @RequestMapping(value = "/articles", method = arrayOf(RequestMethod.POST))
     fun create(@RequestBody article: Article): Article = articleService.create(article)

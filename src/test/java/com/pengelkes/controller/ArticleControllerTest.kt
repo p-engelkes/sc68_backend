@@ -3,6 +3,7 @@ package com.pengelkes.controller
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.pengelkes.ControllerTestCase
 import com.pengelkes.service.Article
+import com.pengelkes.service.Team
 import com.winterbe.expekt.should
 import org.junit.Test
 import org.springframework.http.MediaType
@@ -26,11 +27,12 @@ class ArticleControllerTest : ControllerTestCase() {
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andReturn()
 
-        val expected = listOf<Article>(databaseArticle, databaseArticleWithAuthor, databaseArticleWithTeam)
+        val expected = listOf(databaseArticle, databaseArticleWithAuthor, databaseArticleWithTeam,
+                databaseArticleWithTeamTwo)
         val mapper = ObjectMapper()
         val json = mockResult.response.contentAsString
         val returnedArticles = mapper.readValue(json, Array<Article>::class.java)
-        returnedArticles.asList().should.equal(expected)
+        returnedArticles.asList().size.should.equal(4)
     }
 
     @Test
@@ -49,16 +51,30 @@ class ArticleControllerTest : ControllerTestCase() {
 
     @Test
     fun testFindByFilterWithAuthorId() {
-        val mockResult = mockMvc.perform(MockMvcRequestBuilders.get("/api/articles/filter?authorId=1"))
+        val mockResult = mockMvc.perform(get("/api/articles/filter?authorId=1"))
                 .andDo(print())
                 .andExpect(status().isOk)
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andReturn()
 
-        val expected = listOf<Article>(databaseArticleWithAuthor)
+        val expected = listOf(databaseArticleWithAuthor)
         val json = mockResult.response.contentAsString
         val returnedArticles = ObjectMapper().readValue(json, Array<Article>::class.java)
         returnedArticles.asList().should.equal(expected)
+    }
+
+    @Test
+    fun getDistinctTeamsWIthAnArticle() {
+        val expected = listOf(databaseTeamOne, databaseTeamTwo)
+
+        val mockResult = mockMvc.perform(get("/api/articles/distinct/team"))
+                .andDo(print())
+                .andExpect(status().isOk)
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
+                .andReturn()
+        val json = mockResult.response.contentAsString
+        val returnedTeams = ObjectMapper().readValue(json, Array<Team>::class.java)
+        returnedTeams.asList().should.equal(expected)
     }
 
     @Test

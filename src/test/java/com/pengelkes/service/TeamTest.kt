@@ -15,7 +15,7 @@ class TeamTest : SpringTestCase() {
 
     companion object {
         val testName = "Herren 1. Mannschaft"
-        val teamName = "Herren 2. Mannschaft"
+        val teamName = "Herren 3. Mannschaft"
         val team = Team(name = teamName, trainingTimes = hashMapOf(Pair("Friday", "19:00")))
     }
 
@@ -28,7 +28,7 @@ class TeamTest : SpringTestCase() {
 
     @Test
     fun testFindAll() {
-        teamService.findAll().size.should.equal(1)
+        teamService.findAll().size.should.equal(2)
     }
 
     @Test

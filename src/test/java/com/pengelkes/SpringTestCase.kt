@@ -33,7 +33,9 @@ abstract class SpringTestCase {
         lateinit var databaseArticle: Article
         lateinit var databaseArticleWithAuthor: Article
         lateinit var databaseArticleWithTeam: Article
-        lateinit var databaseTeam: Team
+        lateinit var databaseArticleWithTeamTwo: Article
+        lateinit var databaseTeamOne: Team
+        lateinit var databaseTeamTwo: Team
         lateinit var databaseGameOne: Game
         lateinit var databaseGameTwo: Game
         lateinit var databaseGameThree: Game
@@ -47,7 +49,10 @@ abstract class SpringTestCase {
     @Before
     open fun setup() {
         migrator.cleanAndMigrate()
-        databaseTeam = Team(1, "Herren 1. Mannschaft", hashMapOf(Pair("Friday", "19:00")),
+        println("clean and migrate done")
+        databaseTeamOne = Team(1, "Herren 1. Mannschaft", hashMapOf(Pair("Friday", "19:00")),
+                "011MICFJLG000000VTVG0001VTR8C1K7")
+        databaseTeamTwo = Team(2, "Herren 2. Mannschaft", hashMapOf(Pair("Friday", "19:00")),
                 "011MICFJLG000000VTVG0001VTR8C1K7")
         databasePicture = ProfilePicture(
                 1,
@@ -62,7 +67,9 @@ abstract class SpringTestCase {
         databaseArticleWithAuthor = Article(2, "I have an author title", "I have an author content", authorId = 1)
         databaseArticleWithAuthor.author = databaseUser
         databaseArticleWithTeam = Article(3, "I have a team title", "I have a team content", teamId = 1)
-        databaseArticleWithTeam.team = databaseTeam
+        databaseArticleWithTeam.team = databaseTeamOne
+        databaseArticleWithTeamTwo = Article(4, "I have team 2", "I have team 2 content", 2)
+        databaseArticleWithTeamTwo.team = databaseTeamTwo
         databaseGameOne = Game(gameTime = "Sonntag, 19.02.2017 - 12:00 Uhr", homeTeamName = "Skiclub Nordwest Rheine",
                 awayTeamName = "Portu Rheine", score = Score(6, 0), gameType = GameType.PREVIOUS, id = 1)
         databaseGameTwo = Game(gameTime = "Sonntag, 12.02.2017 - 12:00 Uhr", homeTeamName = "Skiclub Nordwest Rheine",
@@ -76,7 +83,7 @@ abstract class SpringTestCase {
         databaseTableTeamFour = TableTeam(4, 4, "SF Gellendorf", "Icon", 15, 12, 0, 3, "50:30", 20, 36)
         databaseTable = Table(
                 listOf(databaseTableTeamOne, databaseTableTeamTwo, databaseTableTeamThree, databaseTableTeamFour),
-                databaseTeam.id
+                databaseTeamOne.id
         )
     }
 

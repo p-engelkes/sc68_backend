@@ -145,6 +145,7 @@ constructor(
         http.authorizeRequests()
                 .antMatchers("/api/users/register").permitAll()
                 .antMatchers("/api/articles").permitAll()
+                .antMatchers("/api/articles/distinct/team").permitAll()
                 .anyRequest().authenticated().and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .csrf().disable()

@@ -27,6 +27,10 @@ class ArticleController @Autowired constructor(val articleService: ArticleServic
     @RequestMapping(value = "/articles/filter", method = arrayOf(RequestMethod.GET))
     fun findByFilter(@RequestParam("authorId", required = false) authorId: Int?,
                      @RequestParam("teamId", required = false) teamId: Int?): List<Article> {
+        if (authorId == null && teamId == null) {
+            return articleService.findAll()
+        }
+
         authorId?.let { return articleService.findByAuthor(authorId) }
         teamId?.let { return articleService.findByTeam(teamId) }
 

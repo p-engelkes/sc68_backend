@@ -137,16 +137,15 @@ open class ArticleServiceController @Autowired constructor(val dsl: DSLContext,
         return article
     }
 
-    fun findAll(): List<Article> = getEntities(dsl.selectFrom(ARTICLE).fetch())
+    fun findAll(): List<Article> = getEntities(dsl.selectFrom(ARTICLE).orderBy(ARTICLE.CREATED_AT.desc()).fetch())
 
     fun findByAuthor(authorId: Int): List<Article> = getEntities(dsl.selectFrom(ARTICLE)
-            .where(ARTICLE.AUTHOR_ID.eq(authorId)).fetch())
+            .where(ARTICLE.AUTHOR_ID.eq(authorId)).orderBy(ARTICLE.CREATED_AT.desc()).fetch())
 
     fun findByTeam(teamId: Int): List<Article> = getEntities(dsl.selectFrom(ARTICLE)
-            .where(ARTICLE.TEAM_ID.eq(teamId)).fetch())
+            .where(ARTICLE.TEAM_ID.eq(teamId)).orderBy(ARTICLE.CREATED_AT.desc()).fetch())
 
     fun getTeamsWithAnArticle(): List<Team> {
-        println("getting distinct teams with an article")
         val teamsWithAnArticle = mutableListOf<Team>()
         val distinctRecords = dsl.selectDistinct(ARTICLE.TEAM_ID).from(ARTICLE).where(ARTICLE.TEAM_ID.isNotNull)
                 .fetch()

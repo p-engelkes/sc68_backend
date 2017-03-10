@@ -28,7 +28,7 @@ class TeamTest : SpringTestCase() {
 
     @Test
     fun testFindAll() {
-        teamService.findAll().size.should.equal(2)
+        teamService.findAll().size.should.equal(databaseTeams.size)
     }
 
     @Test
@@ -38,5 +38,14 @@ class TeamTest : SpringTestCase() {
         if (team != null) {
             team.name.should.equal(testName)
         }
+    }
+
+    @Test
+    fun testFindByOldClassId() {
+        var expected = listOf(databaseTeamOne, databaseTeamTwo)
+        teamService.findByOldClass(1).should.equal(expected)
+
+        expected = listOf(databaseTeamThree)
+        teamService.findByOldClass(2).should.equal(expected)
     }
 }

@@ -14,11 +14,11 @@ INSERT INTO old_classes (name, order_number) VALUES
   ('F-Junioren', 6),
   ('G-Junioren', 7);
 
-ALTER TABLE sc68.public.team
+ALTER TABLE team
   ADD COLUMN order_number INT;
-ALTER TABLE sc68.public.team
+ALTER TABLE team
   ADD COLUMN old_class_id INT;
-ALTER TABLE sc68.public.team
+ALTER TABLE team
   ADD CONSTRAINT fk_old_class
 FOREIGN KEY (old_class_id)
 REFERENCES old_classes (id);

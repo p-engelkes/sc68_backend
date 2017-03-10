@@ -1,7 +1,9 @@
-INSERT INTO team (name, training_times, team_id)
-VALUES ('Herren 1. Mannschaft', '"Friday"=>"19:00"', '011MICFJLG000000VTVG0001VTR8C1K7');
-INSERT INTO team (name, training_times, team_id)
-VALUES ('Herren 2. Mannschaft', '"Friday"=>"19:00"', '011MICFJLG000000VTVG0001VTR8C1K7');
+INSERT INTO team (name, training_times, team_id, order_number, old_class_id)
+VALUES ('Herren 1. Mannschaft', '"Friday"=>"19:00"', '011MICFJLG000000VTVG0001VTR8C1K7', 0, 1);
+INSERT INTO team (name, training_times, team_id, order_number, old_class_id)
+VALUES ('Herren 2. Mannschaft', '"Friday"=>"19:00"', '011MICFJLG000000VTVG0001VTR8C1K7', 1, 1);
+INSERT INTO team (name, training_times, team_id, order_number, old_class_id)
+VALUES ('A-Junioren', '"Friday"=>"19:00"', 'test', 0, 2);
 INSERT INTO user_account (email, password) VALUES ('test@test.com', 'test');
 INSERT INTO article (title, content) VALUES ('Test Title', 'Test Content');
 INSERT INTO article (title, content, author_id) VALUES ('I have an author title', 'I have an author content', 1);

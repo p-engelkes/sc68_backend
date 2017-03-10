@@ -28,15 +28,20 @@ class Team {
     var name: String? = null
     var trainingTimes: HashMap<String, String>? = null
     var soccerInfoId: String? = null
+    var orderNumber: Int? = null
+    var oldClassId: Int? = null
     var created: Date? = null
 
     constructor()
 
-    constructor(id: Int = 0, name: String, trainingTimes: HashMap<String, String>, teamId: String? = null) {
+    constructor(id: Int = 0, name: String, trainingTimes: HashMap<String, String>, teamId: String? = null,
+                orderNumber: Int? = null, oldClassId: Int? = null) {
         this.id = id
         this.name = name
         this.trainingTimes = trainingTimes
         this.soccerInfoId = teamId
+        this.orderNumber = orderNumber
+        this.oldClassId = oldClassId
     }
 
     constructor(teamRecord: TeamRecord) {
@@ -44,6 +49,8 @@ class Team {
         this.name = teamRecord.name
         this.trainingTimes = teamRecord.trainingTimes
         this.soccerInfoId = teamRecord.teamId
+        this.orderNumber = teamRecord.orderNumber
+        this.oldClassId = teamRecord.oldClassId
     }
 
     companion object {
@@ -76,6 +83,8 @@ class Team {
         if (name != other.name) return false
         if (trainingTimes != other.trainingTimes) return false
         if (soccerInfoId != other.soccerInfoId) return false
+        if (orderNumber != other.orderNumber) return false
+        if (oldClassId != other.oldClassId) return false
         if (created != other.created) return false
 
         return true
@@ -86,6 +95,8 @@ class Team {
         result = 31 * result + (name?.hashCode() ?: 0)
         result = 31 * result + (trainingTimes?.hashCode() ?: 0)
         result = 31 * result + (soccerInfoId?.hashCode() ?: 0)
+        result = 31 * result + (orderNumber ?: 0)
+        result = 31 * result + (oldClassId ?: 0)
         result = 31 * result + (created?.hashCode() ?: 0)
         return result
     }
@@ -122,6 +133,7 @@ interface TeamService {
     fun create(team: Team): Int
     fun findByName(name: String): Team?
     fun findById(id: Int): Team?
+    fun findByOldClass(oldCLassId: Int): List<Team>
     fun findAll(): List<Team>
 }
 
@@ -130,7 +142,6 @@ interface TeamService {
 open class TeamServiceImpl
 @Autowired
 constructor(private val teamServiceController: TeamServiceController) : TeamService {
-
     @Throws(ServletException::class)
     override fun create(team: Team): Int {
         if (nameExists(team.name)) {
@@ -145,6 +156,8 @@ constructor(private val teamServiceController: TeamServiceController) : TeamServ
     override fun findById(id: Int) = teamServiceController.findById(id)
 
     override fun findAll() = teamServiceController.findAll()
+
+    override fun findByOldClass(oldCLassId: Int): List<Team> = teamServiceController.findByOldClass(oldCLassId)
 
     private fun nameExists(name: String?): Boolean {
         if (name != null) {
@@ -172,6 +185,13 @@ constructor(private val dsl: DSLContext) {
     fun findByName(name: String) = getEntity(dsl.selectFrom(TEAM).where(TEAM.NAME.eq(name)).fetchOne())
 
     fun findById(id: Int) = getEntity(dsl.selectFrom(TEAM).where(TEAM.ID.eq(id)).fetchOne())
+
+    fun findByOldClass(oldCLassId: Int?): List<Team> {
+        return getEntities(dsl.selectFrom(TEAM)
+                .where(TEAM.OLD_CLASS_ID.eq(oldCLassId))
+                .orderBy(TEAM.ORDER_NUMBER.asc())
+                .fetch())
+    }
 
     fun findAll(): List<Team> {
         return getEntities(dsl.selectFrom(TEAM).fetch())

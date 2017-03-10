@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.JsonDeserializer
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.module.SimpleModule
 import com.fasterxml.jackson.databind.node.ObjectNode
+import com.pengelkes.backend.jooq.tables.Article.ARTICLE
 import com.pengelkes.backend.jooq.tables.Team.TEAM
 import com.pengelkes.backend.jooq.tables.records.TeamRecord
 import org.jooq.DSLContext
@@ -30,6 +31,7 @@ class Team {
     var soccerInfoId: String? = null
     var orderNumber: Int? = null
     var oldClassId: Int? = null
+    var articles: MutableList<Article> = mutableListOf()
     var created: Date? = null
 
     constructor()
@@ -131,9 +133,11 @@ class TeamDeserializer : JsonDeserializer<Team>() {
 interface TeamService {
     @Throws(ServletException::class)
     fun create(team: Team): Int
+
     fun findByName(name: String): Team?
     fun findById(id: Int): Team?
     fun findByOldClass(oldCLassId: Int): List<Team>
+    fun findByOldClassWithArticle(oldCLassId: Int): List<Team>
     fun findAll(): List<Team>
 }
 
@@ -158,6 +162,8 @@ constructor(private val teamServiceController: TeamServiceController) : TeamServ
     override fun findAll() = teamServiceController.findAll()
 
     override fun findByOldClass(oldCLassId: Int): List<Team> = teamServiceController.findByOldClass(oldCLassId)
+
+    override fun findByOldClassWithArticle(oldCLassId: Int): List<Team> = teamServiceController.findByOldClassWithArticles(oldCLassId)
 
     private fun nameExists(name: String?): Boolean {
         if (name != null) {
@@ -186,11 +192,40 @@ constructor(private val dsl: DSLContext) {
 
     fun findById(id: Int) = getEntity(dsl.selectFrom(TEAM).where(TEAM.ID.eq(id)).fetchOne())
 
-    fun findByOldClass(oldCLassId: Int?): List<Team> {
+    fun findByOldClass(oldCLassId: Int): List<Team> {
         return getEntities(dsl.selectFrom(TEAM)
                 .where(TEAM.OLD_CLASS_ID.eq(oldCLassId))
                 .orderBy(TEAM.ORDER_NUMBER.asc())
                 .fetch())
+    }
+
+    fun findByOldClassWithArticles(oldCLassId: Int?): List<Team> {
+        val allTeams = mutableListOf<Team>()
+        val allTeamsMap = mutableMapOf<Int, Team>()
+        val allArticles = mutableListOf<Article>()
+
+        val teamIdsWithAnArticle = dsl.selectDistinct(TEAM.ID).from(
+                TEAM
+                        .innerJoin(ARTICLE)
+                        .on(TEAM.ID.eq(ARTICLE.TEAM_ID))
+        ).where(TEAM.OLD_CLASS_ID.eq(oldCLassId)).fetch()
+
+        teamIdsWithAnArticle.forEach { findById(it.value1())?.let { allTeamsMap.put(it.id, it) } }
+
+        val allArticleRecords = dsl.select().from(
+                TEAM
+                        .innerJoin(ARTICLE)
+                        .on(TEAM.ID.eq(ARTICLE.TEAM_ID))
+        ).where(TEAM.OLD_CLASS_ID.eq(oldCLassId)).fetch()
+
+        allArticleRecords.forEach { allArticles.add(Article(it)) }
+        allArticles.forEach { article ->
+            allTeamsMap[article.teamId]?.articles?.add(article)
+        }
+
+        allTeamsMap.forEach { allTeams.add(it.value) }
+
+        return allTeams
     }
 
     fun findAll(): List<Team> {

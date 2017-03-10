@@ -43,7 +43,7 @@ class ArticleControllerTest : ControllerTestCase() {
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andReturn()
 
-        val expected = listOf<Article>(databaseArticleWithTeam)
+        val expected = listOf(databaseArticleWithTeam)
         val json = mockResult.response.contentAsString
         val returnedArticles = ObjectMapper().readValue(json, Array<Article>::class.java)
         returnedArticles.asList().should.equal(expected)

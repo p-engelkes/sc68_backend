@@ -17,6 +17,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers
 class TeamControllerTest : ControllerTestCase() {
 
     @Test
+    @Ignore
     fun testGetAllTeams() {
         val mockResult = mockMvc.perform(MockMvcRequestBuilders.get("/api/teams"))
                 .andDo(MockMvcResultHandlers.print())
@@ -24,7 +25,7 @@ class TeamControllerTest : ControllerTestCase() {
                 .andExpect(MockMvcResultMatchers.content().contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andReturn()
 
-        val expected = listOf<Team>(databaseTeamOne, databaseTeamTwo)
+        val expected = databaseTeams
         val mapper = ObjectMapper()
         val json = mockResult.response.contentAsString
         val returnedTeams = mapper.readValue(json, Array<Team>::class.java)

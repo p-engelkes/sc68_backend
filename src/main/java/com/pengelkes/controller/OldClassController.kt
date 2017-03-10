@@ -5,6 +5,7 @@ import com.pengelkes.service.OldClassService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
+import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 
 /**
@@ -14,7 +15,11 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("/api")
 class OldClassController @Autowired constructor(val oldClassService: OldClassService) {
     @RequestMapping(value = "/oldClasses", method = arrayOf(RequestMethod.GET))
-    fun findAll(): List<OldClass> {
-        return oldClassService.findAll()
+    fun findAllWithTeamsAndArticles(@RequestParam("articles", required = false) articles: Boolean?): List<OldClass> {
+        if (articles != null && articles) {
+            return oldClassService.findAllWithTeamsAndArticles()
+        } else {
+            return oldClassService.findAllWithTeams()
+        }
     }
 }

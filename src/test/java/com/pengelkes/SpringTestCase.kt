@@ -96,6 +96,7 @@ abstract class SpringTestCase {
                 listOf(databaseTableTeamOne, databaseTableTeamTwo, databaseTableTeamThree, databaseTableTeamFour),
                 databaseTeamOne.id
         )
+        println("setup done")
     }
 
     fun setUserAuthenticationForTesting() {

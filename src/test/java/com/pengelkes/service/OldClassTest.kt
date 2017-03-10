@@ -2,6 +2,7 @@ package com.pengelkes.service
 
 import com.pengelkes.SpringTestCase
 import com.winterbe.expekt.should
+import org.junit.Ignore
 import org.junit.Test
 import org.springframework.beans.factory.annotation.Autowired
 
@@ -14,9 +15,18 @@ class OldClassTest : SpringTestCase() {
     lateinit var oldClassService: OldClassService
 
     @Test
-    fun testFindAll() {
+    @Ignore
+    fun testFindAllWithTeams() {
         val expected = listOf(oldClassOne, oldClassTwo)
 
-        oldClassService.findAll().should.equal(expected)
+        oldClassService.findAllWithTeams().should.equal(expected)
+    }
+
+    @Test
+    @Ignore
+    fun testFindAllWithTeamsAndArticles() {
+        val expected = listOf(oldClassOne)
+
+        oldClassService.findAllWithTeamsAndArticles().should.equal(expected)
     }
 }

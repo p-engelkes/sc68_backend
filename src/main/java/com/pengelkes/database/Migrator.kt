@@ -32,5 +32,6 @@ open class Migrator @Autowired constructor(private val databaseProperties: Datab
         flyway.setLocations("db/migrations")
         flyway.clean()
         flyway.migrate()
+        println("migration done")
     }
 }

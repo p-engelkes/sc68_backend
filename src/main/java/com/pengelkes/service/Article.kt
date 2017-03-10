@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.pengelkes.backend.jooq.tables.Article.ARTICLE
 import com.pengelkes.backend.jooq.tables.records.ArticleRecord
 import org.jooq.DSLContext
+import org.jooq.Record
 import org.jooq.Result
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
@@ -47,13 +48,13 @@ class Article {
         this.teamId = teamId
     }
 
-    constructor(articleRecord: ArticleRecord) {
-        this.id = articleRecord.id
-        this.title = articleRecord.title
-        this.content = articleRecord.content
-        this.authorId = articleRecord.authorId
-        this.teamId = articleRecord.teamId
-        this.created = articleRecord.createdAt
+    constructor(record: Record) {
+        this.id = record.get(ARTICLE.ID)
+        this.title = record.get(ARTICLE.TITLE)
+        this.content = record.get(ARTICLE.CONTENT)
+        this.authorId = record.get(ARTICLE.AUTHOR_ID)
+        this.teamId = record.get(ARTICLE.TEAM_ID)
+        this.created = record.get(ARTICLE.CREATED_AT)
     }
 
     override fun equals(other: Any?): Boolean {

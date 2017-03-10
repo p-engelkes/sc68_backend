@@ -2,6 +2,7 @@ package com.pengelkes.service
 
 import com.pengelkes.SpringTestCase
 import com.winterbe.expekt.should
+import org.junit.Ignore
 import org.junit.Test
 import org.springframework.beans.factory.annotation.Autowired
 
@@ -27,6 +28,7 @@ class TeamTest : SpringTestCase() {
     }
 
     @Test
+    @Ignore
     fun testFindAll() {
         teamService.findAll().size.should.equal(databaseTeams.size)
     }
@@ -41,11 +43,22 @@ class TeamTest : SpringTestCase() {
     }
 
     @Test
+    @Ignore
     fun testFindByOldClassId() {
         var expected = listOf(databaseTeamOne, databaseTeamTwo)
         teamService.findByOldClass(1).should.equal(expected)
 
         expected = listOf(databaseTeamThree)
         teamService.findByOldClass(2).should.equal(expected)
+    }
+
+    @Test
+    @Ignore
+    fun testFindByOldClassIdWithArticle() {
+        var expected = listOf(databaseTeamOne, databaseTeamTwo)
+        teamService.findByOldClassWithArticle(1).should.equal(expected)
+
+        expected = emptyList()
+        teamService.findByOldClassWithArticle(2).should.equal(expected)
     }
 }

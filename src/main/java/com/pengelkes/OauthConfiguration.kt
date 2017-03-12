@@ -144,8 +144,8 @@ constructor(
     override fun configure(http: HttpSecurity) {
         http.authorizeRequests()
                 .antMatchers("/api/users/register").permitAll()
-                .antMatchers("/api/articles").permitAll()
-                .antMatchers("/api/articles/distinct/team").permitAll()
+                .antMatchers("/api/articles/**").permitAll()
+                .antMatchers("/api/oldClasses").permitAll()
                 .anyRequest().authenticated().and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .csrf().disable()

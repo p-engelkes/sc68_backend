@@ -39,7 +39,6 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 import java.security.SecureRandom
-import java.util.*
 
 /**
  * Created by pengelkes on 23.12.2016.
@@ -54,18 +53,20 @@ constructor(private val userService: UserService) : UserDetailsService {
     override fun loadUserByUsername(userName: String): UserDetails {
         var user = userService.findByName(userName)
         if (user != null) {
-            return login(user.userName!!, user.password!!)
+            return login(user)
         } else {
             user = userService.findByEmail(userName)
             if (user != null) {
-                return login(user.email!!, user.password!!)
+                return login(user)
             } else {
                 throw UsernameNotFoundException("Es existiert kein Benutzer mit dem Namen: " + userName)
             }
         }
     }
 
-    private fun login(userName: String, password: String): UserDetails {
+    private fun login(user: com.pengelkes.service.User): UserDetails {
+        val userName = user.email!!
+        val password = user.password!!
         return User(
                 userName,
                 password,
@@ -73,16 +74,23 @@ constructor(private val userService: UserService) : UserDetailsService {
                 true,
                 true,
                 true,
-                getAuthorities(ROLE_USER)
+                getAuthorities(user)
         )
     }
 
-    fun getAuthorities(role: String): Collection<GrantedAuthority> {
-        return Arrays.asList(SimpleGrantedAuthority(role))
+    fun getAuthorities(user: com.pengelkes.service.User): Collection<GrantedAuthority> {
+        val authorities = mutableListOf<GrantedAuthority>(SimpleGrantedAuthority(ROLE_USER))
+
+        if (user.articleWriter) {
+            authorities.add(SimpleGrantedAuthority(ROLE_ARTICLE_WRITER))
+        }
+
+        return authorities
     }
 
     companion object {
         val ROLE_USER = "ROLE_USER"
+        val ROLE_ARTICLE_WRITER = "ARTICLE_WRITER"
     }
 }
 
@@ -144,7 +152,8 @@ constructor(
     override fun configure(http: HttpSecurity) {
         http.authorizeRequests()
                 .antMatchers("/api/users/register").permitAll()
-                .antMatchers("/api/articles/**").permitAll()
+                .antMatchers(HttpMethod.GET, "/api/articles/**").permitAll()
+                .antMatchers(HttpMethod.POST, "/api/articles/**").hasRole("ROLE_ARTICLE_WRITER")
                 .antMatchers("/api/oldClasses").permitAll()
                 .anyRequest().authenticated().and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()

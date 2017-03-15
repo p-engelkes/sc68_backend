@@ -17,6 +17,7 @@ import javax.servlet.ServletException
  * Created by pengelkes on 23.12.2016.
  */
 class User {
+
     var id: Int = 0
     var firstName: String? = null
     var lastName: String? = null
@@ -29,6 +30,7 @@ class User {
     var created: Date? = null
     var backNumber: Int? = null
     var profilePicture: ProfilePicture? = null
+    var articleWriter: Boolean = false
 
     //empty constructor needed for jackson
     constructor() {
@@ -82,6 +84,7 @@ class User {
         this.position = userAccountRecord.getValue<Position>(USER_ACCOUNT.POSITION, Position::class.java)
         this.teamId = userAccountRecord.teamId
         this.backNumber = userAccountRecord.backnumber
+        this.articleWriter = userAccountRecord.articleWriter
     }
 
     override fun equals(other: Any?): Boolean {

@@ -1,0 +1,2 @@
+ALTER TABLE user_account
+  ADD COLUMN article_writer BOOLEAN DEFAULT FALSE;

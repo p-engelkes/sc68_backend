@@ -90,7 +90,7 @@ constructor(private val userService: UserService) : UserDetailsService {
 
     companion object {
         val ROLE_USER = "ROLE_USER"
-        val ROLE_ARTICLE_WRITER = "ARTICLE_WRITER"
+        val ROLE_ARTICLE_WRITER = "ROLE_ARTICLE_WRITER"
     }
 }
 
@@ -153,7 +153,7 @@ constructor(
         http.authorizeRequests()
                 .antMatchers("/api/users/register").permitAll()
                 .antMatchers(HttpMethod.GET, "/api/articles/**").permitAll()
-                .antMatchers(HttpMethod.POST, "/api/articles/**").hasRole("ROLE_ARTICLE_WRITER")
+                .antMatchers(HttpMethod.POST, "/api/articles/**").hasRole("ARTICLE_WRITER")
                 .antMatchers("/api/oldClasses").permitAll()
                 .anyRequest().authenticated().and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()

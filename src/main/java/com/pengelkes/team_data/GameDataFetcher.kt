@@ -68,6 +68,7 @@ open class GameDataFetcher {
                         }
                     }
 
+                    game.gameType = this.gameType
                     allGames.add(game)
                 }
 

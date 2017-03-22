@@ -110,7 +110,7 @@ class Game {
 
 @Service
 interface GameService {
-    fun updateGamesByTeamAndType(team: Team, gameType: GameType): IntArray
+    fun updateGamesByTeamAndType(team: Team, gameType: GameType)
     fun findByTeamAndType(teamId: Int, gameType: GameType): List<Game>
 }
 
@@ -123,7 +123,7 @@ constructor(private val gameServiceController: GameServiceController) : GameServ
         return gameServiceController.findByTeamAndType(teamId, gameType)
     }
 
-    override fun updateGamesByTeamAndType(team: Team, gameType: GameType): IntArray {
+    override fun updateGamesByTeamAndType(team: Team, gameType: GameType) {
         return gameServiceController.updateGamesByTeamAndType(team, gameType)
     }
 
@@ -131,14 +131,18 @@ constructor(private val gameServiceController: GameServiceController) : GameServ
 
 @Component
 open class GameServiceController @Autowired constructor(private val dsl: DSLContext) {
-    fun updateGamesByTeamAndType(team: Team, gameType: GameType): IntArray {
+    fun updateGamesByTeamAndType(team: Team, gameType: GameType) {
         deleteGamesByTeamAndType(team, gameType)
         return createGamesByTeamAndType(team, gameType)
     }
 
     fun findByTeamAndType(teamId: Int, gameType: GameType): List<Game> {
-        return getEntities(dsl.selectFrom(GAME).where(GAME.TEAM_ID.eq(teamId))
-                .and(GAME.GAME_TYPE.eq(gameType.toString())).fetch())
+        return getEntities(
+                dsl.selectFrom(GAME)
+                        .where(GAME.TEAM_ID.eq(teamId))
+                        .and(GAME.GAME_TYPE.eq(gameType.toString()))
+                        .orderBy(GAME.ID.asc())
+                        .fetch())
     }
 
     private fun getEntities(result: Result<GameRecord>): List<Game> {
@@ -159,11 +163,14 @@ open class GameServiceController @Autowired constructor(private val dsl: DSLCont
                 .execute()
     }
 
-    private fun createGamesByTeamAndType(team: Team, gameType: GameType): IntArray {
+    private fun createGamesByTeamAndType(team: Team, gameType: GameType) {
         val gameDataFetcher = GameDataFetcher(team, gameType)
         val games = gameDataFetcher.getAllGames()
 
-        return dsl.batchInsert(createGameRecords(games, team)).execute()
+        val gameRecords = createGameRecords(games, team)
+        gameRecords.forEach {
+            dsl.newRecord(GAME, it).store()
+        }
     }
 
     private fun createGameRecords(games: List<Game>, team: Team): List<GameRecord> {

@@ -24,7 +24,7 @@ class Score {
 
     constructor()
 
-    constructor(homeTeamGoals: Int, awayTeamGoals: Int) {
+    constructor(homeTeamGoals: Int?, awayTeamGoals: Int?) {
         this.homeTeamGoals = homeTeamGoals
         this.awayTeamGoals = awayTeamGoals
     }

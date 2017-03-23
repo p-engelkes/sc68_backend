@@ -156,6 +156,8 @@ constructor(
                 .antMatchers(HttpMethod.POST, "/api/articles/**").hasRole("ARTICLE_WRITER")
                 .antMatchers("/api/oldClasses").permitAll()
                 .antMatchers("/api/teams/**").permitAll()
+                .antMatchers("/api/table/**").permitAll()
+                .antMatchers("/api/games/**").permitAll()
                 .anyRequest().authenticated().and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .csrf().disable()

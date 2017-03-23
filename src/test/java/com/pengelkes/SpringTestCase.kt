@@ -73,7 +73,7 @@ abstract class SpringTestCase {
                 3.toFloat()
         )
         databaseUser = com.pengelkes.service.User(id = 1, email = "test@test.com", password = "test",
-                profilePicture = databasePicture)
+                profilePicture = databasePicture, teamId = 1, team = databaseTeamOne)
         databaseArticle = Article(1, "Test Title", "Test Content")
         databaseArticleWithAuthor = Article(2, "I have an author title", "I have an author content", authorId = 1)
         databaseArticleWithAuthor.author = databaseUser

@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.JsonDeserializer
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.module.SimpleModule
 import com.fasterxml.jackson.databind.node.ObjectNode
+import com.pengelkes.backend.jooq.Tables.USER_ACCOUNT
 import com.pengelkes.backend.jooq.tables.Article.ARTICLE
 import com.pengelkes.backend.jooq.tables.Team.TEAM
 import com.pengelkes.backend.jooq.tables.records.TeamRecord
@@ -139,6 +140,7 @@ interface TeamService {
     fun findByOldClass(oldCLassId: Int): List<Team>
     fun findByOldClassWithArticle(oldCLassId: Int): List<Team>
     fun findAll(): List<Team>
+    fun findAllPlayersByTeam(teamId: Int): List<User>
 }
 
 @Service
@@ -163,7 +165,11 @@ constructor(private val teamServiceController: TeamServiceController) : TeamServ
 
     override fun findByOldClass(oldCLassId: Int): List<Team> = teamServiceController.findByOldClass(oldCLassId)
 
-    override fun findByOldClassWithArticle(oldCLassId: Int): List<Team> = teamServiceController.findByOldClassWithArticles(oldCLassId)
+    override fun findByOldClassWithArticle(oldCLassId: Int): List<Team> = teamServiceController.findByOldClassWithArticle(oldCLassId)
+
+    override fun findAllPlayersByTeam(teamId: Int): List<User> {
+        return teamServiceController.findAllPlayersByTeam(teamId)
+    }
 
     private fun nameExists(name: String?): Boolean {
         if (name != null) {
@@ -176,8 +182,8 @@ constructor(private val teamServiceController: TeamServiceController) : TeamServ
 @Component
 open class TeamServiceController
 @Autowired
-constructor(private val dsl: DSLContext) {
-
+constructor(private val dsl: DSLContext,
+            private val profilePictureService: ProfilePictureService) {
     fun create(team: Team): Int {
         val record = dsl.insertInto(TEAM)
                 .set(TEAM.NAME, team.name)
@@ -199,7 +205,7 @@ constructor(private val dsl: DSLContext) {
                 .fetch())
     }
 
-    fun findByOldClassWithArticles(oldCLassId: Int?): List<Team> {
+    fun findByOldClassWithArticle(oldCLassId: Int): List<Team> {
         val allTeams = mutableListOf<Team>()
         val allTeamsMap = mutableMapOf<Int, Team>()
         val allArticles = mutableListOf<Article>()
@@ -228,8 +234,22 @@ constructor(private val dsl: DSLContext) {
         return allTeams
     }
 
+
     fun findAll(): List<Team> {
         return getEntities(dsl.selectFrom(TEAM).fetch())
+    }
+
+    fun findAllPlayersByTeam(teamId: Int): List<User> {
+        val players = mutableListOf<User>()
+
+        dsl.selectFrom(USER_ACCOUNT).where(USER_ACCOUNT.TEAM_ID.eq(teamId)).forEach {
+            it.getEntity(profilePictureService = profilePictureService)?.let { user ->
+                findById(teamId)?.let { user.team = it }
+                players.add(user)
+            }
+        }
+
+        return players
     }
 
     private fun getEntity(teamRecord: TeamRecord?): Team? {

@@ -2,6 +2,7 @@ package com.pengelkes.controller
 
 import com.pengelkes.service.Team
 import com.pengelkes.service.TeamService
+import com.pengelkes.service.User
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
 import javax.servlet.ServletException
@@ -31,5 +32,10 @@ constructor(private val teamService: TeamService) {
         }
 
         throw ServletException("Das Team konnte nicht erstellt werden");
+    }
+
+    @RequestMapping(value = "/teams/{id}/players", method = arrayOf(RequestMethod.GET))
+    fun getAllPlayers(@PathVariable id: Int): List<User> {
+        return teamService.findAllPlayersByTeam(id)
     }
 }

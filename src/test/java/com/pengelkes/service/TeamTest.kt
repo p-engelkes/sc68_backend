@@ -43,6 +43,13 @@ class TeamTest : SpringTestCase() {
     }
 
     @Test
+    fun testFindAllPlayersByTeam() {
+        val expected = listOf(databaseUser)
+
+        teamService.findAllPlayersByTeam(1).should.equal(expected)
+    }
+
+    @Test
     @Ignore
     fun testFindByOldClassId() {
         var expected = listOf(databaseTeamOne, databaseTeamTwo)

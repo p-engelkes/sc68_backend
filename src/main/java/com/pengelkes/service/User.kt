@@ -253,3 +253,14 @@ open class UserServiceController @Autowired constructor(val dsl: DSLContext,
         return allUsers
     }
 }
+
+fun UserAccountRecord?.getEntity(teamService: TeamService? = null, profilePictureService: ProfilePictureService): User? {
+    if (this != null) {
+        val user = User(this)
+        teamService?.let { this.teamId?.let { teamService.findById(it)?.let { user.team = it } } }
+        profilePictureService.findById(user.id)?.let { user.profilePicture = it }
+        return user
+    }
+
+    return null
+}

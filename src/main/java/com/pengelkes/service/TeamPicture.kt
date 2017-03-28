@@ -57,7 +57,6 @@ class TeamPicture {
         if (width != other.width) return false
         if (height != other.height) return false
         if (ratio != other.ratio) return false
-        if (createdAt != other.createdAt) return false
         if (teamId != other.teamId) return false
 
         return true
@@ -69,7 +68,6 @@ class TeamPicture {
         result = 31 * result + (width ?: 0)
         result = 31 * result + (height ?: 0)
         result = 31 * result + (ratio?.hashCode() ?: 0)
-        result = 31 * result + (createdAt?.hashCode() ?: 0)
         result = 31 * result + (teamId ?: 0)
         return result
     }

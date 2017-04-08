@@ -15,11 +15,14 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("/api")
 class OldClassController @Autowired constructor(val oldClassService: OldClassService) {
     @RequestMapping(value = "/oldClasses", method = arrayOf(RequestMethod.GET))
-    fun findAllWithTeamsAndArticles(@RequestParam("articles", required = false) articles: Boolean?): List<OldClass> {
+    fun findAllWithTeamsAndArticles(@RequestParam("articles", required = false) articles: Boolean?,
+                                    @RequestParam("teams", required = false) teams: Boolean?): List<OldClass> {
         if (articles != null && articles) {
             return oldClassService.findAllWithTeamsAndArticles()
-        } else {
+        } else if (teams != null && teams) {
             return oldClassService.findAllWithTeams()
+        } else {
+            return oldClassService.findAll();
         }
     }
 }

@@ -39,4 +39,9 @@ class TeamPictureController @Autowired constructor(private val teamPictureServic
     fun findByTeam(@PathVariable teamId: Int): List<TeamPicture> {
         return teamPictureService.findByTeam(teamId)
     }
+
+    @RequestMapping(value = "/teamPictures/{pictureId}", method = arrayOf(RequestMethod.DELETE))
+    fun deleteById(@PathVariable pictureId: Int) {
+        return teamPictureService.deleteById(pictureId)
+    }
 }

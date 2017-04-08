@@ -58,6 +58,7 @@ class OldClass {
 
 @Service
 interface OldClassService {
+    fun findAll(): List<OldClass>
     fun findAllWithTeams(): List<OldClass>
     fun findAllWithTeamsAndArticles(): List<OldClass>
 }
@@ -67,6 +68,8 @@ interface OldClassService {
 open class OldClassServiceImpl
 @Autowired
 constructor(private val oldClassServiceController: OldClassServiceController) : OldClassService {
+    override fun findAll(): List<OldClass> = oldClassServiceController.findAll()
+
     override fun findAllWithTeams(): List<OldClass> = oldClassServiceController.findAllWithTeams()
 
     override fun findAllWithTeamsAndArticles(): List<OldClass> = oldClassServiceController.findAllWithTeamsAndArticles()
@@ -76,6 +79,13 @@ constructor(private val oldClassServiceController: OldClassServiceController) : 
 open class OldClassServiceController
 @Autowired
 constructor(private val dsl: DSLContext, private val teamService: TeamService) {
+    fun findAll(): List<OldClass> {
+        return getEntities(dsl.selectFrom(OLD_CLASSES)
+                .orderBy(OLD_CLASSES.ORDER_NUMBER.asc())
+                .fetch()
+        )
+    }
+
     fun findAllWithTeams(): List<OldClass> {
         val allOldClasses = getEntities(dsl.selectFrom(OLD_CLASSES)
                 .orderBy(OLD_CLASSES.ORDER_NUMBER.asc())

@@ -77,6 +77,7 @@ class TeamPicture {
 interface TeamPictureService {
     fun createByTeam(teamPicture: TeamPicture)
     fun findByTeam(teamId: Int): List<TeamPicture>
+    fun deleteById(pictureId: Int)
 }
 
 @Service
@@ -87,6 +88,7 @@ open class TeamPictureServiceImpl
 
     override fun findByTeam(teamId: Int): List<TeamPicture> = teamPictureServiceController.findByTeam(teamId)
 
+    override fun deleteById(pictureId: Int) = teamPictureServiceController.deleteById(pictureId)
 }
 
 @Component
@@ -105,6 +107,12 @@ open class TeamPictureServiceController @Autowired constructor(val dsl: DSLConte
         return getEntities(dsl.selectFrom(TEAM_PICTURE)
                 .where(TEAM_PICTURE.TEAM_ID.eq(teamId))
                 .fetch())
+    }
+
+    fun deleteById(pictureId: Int) {
+        dsl.deleteFrom(TEAM_PICTURE)
+                .where(TEAM_PICTURE.ID.eq(pictureId))
+                .execute()
     }
 
     private fun getEntities(result: Result<TeamPictureRecord>): List<TeamPicture> {

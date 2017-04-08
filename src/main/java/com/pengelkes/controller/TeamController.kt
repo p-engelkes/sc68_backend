@@ -26,9 +26,18 @@ constructor(private val teamService: TeamService) {
 
     @RequestMapping(value = "/teams", method = arrayOf(RequestMethod.POST))
     @Throws(ServletException::class)
-    fun create(@RequestBody json: String): Int {
+    fun add(@RequestBody json: String): Team {
         Team.fromJson(json)?.let {
             return teamService.create(it)
+        }
+
+        throw ServletException("Das Team konnte nicht erstellt werden");
+    }
+
+    @RequestMapping(value = "/teams/{id}", method = arrayOf(RequestMethod.POST))
+    fun update(@RequestBody json: String, @PathVariable id: Int): Team {
+        Team.fromJson(json)?.let {
+            return teamService.update(it);
         }
 
         throw ServletException("Das Team konnte nicht erstellt werden");

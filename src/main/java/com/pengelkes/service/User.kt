@@ -126,7 +126,6 @@ class User {
 
 @Service
 interface UserService {
-    fun helloIntegrationTest(): String
     @Throws(ServletException::class)
     fun registerNewUser(user: User): Int
 
@@ -143,8 +142,6 @@ open class UserServiceImpl
 @Autowired
 constructor(private val userServiceController: UserServiceController,
             private val passwordEncoder: PasswordEncoder) : UserService {
-    override fun helloIntegrationTest() = userServiceController.helloIntegrationTest()
-
     @Throws(ServletException::class)
     override fun registerNewUser(user: User): Int {
         if (emailExists(user.email!!)) {
@@ -168,8 +165,6 @@ constructor(private val userServiceController: UserServiceController,
 open class UserServiceController @Autowired constructor(val dsl: DSLContext,
                                                         val teamService: TeamService,
                                                         val profilePictureService: ProfilePictureService) {
-    fun helloIntegrationTest() = "Hello Integration Tests"
-
     fun registerNewUser(user: User): Int {
         val userAccountRecord = dsl.insertInto(USER_ACCOUNT)
                 .set(USER_ACCOUNT.EMAIL, user.email)

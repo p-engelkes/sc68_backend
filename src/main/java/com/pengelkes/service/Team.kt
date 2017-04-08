@@ -57,10 +57,13 @@ class Team {
     }
 
     companion object {
-        val TRAINING_TIMES_JSON = "training_times"
+        val ID_JSON = "id"
+        val TRAINING_TIMES_JSON = "trainingTimes"
         val TRAINING_DAY_JSON = "day"
         val TRAINING_TIME_JSON = "time"
         val NAME_JSON = "name"
+        val SOCCER_ID_JSON = "soccerId"
+        val OLD_CLASS_ID_JSON = "oldClass"
 
         fun fromJson(json: String): Team? {
             val mapper = ObjectMapper()
@@ -121,10 +124,15 @@ class TeamDeserializer : JsonDeserializer<Team>() {
             trainingTimes.put(key, value)
         }
         val teamNameNode = nodes.get(Team.NAME_JSON)
-
+        val soccerIdNode = nodes.get(Team.SOCCER_ID_JSON)
+        val id = nodes.get(Team.ID_JSON)
+        val oldClassIdNode = nodes.get(Team.OLD_CLASS_ID_JSON)
 
         val team = Team()
+        id?.let { team.id = it.asInt() }
         team.name = teamNameNode.asText()
+        team.soccerInfoId = soccerIdNode.asText()
+        team.oldClassId = oldClassIdNode.asInt()
         team.trainingTimes = trainingTimes
         return team
     }
@@ -133,7 +141,7 @@ class TeamDeserializer : JsonDeserializer<Team>() {
 @Service
 interface TeamService {
     @Throws(ServletException::class)
-    fun create(team: Team): Int
+    fun create(team: Team): Team
 
     fun findByName(name: String): Team?
     fun findById(id: Int): Team?
@@ -141,6 +149,7 @@ interface TeamService {
     fun findByOldClassWithArticle(oldCLassId: Int): List<Team>
     fun findAll(): List<Team>
     fun findAllPlayersByTeam(teamId: Int): List<User>
+    fun update(team: Team): Team
 }
 
 @Service
@@ -149,7 +158,7 @@ open class TeamServiceImpl
 @Autowired
 constructor(private val teamServiceController: TeamServiceController) : TeamService {
     @Throws(ServletException::class)
-    override fun create(team: Team): Int {
+    override fun create(team: Team): Team {
         if (nameExists(team.name)) {
             throw ServletException("Es existiert bereits ein Team mit dem ausgewähten Namen")
         }
@@ -167,9 +176,9 @@ constructor(private val teamServiceController: TeamServiceController) : TeamServ
 
     override fun findByOldClassWithArticle(oldCLassId: Int): List<Team> = teamServiceController.findByOldClassWithArticle(oldCLassId)
 
-    override fun findAllPlayersByTeam(teamId: Int): List<User> {
-        return teamServiceController.findAllPlayersByTeam(teamId)
-    }
+    override fun findAllPlayersByTeam(teamId: Int): List<User> = teamServiceController.findAllPlayersByTeam(teamId)
+
+    override fun update(team: Team): Team = teamServiceController.update(team);
 
     private fun nameExists(name: String?): Boolean {
         if (name != null) {
@@ -184,14 +193,30 @@ open class TeamServiceController
 @Autowired
 constructor(private val dsl: DSLContext,
             private val profilePictureService: ProfilePictureService) {
-    fun create(team: Team): Int {
+    fun create(team: Team): Team {
         val record = dsl.insertInto(TEAM)
                 .set(TEAM.NAME, team.name)
                 .set(TEAM.TRAINING_TIMES, team.trainingTimes)
+                .set(TEAM.OLD_CLASS_ID, team.oldClassId)
+                .set(TEAM.TEAM_ID, team.soccerInfoId)
                 .returning(TEAM.ID)
                 .fetchOne()
 
-        return record.id
+        team.id = record.id;
+
+        return team
+    }
+
+    fun update(team: Team): Team {
+        dsl.update(TEAM)
+                .set(TEAM.NAME, team.name)
+                .set(TEAM.TRAINING_TIMES, team.trainingTimes)
+                .set(TEAM.OLD_CLASS_ID, team.oldClassId)
+                .set(TEAM.TEAM_ID, team.soccerInfoId)
+                .where(TEAM.ID.eq(team.id))
+                .execute()
+
+        return team
     }
 
     fun findByName(name: String) = getEntity(dsl.selectFrom(TEAM).where(TEAM.NAME.eq(name)).fetchOne())

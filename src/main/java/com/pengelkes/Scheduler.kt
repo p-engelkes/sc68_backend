@@ -19,7 +19,7 @@ open class Scheduler @Autowired constructor(private val gameService: GameService
     @Scheduled(fixedRate = 21600000)
     fun updateGameAndTableData() {
         teamService.findAll().forEach { team ->
-            team.soccerInfoId?.let {
+            if (team.soccerInfoId != null && !team.soccerInfoId!!.isEmpty()) {
                 gameService.updateGamesByTeamAndType(team, GameType.PREVIOUS)
                 tableService.updateTable(team)
             }

@@ -255,6 +255,7 @@ constructor(private val dsl: DSLContext,
         }
 
         allTeamsMap.forEach { allTeams.add(it.value) }
+        allTeams.sortBy { it.orderNumber }
 
         return allTeams
     }

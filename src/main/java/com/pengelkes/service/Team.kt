@@ -64,6 +64,7 @@ class Team {
         val NAME_JSON = "name"
         val SOCCER_ID_JSON = "soccerId"
         val OLD_CLASS_ID_JSON = "oldClass"
+        val ORDER_NUMBER_JSON = "orderNumber"
 
         fun fromJson(json: String): Team? {
             val mapper = ObjectMapper()
@@ -127,12 +128,14 @@ class TeamDeserializer : JsonDeserializer<Team>() {
         val soccerIdNode = nodes.get(Team.SOCCER_ID_JSON)
         val id = nodes.get(Team.ID_JSON)
         val oldClassIdNode = nodes.get(Team.OLD_CLASS_ID_JSON)
+        val orderNumber = nodes.get(Team.ORDER_NUMBER_JSON)
 
         val team = Team()
         id?.let { team.id = it.asInt() }
         team.name = teamNameNode.asText()
         team.soccerInfoId = soccerIdNode.asText()
         team.oldClassId = oldClassIdNode.asInt()
+        team.orderNumber = orderNumber.asInt()
         team.trainingTimes = trainingTimes
         return team
     }
@@ -199,6 +202,7 @@ constructor(private val dsl: DSLContext,
                 .set(TEAM.TRAINING_TIMES, team.trainingTimes)
                 .set(TEAM.OLD_CLASS_ID, team.oldClassId)
                 .set(TEAM.TEAM_ID, team.soccerInfoId)
+                .set(TEAM.ORDER_NUMBER, team.orderNumber)
                 .returning(TEAM.ID)
                 .fetchOne()
 
@@ -213,6 +217,7 @@ constructor(private val dsl: DSLContext,
                 .set(TEAM.TRAINING_TIMES, team.trainingTimes)
                 .set(TEAM.OLD_CLASS_ID, team.oldClassId)
                 .set(TEAM.TEAM_ID, team.soccerInfoId)
+                .set(TEAM.ORDER_NUMBER, team.orderNumber)
                 .where(TEAM.ID.eq(team.id))
                 .execute()
 

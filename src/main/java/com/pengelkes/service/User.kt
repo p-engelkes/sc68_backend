@@ -1,6 +1,7 @@
 package com.pengelkes.service
 
 import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.databind.module.SimpleModule
 import com.pengelkes.backend.jooq.tables.UserAccount.USER_ACCOUNT
 import com.pengelkes.backend.jooq.tables.records.UserAccountRecord
 import org.jooq.DSLContext
@@ -10,6 +11,7 @@ import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.stereotype.Component
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
+import java.io.IOException
 import java.util.*
 import javax.servlet.ServletException
 
@@ -25,6 +27,7 @@ class User {
     var password: String? = null
     var email: String? = null
     var position: Position? = null
+    var positionTranslation: String? = null
     var team: Team? = null
     var teamId: Int? = null
     var created: Date? = null
@@ -85,6 +88,31 @@ class User {
         this.teamId = userAccountRecord.teamId
         this.backNumber = userAccountRecord.backnumber
         this.articleWriter = userAccountRecord.articleWriter
+    }
+
+    companion object {
+        val id = "id"
+        val userName = "userName"
+        val firstName = "firstName"
+        val lastName = "lastName"
+        val password = "password"
+        val email = "email"
+        val position = "position"
+        val teamId = "teamId"
+        val backNumber = "backNumber"
+        val articleWriter = "articleWriter"
+
+        fun fromJson(json: String): User? {
+            val mapper = ObjectMapper()
+            val module = SimpleModule()
+            module.addDeserializer(User::class.java, UserDeserializer())
+            mapper.registerModule(module)
+            try {
+                return mapper.readValue(json, User::class.java)
+            } catch (e: IOException) {
+                return null
+            }
+        }
     }
 
     override fun equals(other: Any?): Boolean {

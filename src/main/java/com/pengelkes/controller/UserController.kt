@@ -18,17 +18,34 @@ constructor(private val userService: UserService) {
 
     @RequestMapping(value = "/users/register", method = arrayOf(RequestMethod.POST))
     @Throws(ServletException::class)
-    fun registerUser(@RequestBody user: User) = userService.registerNewUser(user)
+    fun registerUser(@RequestBody json: String): Int {
+        User.fromJson(json)?.let {
+            return userService.registerNewUser(it)
+        }
+
+        throw ServletException("Der Benutzer konnte nicht erstellt werden")
+    }
 
     @RequestMapping(value = "positions", method = arrayOf(RequestMethod.GET))
-    fun getAllPositions() = Position.values().asList()
+    fun getAllPositions() = Position.values().map { it.translation }
 
     @RequestMapping(value = "/users/{id}", method = arrayOf(RequestMethod.GET))
     fun getUser(@PathVariable id: Int): User? {
-        return userService.findById(id)
+        val user = userService.findById(id)
+        user?.let {
+            it.positionTranslation = it.position?.translation
+        }
+
+        return user;
     }
 
     @RequestMapping(value = "/users/{id}", method = arrayOf(RequestMethod.POST))
-    fun updateUser(@RequestBody user: User, @PathVariable id: Int) = userService.update(user)
+    fun updateUser(@RequestBody json: String, @PathVariable id: Int): User? {
+        User.fromJson(json)?.let {
+            return userService.update(it)
+        }
+
+        throw ServletException("Der Benutzer konnte nicht aktualisiert werden")
+    }
 }
 

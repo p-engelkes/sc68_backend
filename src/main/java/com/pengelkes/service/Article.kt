@@ -90,6 +90,7 @@ class Article {
 interface ArticleService {
     fun create(article: Article): Article
     fun update(article: Article): Article
+    fun findById(id: Int): Article?
     fun findAll(): List<Article>
     fun findByAuthor(authorId: Int): List<Article>
     fun findByTeam(teamId: Int): List<Article>
@@ -101,11 +102,11 @@ interface ArticleService {
 open class ArticleServiceImpl @Autowired constructor(val articleServiceController: ArticleServiceController) : ArticleService {
     override fun create(article: Article): Article = articleServiceController.create(article)
     override fun update(article: Article): Article = articleServiceController.update(article)
+    override fun findById(id: Int): Article? = articleServiceController.findById(id)
     override fun findAll(): List<Article> = articleServiceController.findAll()
     override fun findByAuthor(authorId: Int): List<Article> = articleServiceController.findByAuthor(authorId)
     override fun findByTeam(teamId: Int): List<Article> = articleServiceController.findByTeam(teamId)
     override fun getDistinctTeamsWithAnArticle(): List<Team> = articleServiceController.getTeamsWithAnArticle()
-
 }
 
 @Component
@@ -137,6 +138,8 @@ open class ArticleServiceController @Autowired constructor(val dsl: DSLContext,
 
         return article
     }
+
+    fun findById(id: Int): Article? = getEntity(dsl.selectFrom(ARTICLE).where(ARTICLE.ID.eq(id)).fetchOne())
 
     fun findAll(): List<Article> = getEntities(dsl.selectFrom(ARTICLE).orderBy(ARTICLE.CREATED_AT.desc()).fetch())
 

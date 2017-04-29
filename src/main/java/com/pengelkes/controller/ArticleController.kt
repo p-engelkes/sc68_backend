@@ -24,6 +24,9 @@ class ArticleController @Autowired constructor(val articleService: ArticleServic
     @RequestMapping(value = "/articles/{id}", method = arrayOf(RequestMethod.POST))
     fun update(@RequestBody article: Article, @PathVariable id: Int): Article = articleService.update(article)
 
+    @RequestMapping(value = "/articles/{id}", method = arrayOf(RequestMethod.GET))
+    fun findById(@PathVariable id: Int): Article? = articleService.findById(id);
+
     @RequestMapping(value = "/articles/filter", method = arrayOf(RequestMethod.GET))
     fun findByFilter(@RequestParam("authorId", required = false) authorId: Int?,
                      @RequestParam("teamId", required = false) teamId: Int?): List<Article> {

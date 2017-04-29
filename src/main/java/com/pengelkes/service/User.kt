@@ -49,6 +49,7 @@ class User {
         this.password = password
         this.email = email
         this.position = position
+        this.positionTranslation = this.position?.translation
         this.team = team
         this.teamId = teamId
         this.created = created
@@ -70,6 +71,7 @@ class User {
         this.password = user.password
         this.email = user.email
         this.position = user.position
+        this.positionTranslation = this.position?.translation
         this.team = user.team
         this.teamId = user.teamId
         this.created = user.created
@@ -85,6 +87,7 @@ class User {
         this.password = userAccountRecord.password
         this.email = userAccountRecord.email
         this.position = userAccountRecord.getValue<Position>(USER_ACCOUNT.POSITION, Position::class.java)
+        this.positionTranslation = this.position?.translation
         this.teamId = userAccountRecord.teamId
         this.backNumber = userAccountRecord.backnumber
         this.articleWriter = userAccountRecord.articleWriter
